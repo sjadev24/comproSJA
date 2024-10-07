@@ -80,7 +80,7 @@ foreach ($result as $row) {
 							<div class="mb-5">
 								<h3 class="footer-heading">Help &amp; Support</h3>
 								<a href='https://e-katalog.lkpp.go.id/id/search-produk?authenticityToken=46ea77a9b4b2a270776b6ed764554b8878435fc7&q=senang+jaya&order=relevance&limit=12&offset=1'>
-									<img src="../sja/lkpp.png" width="120">
+									<img src="./lkpp.png" width="120">
 								</a>
 							</div>
 							<div>

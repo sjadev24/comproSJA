@@ -90,7 +90,7 @@ foreach ($result as $row) {
     <div class="row align-items-center about-row">
       <div class="col-5 mx-auto">
         <div class="media-decoration">
-          <img src="../sja/pxfuel.jpg" alt="">
+          <img src="./pxfuel.jpg" alt="">
         </div>
       </div>
       <div class="col-5 me-auto about-content">
@@ -193,49 +193,49 @@ foreach ($result as $row) {
     <div class="swiper customers-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/dlh.png" alt="Dinas Lingkungan Hidup" title="Dinas Lingkungan Hidup">
+          <img src="./testimoni-customer/dlh.png" alt="Dinas Lingkungan Hidup" title="Dinas Lingkungan Hidup">
         </div>
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/pupr.png" alt="Kementerian PUPR" title="Kementerian PUPR">
+          <img src="./testimoni-customer/pupr.png" alt="Kementerian PUPR" title="Kementerian PUPR">
         </div>
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/imigrasi.png" alt="Rumah Detensi Imigrasi" title="Rumah Detensi Imigrasi">
+          <img src="./testimoni-customer/imigrasi.png" alt="Rumah Detensi Imigrasi" title="Rumah Detensi Imigrasi">
         </div>
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/humbang_hasundutan.png" alt="Dinas Perhubungan Kabupaten Humbang Hasundutan" title="Dinas Perhubungan Kabupaten Humbang Hasundutan">
+          <img src="./testimoni-customer/humbang_hasundutan.png" alt="Dinas Perhubungan Kabupaten Humbang Hasundutan" title="Dinas Perhubungan Kabupaten Humbang Hasundutan">
         </div>
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/batubara.png" alt="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara" title="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara">
+          <img src="./testimoni-customer/batubara.png" alt="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara" title="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara">
         </div>
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/kemenhub.png" alt="Kementerian Perhubungan" title="Kementerian Perhubungan">
+          <img src="./testimoni-customer/kemenhub.png" alt="Kementerian Perhubungan" title="Kementerian Perhubungan">
         </div>
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/jember.png" alt="DLH Kabupaten Jember" title="DLH Kabupaten Jember">
+          <img src="./testimoni-customer/jember.png" alt="DLH Kabupaten Jember" title="DLH Kabupaten Jember">
         </div>
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/tapanuli_utara.png" alt="DLH Kabupaten Tapanuli Utara" title="DLH Kabupaten Tapanuli Utara">
+          <img src="./testimoni-customer/tapanuli_utara.png" alt="DLH Kabupaten Tapanuli Utara" title="DLH Kabupaten Tapanuli Utara">
         </div>
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/batu.png" alt="DLH Kota Batu" title="DLH Kota Batu">
+          <img src="./testimoni-customer/batu.png" alt="DLH Kota Batu" title="DLH Kota Batu">
         </div>
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/malang.png" alt="DLH Kota Malang" title="DLH Kota Malang">
+          <img src="./testimoni-customer/malang.png" alt="DLH Kota Malang" title="DLH Kota Malang">
         </div>
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/tangerang.png" alt="DLH Kota Tangerang" title="DLH Kota Tangerang">
+          <img src="./testimoni-customer/tangerang.png" alt="DLH Kota Tangerang" title="DLH Kota Tangerang">
         </div>
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/bulukumba.png" alt="DLHK Kabupaten Bulukumba" title="DLHK Kabupaten Bulukumba">
+          <img src="./testimoni-customer/bulukumba.png" alt="DLHK Kabupaten Bulukumba" title="DLHK Kabupaten Bulukumba">
         </div>
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/sumedang.png" alt="DLHK Kabupaten Sumedang" title="DLHK Kabupaten Sumedang">
+          <img src="./testimoni-customer/sumedang.png" alt="DLHK Kabupaten Sumedang" title="DLHK Kabupaten Sumedang">
         </div>
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/depok.png" alt="DLHK Kota Depok" title="DLHK Kota Depok">
+          <img src="./testimoni-customer/depok.png" alt="DLHK Kota Depok" title="DLHK Kota Depok">
         </div>
         <div class="swiper-slide">
-          <img src="../sja/testimoni-customer/tegal.png" alt="DPUPR Kota Tegal" title="DPUPR Kota Tegal">
+          <img src="./testimoni-customer/tegal.png" alt="DPUPR Kota Tegal" title="DPUPR Kota Tegal">
         </div>
       </div>
       <div class="swiper-pagination"></div>
