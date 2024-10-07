@@ -1,0 +1,10 @@
+@media only screen and (max-width: 991px) {
+	.header .logo {display: block;width: 100%;text-align: center;}
+	.header .search-box {display: block;}
+}
+
+@media only screen and (min-width: 992px) {
+	.product .text {
+		min-height: 190px;
+	}
+}
