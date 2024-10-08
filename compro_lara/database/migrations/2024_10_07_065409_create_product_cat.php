@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('product_cat', function (Blueprint $table) {
             $table->increments('cat_id');
             $table->string('cat_name');
-            
+            $table->string('desc');
         });
     }
 
