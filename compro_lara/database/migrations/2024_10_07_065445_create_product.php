@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('product_name');
             $table->char('cat_id');
             $table->longtext('desc');
+            $table->longtext('photo');
         });
     }
 
