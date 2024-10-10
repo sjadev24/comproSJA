@@ -13,10 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('product_cat', function (Blueprint $table) {
-            $table->increments('cat_id');
-            $table->string('cat_name');
-            $table->string('desc');
+        Schema::create('galery', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
         });
     }
 
@@ -27,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('product_cat');
+        Schema::dropIfExists('galery');
     }
 };
