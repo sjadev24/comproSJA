@@ -28,60 +28,43 @@ foreach ($result as $row) {
 }
 ?>
 
-<section class="section-hero">
-  <div class="container">
-    <div class="swiper hero-swiper">
-      <div class="swiper-wrapper">
-        <?php
-        $i = 0;
-        $statement = $pdo->prepare("SELECT * FROM tbl_slider");
-        $statement->execute();
-        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
-        foreach ($result as $row) {
-          $photo = $row['photo'];
-          $pos = $row['position'];
-        ?>
-          <div data-text="aaa" class="swiper-slide <?php if ($i == 0) {
-                                                      echo 'active';
-                                                    } ?>">
-            <img src="assets/uploads/<?php echo $photo; ?>" alt="">
-            <div class="slide-text <?php if ($pos == 'Left') {
-                                      echo 'slide_style_left';
-                                    } elseif ($pos == 'Center') {
-                                      echo 'slide_style_center';
-                                    } elseif ($pos == 'Right') {
-                                      echo 'slide_style_right';
-                                    } ?>">
-              <h1 data-animation="animate__animated animate__<?php if ($pos == 'Left') {
-                                                                echo 'zoomInLeft';
-                                                              } elseif ($pos == 'Center') {
-                                                                echo 'flipInX';
-                                                              } elseif ($pos == 'Right') {
-                                                                echo 'zoomInRight';
-                                                              } ?>"><?php echo $row['heading']; ?></h1>
-              <p data-animation="animate__animated animate__<?php if ($pos == 'Left') {
-                                                              echo 'fadeInLeft';
-                                                            } elseif ($pos == 'Center') {
-                                                              echo 'fadeInDown';
-                                                            } elseif ($pos == 'Right') {
-                                                              echo 'fadeInRight';
-                                                            } ?>"><?php echo nl2br($row['content']); ?></p>
-              <a href="<?php echo $row['button_url']; ?>" target="_blank" class="btn btn-primary" data-animation="animate__animated animate__<?php if ($pos == 'Left') {
-                                                                                                                                                echo 'fadeInLeft';
-                                                                                                                                              } elseif ($pos == 'Center') {
-                                                                                                                                                echo 'fadeInDown';
-                                                                                                                                              } elseif ($pos == 'Right') {
-                                                                                                                                                echo 'fadeInRight';
-                                                                                                                                              } ?>"><?php echo $row['button_text']; ?></a>
+<section class="section-hero py-0">
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+      <?php
+      $i = 0;
+      $statement = $pdo->prepare("SELECT * FROM tbl_slider");
+      $statement->execute();
+      $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+      foreach ($result as $row) {
+        $photo = $row['photo'];
+        $photoAlt = substr($photo, 0, strrpos($photo, '.'));
+        $pos = $row['position'];
+      ?>
+        <div class="d-flex align-items-center swiper-slide <?php if ($i == 0) {
+                                                              echo 'active';
+                                                            } ?>">
+          <div class="slide-img">
+            <img src="assets/uploads/<?php echo $photo; ?>" alt="<?php echo $photoAlt; ?>">
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-lg-5">
+                <div class="slide-text">
+                  <h2 class="mb-1" data-animation="animate__animated animate__fadeInLeft"><?php echo $row['heading']; ?></h2>
+                  <p data-animation="animate__animated animate__fadeInLeft"><?php echo nl2br($row['content']); ?></p>
+                  <a data-animation="animate__animated animate__fadeInLeft" href="<?php echo $row['button_url']; ?>" target="_blank" class="btn btn-primary"><?php echo $row['button_text']; ?></a>
+                </div>
+              </div>
             </div>
           </div>
-        <?php
-          $i++;
-        }
-        ?>
-      </div>
-      <div class="swiper-pagination"></div>
+        </div>
+      <?php
+        $i++;
+      }
+      ?>
     </div>
+    <div class="swiper-pagination"></div>
   </div>
 </section>
 
@@ -122,17 +105,8 @@ foreach ($result as $row) {
             <span>Become a more advanced corporate industry company of the time to come to satisfy customer satisfaction.</span>
           </li>
         </ul>
-      </div>
-    </div>
 
-    <div class="row align-items-center about-row">
-      <div class="col-5 mx-auto">
-        <div class="media-decoration">
-          <img src="assets/uploads/product-featured-132.jpg" alt="">
-        </div>
-      </div>
-      <div class="col-5 me-auto about-content">
-        <h2 class="fs-5 mb-3">Our Mision:</h2>
+        <h2 class="fs-5 mb-3">Our Mission:</h2>
         <ul class="d-flex flex-column gap-2">
           <li>
             <i class="fa-solid fa-circle"></i>
@@ -149,8 +123,77 @@ foreach ($result as $row) {
         </ul>
       </div>
     </div>
+
+    <div class="row align-items-center about-row">
+      <div class="col-5 mx-auto">
+        <div class="media-decoration">
+          <img src="assets/uploads/product-featured-132.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-5 me-auto about-content">
+
+      </div>
+    </div>
   </div>
 </section>
+
+<section class="section-products">
+  <div class="container">
+    <h2 class="fs-3">Our products</h2>
+    <div class="row">
+
+      <!-- <div class="col-md-4 col-lg-3">
+        <div class="d-flex flex-column h-100">
+          <h6 class="mb-sm-3">Browse by:</h6>
+
+          <div class="grid-menu mb-4">
+            <ul class="nav flex-md-column gap-1 nav-pills nav-pills-primary product-filters">
+              <li class="nav-item">
+                <a class="nav-link active" data-filter="*">All products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-filter=".marketing">Marketing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-filter=".design">Design</a>
+              </li>
+            </ul>
+          </div>
+
+          <a href="portfolio-showcase.html" class="btn btn-light mt-auto mb-5">View all projects<i class="fa-solid fa-arrow-right-long ms-2"></i></a>
+        </div>
+      </div> -->
+
+      <div class="col-md-8 col-lg-9">
+        <div class="row g-4 product-container">
+
+          <div class="col-sm-6 col-lg-4 product-item marketing">
+            <div class="card product-card">
+              <img src="https://mizzle.webestica.com/assets/images/portfolio/masonry/01.jpg" alt="portfolio-image">
+              <div class="card-img-overlay product-info d-flex">
+                <div class="card-text mt-auto">
+                  <p class="mb-0"><a href="#" class="text-white stretched-link">Dynamic Workflows Website</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 product-item design">
+            <div class="card product-card">
+              <img src="https://mizzle.webestica.com/assets/images/portfolio/masonry/04.jpg" alt="portfolio-image">
+              <div class="card-img-overlay product-info d-flex">
+                <div class="card-text mb-1">
+                  <p class="mb-0"><a href="#" class="text-white stretched-link">ElevateTech Redesign</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section class="section-services bg-dark">
   <div class="container">
@@ -280,4 +323,5 @@ foreach ($result as $row) {
 
 <script src="assets/js/vendor/aos.js"></script>
 <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+<script src="assets/js/vendor/isotope.pkgd.min.js"></script>
 <?php require_once('footer.php'); ?>
