@@ -37,20 +37,35 @@ class UserController extends Controller
 
     public function login(Request $req){
         if($req->session()->has('name')){
-            return redirect()->route(); //return to logout if already login 
+            return redirect()->route('formlogin'); //return to logout if already login 
         }
         $getuser = User::where('email',$req->email)->first();
-    dd($getuser);
+        print(Hash::check($req->password, $getuser->password));
+
+
+        if(Hash::check($req->password, $getuser->password)){
+            print('match');
+        }
+
+
+
+        if($getuser->email == $req->email && Hash::check($req->password, $getuser->password)){
+            //return to dashboard
+            print('success');
+        }else{
+            print('fail');
+            //return to formlogin
+        }
         if($getuser != null && Hash::check($req->password, $getuser->password)){
             //return to dashboard
-           dd('0');
+           
         }else{
             //return to formlogin
             $pass = Hash::make($req->password);
                 if($req->email == $getuser->email && Hash::check($req->password, $getuser->password)){
                     Session::put('user_id', $req->id);
                     Session::put('name', $getuser->name);
-                    // dd(Session::get('role'));
+                    
                     dd($getuser);
                     return redirect()->route('home')->with('status', "Login Success");
         }
