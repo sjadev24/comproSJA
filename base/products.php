@@ -10,24 +10,24 @@ require_once('includes/header.php');
     <h2 class="h3 mb-7">Our Products</h2>
 
     <div class="row">
-      <?php $tab = isset($_GET['tab']) ? $_GET['tab'] : null; ?>
+      <?php $current_tab = isset($_GET['tab']) ? $_GET['tab'] : null; ?>
 
       <div class="col-lg-2 pb-2 pb-lg-0 mb-4 mb-lg-0">
         <ul class="nav nav-underline flex-row flex-lg-column justify-content-center justify-content-lg-start gap-4 gap-lg-2" role="tablist">
           <li class="nav-item" role="presentation">
-            <button type="button" id="heavy-duty-tab" class="nav-link <?php echo $tab === 'heavy-duty' || $tab === null ? 'active' : ''; ?>" data-bs-toggle="tab" data-bs-target="#heavy-duty-content" role="tab" aria-controls="heavy-duty-content" aria-selected="true">Heavy Duty</button>
+            <button type="button" id="heavy-duty-tab" class="nav-link <?php echo $current_tab === 'heavy-duty' || $current_tab === null ? 'active' : ''; ?>" data-bs-toggle="tab" data-bs-target="#heavy-duty-content" role="tab" aria-controls="heavy-duty-content" aria-selected="true">Heavy Duty</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button type="button" id="special-purpose-tab" class="nav-link <?php echo $tab === 'special-purpose' ? 'active' : ''; ?>" data-bs-toggle="tab" data-bs-target="#special-purpose-content" role="tab" aria-controls="special-purpose-content" aria-selected="false">Special purpose vehicle</button>
+            <button type="button" id="special-purpose-tab" class="nav-link <?php echo $current_tab === 'special-purpose' ? 'active' : ''; ?>" data-bs-toggle="tab" data-bs-target="#special-purpose-content" role="tab" aria-controls="special-purpose-content" aria-selected="false">Special purpose vehicle</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button type="button" id="ambulance-tab" class="nav-link <?php echo $tab === 'ambulance' ? 'active' : ''; ?>" data-bs-toggle="tab" data-bs-target="#ambulance-content" role="tab" aria-controls="ambulance-content" aria-selected="false">Ambulance</button>
+            <button type="button" id="ambulance-tab" class="nav-link <?php echo $current_tab === 'ambulance' ? 'active' : ''; ?>" data-bs-toggle="tab" data-bs-target="#ambulance-content" role="tab" aria-controls="ambulance-content" aria-selected="false">Ambulance</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button type="button" id="bus-tab" class="nav-link <?php echo $tab === 'bus' ? 'active' : ''; ?>" data-bs-toggle="tab" data-bs-target="#bus-content" role="tab" aria-controls="bus-content" aria-selected="false">Bus</button>
+            <button type="button" id="bus-tab" class="nav-link <?php echo $current_tab === 'bus' ? 'active' : ''; ?>" data-bs-toggle="tab" data-bs-target="#bus-content" role="tab" aria-controls="bus-content" aria-selected="false">Bus</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button type="button" id="heavy-equipment-tab" class="nav-link <?php echo $tab === 'heavy-equipment' ? 'active' : ''; ?>" data-bs-toggle="tab" data-bs-target="#heavy-equipment-content" role="tab" aria-controls="heavy-equipment-content" aria-selected="false">Heavy equipment</button>
+            <button type="button" id="heavy-equipment-tab" class="nav-link <?php echo $current_tab === 'heavy-equipment' ? 'active' : ''; ?>" data-bs-toggle="tab" data-bs-target="#heavy-equipment-content" role="tab" aria-controls="heavy-equipment-content" aria-selected="false">Heavy equipment</button>
           </li>
         </ul>
       </div>
@@ -66,7 +66,7 @@ require_once('includes/header.php');
         ?>
 
         <div class="tab-content">
-          <div id="heavy-duty-content" class="tab-pane <?php echo (isset($tab) && $tab == 'heavy-duty') || !isset($tab) ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="heavy-duty-tab" tabindex="0">
+          <div id="heavy-duty-content" class="tab-pane <?php echo $current_tab === 'heavy-duty' || $current_tab === null ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="heavy-duty-tab" tabindex="0">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
               <?php
               foreach ($product_categories['heavy_duty'] as $product) {
@@ -91,7 +91,7 @@ require_once('includes/header.php');
               ?>
             </div>
           </div>
-          <div id="special-purpose-content" class="tab-pane <?php echo (isset($tab) && $tab == 'special-purpose') ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="special-purpose-tab" tabindex="0">
+          <div id="special-purpose-content" class="tab-pane <?php echo $current_tab === 'special-purpose' ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="special-purpose-tab" tabindex="0">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
               <?php
               foreach ($product_categories['special_purpose'] as $product) {
@@ -116,7 +116,7 @@ require_once('includes/header.php');
               ?>
             </div>
           </div>
-          <div id="ambulance-content" class="tab-pane <?php echo (isset($tab) && $tab == 'ambulance') ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="ambulance-tab" tabindex="0">
+          <div id="ambulance-content" class="tab-pane <?php echo $current_tab === 'ambulance' ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="ambulance-tab" tabindex="0">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
               <?php
               foreach ($product_categories['ambulance'] as $product) {
@@ -141,7 +141,7 @@ require_once('includes/header.php');
               ?>
             </div>
           </div>
-          <div id="bus-content" class="tab-pane <?php echo (isset($tab) && $tab == 'bus') ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="bus-tab" tabindex="0">
+          <div id="bus-content" class="tab-pane <?php echo $current_tab === 'bus' ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="bus-tab" tabindex="0">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
               <?php
               foreach ($product_categories['bus'] as $product) {
@@ -166,7 +166,7 @@ require_once('includes/header.php');
               ?>
             </div>
           </div>
-          <div id="heavy-equipment-content" class="tab-pane <?php echo (isset($tab) && $tab == 'heavy-equipment') ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="heavy-equipment-tab" tabindex="0">
+          <div id="heavy-equipment-content" class="tab-pane <?php echo $current_tab === 'heavy-equipment' ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="heavy-equipment-tab" tabindex="0">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
               <?php
               foreach ($product_categories['heavy_equipment'] as $product) {
@@ -197,7 +197,4 @@ require_once('includes/header.php');
   </div>
 </section>
 
-<?php
-$scripts = array('isotope.pkgd.min.js');
-require_once('includes/footer.php');
-?>
+<?php require_once('includes/footer.php'); ?>
