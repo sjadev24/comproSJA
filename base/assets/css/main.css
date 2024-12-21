@@ -485,6 +485,11 @@ Mobile style's
     display: block;
   }
 }
+@media (max-width: 767px) {
+  .section {
+    --section-spacer-y: 4rem;
+  }
+}
 .header {
   padding: 0.75rem 0;
   background-color: var(--bs-gray-900);

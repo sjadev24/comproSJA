@@ -180,3 +180,9 @@ Mobile style's
     display: block;
   }
 }
+
+@media (max-width: 767px) {
+  .section {
+    --section-spacer-y: 4rem;
+  }
+}
