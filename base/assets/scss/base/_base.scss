@@ -1,0 +1,182 @@
+@use '../abstracts/variables' as var;
+
+.section {
+  --section-spacer-y: 5rem;
+  --section-spacer-x: 0;
+  --section-bg: var(--bs-body-bg);
+  --section-color: var(--bs-body-color);
+  padding: var(--section-spacer-y) var(--section-spacer-x);
+  background-color: var(--section-bg);
+  color: var(--section-color);
+}
+
+.section.bg-dark .swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.section.bg-light {
+  --section-color: var(--bs-gray-700);
+}
+
+.section.bg-dark {
+  --bs-heading-color: var(--bs-white);
+  --section-bg: transparent;
+  --section-color: var(--bs-gray-500);
+}
+
+.title-underline {
+  margin: 0.3rem 0;
+  font-family: var.$font-family-headings;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.title-underline::after {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 3px;
+  background-color: var.$color-orange-shade-200;
+  margin-top: 0.5rem;
+}
+
+.btn-icon {
+  --bs-btn-border-radius: 4px;
+}
+
+.img-effect {
+  position: relative;
+}
+
+.img-effect img {
+  position: relative;
+  z-index: 1;
+}
+
+.dotted::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><circle cx='50' cy='50' r='15' fill='%23d2aa78'></circle></svg>");
+  background-size: 0.5rem;
+}
+
+.img-effect.dotted.last::before {
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+}
+
+.social-link {
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-hover-color: #{var.$color-orange};
+  --bs-btn-active-color: #{var.$color-orange};
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-font-size: 1.1rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.swiper {
+  width: 100%;
+}
+
+.card-element-hover {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card-element-hover .card-img {
+  transition: all 0.3s ease-in-out;
+}
+
+.card-element-hover:hover .card-img {
+  transform: scale(1.06);
+}
+
+.card-element-hover .card-img-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  font-size: 1.5rem;
+  color: var(--bs-white);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-element-hover:hover .card-img-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tab-pane li {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tab-pane .fa-circle {
+  padding-top: 0.5rem;
+  font-size: 0.3125rem;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 959px) {
+  .menu-mobile {
+    display: block;
+  }
+  .menu-dropdown-icon:before {
+    display: block;
+  }
+  .menu > ul {
+    display: none;
+  }
+  .menu > ul > li {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  .menu > ul > li a {
+    padding: 1.5em;
+    width: 100%;
+    display: block;
+  }
+  .menu > ul > li > ul {
+    position: relative;
+  }
+  .menu > ul > li > ul.normal-sub {
+    width: 100%;
+  }
+  .menu > ul > li > ul > li {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .menu > ul > li > ul > li:first-child {
+    margin: 0;
+  }
+  .menu > ul > li > ul > li > ul {
+    position: relative;
+  }
+  .menu > ul > li > ul > li > ul > li {
+    float: none;
+  }
+  .menu .show-on-mobile {
+    display: block;
+  }
+}

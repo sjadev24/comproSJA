@@ -1,0 +1,110 @@
+@use '../abstracts/variables' as var;
+
+.menu > ul {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.menu > ul > li > a {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 1rem 1.5rem;
+}
+
+.menu > ul > li > a i {
+  font-size: 0.75rem;
+  line-height: 1.04;
+}
+
+.menu > ul > li > ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0.75rem;
+  background-color: var(--bs-gray-900);
+  margin: 0 auto;
+  font-size: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.24);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 10px);
+  transition: all 0.12s;
+}
+
+.menu > ul > li > ul.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0);
+  transition-duration: 0.3s;
+}
+
+.menu > ul > li > ul > li {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 25%;
+  padding: 0.75rem;
+}
+
+.menu > ul > li > ul > li a {
+  padding: 0.2em 0;
+  font-size: 0.8rem;
+}
+
+.menu > ul > li > ul > li a:hover {
+  color: var.$color-orange;
+}
+
+.menu > ul > li > ul > li > a {
+  border-bottom: 1px solid #ccc;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.menu > ul > li > ul > li > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.menu > ul > li > ul > li > ul > li {
+  font-size: 0.8em;
+}
+
+.menu > ul > li > ul.normal-sub {
+  width: 220px;
+  left: auto;
+  padding: 10px 20px;
+}
+
+.menu > ul > li > ul.normal-sub > li {
+  width: 100%;
+}
+
+.menu > ul > li > ul.normal-sub > li a {
+  border: 0;
+  padding: 1em 0;
+}
+
+.menu-mobile {
+  display: none;
+  padding: 20px;
+  color: var(--bs-white);
+}
+
+.menu-mobile:hover {
+  color: var(--bs-white);
+}
+
+.menu-mobile:after {
+  content: '\f067';
+  font-family: 'FontAwesome';
+  font-size: 2.5rem;
+  padding: 0;
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-25%);
+}

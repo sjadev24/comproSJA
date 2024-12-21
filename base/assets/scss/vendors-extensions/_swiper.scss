@@ -1,0 +1,15 @@
+.swiper-slide {
+  cursor: grab;
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px;
+  background-color: #1f2937;
+  opacity: 0.8;
+}
