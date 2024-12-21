@@ -122,3 +122,13 @@
   --bs-card-border-radius: 0;
   --bs-card-inner-border-radius: 0;
 }
+
+@media (max-width: 575px) {
+  .hero-slide-content .h1 {
+    font-size: 1.65rem;
+  }
+  
+  .hero-slide-content p {
+    font-size: 1rem;
+  }
+}

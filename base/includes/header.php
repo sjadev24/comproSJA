@@ -70,12 +70,14 @@ $success_message1 = '';
 						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 					</div>
 					<div class="offcanvas-body">
+						<?php $current_page = basename($_SERVER['PHP_SELF']); ?>
+
 						<ul class="navbar-nav flex-grow-1 pe-3">
-							<li class="nav-item"><a href="index.php" class="nav-link active" aria-current="page">Home</a></li>
-							<li class="nav-item"><a href="products.php" class="nav-link">Products</a></li>
-							<li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
-							<li class="nav-item"><a href="gallery.php" class="nav-link">Gallery</a></li>
-							<li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+							<li class="nav-item"><a href="index.php" class="nav-link <?php echo $current_page === 'index.php' ? 'active' : ''; ?>" aria-current="page">Home</a></li>
+							<li class="nav-item"><a href="products.php" class="nav-link <?php echo $current_page === 'products.php' ? 'active' : ''; ?>">Products</a></li>
+							<li class="nav-item"><a href="about.php" class="nav-link <?php echo $current_page === 'about.php' ? 'active' : ''; ?>">About</a></li>
+							<li class="nav-item"><a href="gallery.php" class="nav-link <?php echo $current_page === 'gallery.php' ? 'active' : ''; ?>">Gallery</a></li>
+							<li class="nav-item"><a href="contact.php" class="nav-link <?php echo $current_page === 'contact.php' ? 'active' : ''; ?>">Contact</a></li>
 							<li class="nav-item dropdown search-dropdown row">
 								<div class="d-none d-lg-flex">
 									<button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Search">
