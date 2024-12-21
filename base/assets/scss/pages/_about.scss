@@ -1,0 +1,96 @@
+@use '../abstracts/variables' as var;
+
+/*--------------------------------------------------------------
+# Section Who We Are
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Section About Background
+--------------------------------------------------------------*/
+
+.section-aboutbackground {
+  height: 80vh;
+  background: url('../img/office-03.jpg') no-repeat center / cover fixed;
+}
+
+/*--------------------------------------------------------------
+# Section Our Values
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Section What We Do
+--------------------------------------------------------------*/
+
+.steps {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.steps::before {
+  content: '';
+  height: 100%;
+  border-left: 2px solid var.$color-orange-shade-200;
+  position: absolute;
+  top: 0;
+  left: calc(1rem - 1px);
+  z-index: -1;
+}
+
+.step {
+  display: flex;
+  gap: 1rem;
+}
+
+.step-number {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.25rem;
+  background-color: var(--section-bg);
+  border: 2px solid var.$color-orange-shade-200;
+  border-radius: 50%;
+  font-weight: 600;
+  color: var(--bs-heading-color);
+}
+
+/*--------------------------------------------------------------
+# Section Awards
+--------------------------------------------------------------*/
+
+.lists::before {
+  content: none;
+}
+
+/*--------------------------------------------------------------
+# Section Our Team
+--------------------------------------------------------------*/
+
+.avatar {
+  width: 8rem;
+}
+
+/*--------------------------------------------------------------
+# Section Our Customers
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Section CTA
+--------------------------------------------------------------*/
+
+.section-aboutcta {
+  --bs-heading-color: var(--bs-white);
+  --section-color: var(--bs-gray-500);
+  position: relative;
+  background: url('../uploads/slider-4.jpg') no-repeat center / cover fixed;
+}
+
+.section-aboutcta .container {
+  position: relative;
+  z-index: 1;
+}

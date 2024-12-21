@@ -1,0 +1,76 @@
+@use '../abstracts/variables' as var;
+
+.header {
+  padding: 0.75rem 0;
+  background-color: var(--bs-gray-900);
+  color: var(--bs-white);
+}
+
+.navbar-brand img {
+  max-width: 17.5rem;
+}
+
+.search-dropdown .dropdown-toggle {
+  color: var(--bs-white);
+}
+
+.search-dropdown:hover .dropdown-toggle {
+  color: var.$color-orange;
+}
+
+.search-dropdown .dropdown-toggle::after {
+  content: none;
+}
+
+.search-dropdown .dropdown-toggle.show,
+.search-dropdown .dropdown-toggle:active {
+  --bs-btn-active-color: var(--bs-white);
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-border-color: transparent;
+}
+
+.search-dropdown .dropdown-menu {
+  --bs-dropdown-padding-y: 0;
+  --bs-dropdown-font-size: inherit;
+  --bs-dropdown-min-width: 11rem;
+  left: auto;
+  right: 0;
+}
+
+.search-dropdown .form-control {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: inherit;
+}
+
+.search-dropdown .btn-outline-secondary {
+  --bs-btn-border-color: var(--bs-border-color);
+}
+
+@media (min-width: 992px) {
+  .search-dropdown .form-control {
+    --bs-border-color: transparent;
+    min-width: 10rem;
+  }
+
+  .search-dropdown .form-control:focus {
+    border-color: transparent;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand img {
+    max-width: 15rem;
+  }
+
+  .navbar-toggler {
+    --bs-navbar-toggler-padding-x: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar-brand img {
+    max-width: 13.5rem;
+  }
+}
