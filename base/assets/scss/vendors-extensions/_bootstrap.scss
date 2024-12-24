@@ -138,6 +138,26 @@ ul {
   margin-bottom: 3rem !important;
 }
 
+@media (min-width: 768px) {
+  .mb-md-0 {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .mb-lg-5 {
+    margin-bottom: 2rem !important;
+  }
+
+  .mb-lg-6 {
+    margin-bottom: 2.5rem !important;
+  }
+
+  .mb-lg-7 {
+    margin-bottom: 3rem !important;
+  }
+}
+
 .gy-5 {
   --bs-gutter-y: 2rem !important;
 }

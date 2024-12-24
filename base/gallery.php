@@ -6,27 +6,29 @@ require_once('includes/header.php');
 
 <section class="section section-gallery">
   <div class="container">
-    <h2 class="h3 mb-7">Our Gallery</h2>
+    <h2 class="h3 mb-5 mb-lg-6">Our Gallery</h2>
 
     <div class="row">
       <div class="col-lg-2 pb-2 pb-lg-0 mb-4 mb-lg-0">
-        <ul class="nav nav-underline flex-row flex-lg-column justify-content-center justify-content-lg-start gap-4 gap-lg-2 process-filters-btn-group">
-          <li class="nav-item">
-            <button class="nav-link active" data-filter="*">Show All</a>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link" data-filter=".cutting">Cutting</a>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link" data-filter=".painting">Painting</a>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link" data-filter=".finishing">Finishing</a>
-          </li>
-        </ul>
+        <div class="d-flex d-lg-block nav-wrapper">
+          <ul class="nav nav-underline flex-row flex-lg-column flex-nowrap flex-lg-wrap gap-4 gap-lg-2 process-filters-btn-group mx-auto mx-lg-0">
+            <li class="nav-item">
+              <button class="nav-link active" data-filter="*">Show All</a>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" data-filter=".cutting">Cutting</a>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" data-filter=".painting">Painting</a>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" data-filter=".finishing">Finishing</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="col-12 col-lg-10">
+      <div class="col-lg-10">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 process-grid gy-4" tabindex="0">
           <div class="process-item cutting">
             <div class="card card-element-hover">

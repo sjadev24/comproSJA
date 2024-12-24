@@ -48,9 +48,12 @@ require_once('includes/header.php');
   <div class="container">
     <div class="row g-4 align-items-xl-center">
       <div class="col-lg-7">
-        <div class="row pe-xl-5">
+        <div class="row pe-lg-4 pe-xl-5 g-5 g-lg-4">
           <div class="col-sm-6">
-            <img src="assets/img/office-01.jpg" class="rounded" alt="office 01">
+            <picture>
+              <source data-srcset="assets/img/webp/office-01.webp" type="image/webp" />
+              <img src="assets/img/placehold.png" data-src="assets/img/office-01.jpg" class="rounded lazyload" alt="office 01">
+            </picture>
           </div>
 
           <div class="col-sm-6">
@@ -68,31 +71,35 @@ require_once('includes/header.php');
                 </div>
               </div>
             </div>
-            <img src="assets/img/office-02.jpg" class="rounded" alt="office 02">
+            <picture>
+              <source data-srcset="assets/img/webp/office-02.webp" type="image/webp" />
+              <img src="assets/img/placehold.png" data-src="assets/img/office-02.jpg" class="rounded lazyload" alt="office 02">
+            </picture>
           </div>
         </div>
       </div>
 
       <div class="col-lg-5">
         <span class="d-inline-block bg-light text-gray-700 small rounded-3 px-3 py-2 mb-4">🤝 Your access point for top-notch bodywork solutions</span>
+
         <h2 class="mb-4">Crafting Excellence in Vehicle Customization</h2>
-        <p class="mb-4">With our extensive experience in karoseri, we specialize in creating high-quality, custom body designs for trucks, vans, and more. Our commitment to innovation and customer satisfaction ensures that every vehicle meets the highest standards. Discover how we can transform your vehicle with tailored designs that maximize functionality and aesthetics.</p>
+        <p class="mb-5">With our extensive experience in karoseri, we specialize in creating high-quality, custom body designs for trucks, vans, and more. Our commitment to innovation and customer satisfaction ensures that every vehicle meets the highest standards. Discover how we can transform your vehicle with tailored designs that maximize functionality and aesthetics.</p>
+
         <p><strong>Why Choose Us?</strong></p>
         <ul class="list-group list-group-borderless mb-4">
-          <li class="list-group-item heading-color d-flex mb-0 border-0">
+          <li class="list-group-item d-flex border-0">
             <i class="bi bi-patch-check-fill text-primary me-2" aria-hidden="true"></i>
             Expertise in innovative and functional custom designs
           </li>
-          <li class="list-group-item heading-color d-flex mb-0 border-0">
+          <li class="list-group-item d-flex border-0">
             <i class="bi bi-patch-check-fill text-primary me-2" aria-hidden="true"></i>
             A proven history of delivering reliable and high-quality karoseri solutions
           </li>
-          <li class="list-group-item heading-color d-flex mb-0 border-0">
+          <li class="list-group-item d-flex border-0">
             <i class="bi bi-patch-check-fill text-primary me-2" aria-hidden="true"></i>
             Dedicated customer support from concept to completion
           </li>
         </ul>
-        <a href="about.php" class="btn btn-primary">Discover more</a>
       </div>
     </div>
   </div>
@@ -100,32 +107,56 @@ require_once('includes/header.php');
 
 <section class="section section-partners">
   <div class="container">
-    <h2 class="h5 pb-2 mb-4 text-center text-gray-600 text-uppercase">Our trusted partners</h2>
+    <h2 class="h5 mb-5 text-center text-gray-600 text-uppercase">Our trusted partners</h2>
     <div class="swiper partners-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="assets/uploads/partners/hino.png" alt="Hino" title="Hino">
+          <picture>
+            <source data-srcset="assets/uploads/partners/webp/hino.webp" type="image/webp" />
+            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/hino.png" class="lazyload" alt="Hino" title="Hino">
+          </picture>
         </div>
         <div class="swiper-slide">
-          <img src="assets/uploads/partners/armindo.png" alt="Armindo" title="Armindo">
+          <picture>
+            <source data-srcset="assets/uploads/partners/webp/armindo.webp" type="image/webp" />
+            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/armindo.png" class="lazyload" alt="Armindo" title="Armindo">
+          </picture>
         </div>
         <div class="swiper-slide">
-          <img src="assets/uploads/partners/cemaco.png" alt="Cemaco" title="Cemaco">
+          <picture>
+            <source data-srcset="assets/uploads/partners/webp/cemaco.webp" type="image/webp" />
+            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/cemaco.png" class="lazyload" alt="Cemaco" title="Cemaco">
+          </picture>
         </div>
         <div class="swiper-slide">
-          <img src="assets/uploads/partners/auto2000.png" alt="Auto2000" title="Auto2000">
+          <picture>
+            <source data-srcset="assets/uploads/partners/webp/auto2000.webp" type="image/webp" />
+            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/auto2000.png" class="lazyload" alt="Auto2000" title="Auto2000">
+          </picture>
         </div>
         <div class="swiper-slide">
-          <img src="assets/uploads/partners/arista.png" alt="Arista" title="Arista">
+          <picture>
+            <source data-srcset="assets/uploads/partners/webp/arista.webp" type="image/webp" />
+            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/arista.png" class="lazyload" alt="Arista" title="Arista">
+          </picture>
         </div>
         <div class="swiper-slide">
-          <img src="assets/uploads/partners/indomobil.png" alt="Indomobil" title="Indomobil">
+          <picture>
+            <source data-srcset="assets/uploads/partners/webp/indomobil.webp" type="image/webp" />
+            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/indomobil.png" class="lazyload" alt="Indomobil" title="Indomobil">
+          </picture>
         </div>
         <div class="swiper-slide">
-          <img src="assets/uploads/partners/nasmoco.png" alt="Nasmoco" title="Nasmoco">
+          <picture>
+            <source data-srcset="assets/uploads/partners/webp/nasmoco.webp" type="image/webp" />
+            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/nasmoco.png" class="lazyload" alt="Nasmoco" title="Nasmoco">
+          </picture>
         </div>
         <div class="swiper-slide">
-          <img src="assets/uploads/partners/tejaberlian.png" alt="Teja Berlian" title="Teja Berlian">
+          <picture>
+            <source data-srcset="assets/uploads/partners/webp/tejaberlian.webp" type="image/webp" />
+            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/tejaberlian.png" class="lazyload" alt="Teja Berlian" title="Teja Berlian">
+          </picture>
         </div>
       </div>
     </div>
@@ -134,10 +165,10 @@ require_once('includes/header.php');
 
 <section class="section section-specialize bg-light">
   <div class="container">
-    <h2 class="mb-5 text-center">What we specialize in</h2>
-    <div class="row">
-      <div class="col-sm-4 my-4">
-        <div class="card card-body p-0 border-0 text-center">
+    <h2 class="mb-6 text-center">What we specialize in</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-4">
+      <div class="col">
+        <div class="text-center my-2">
           <div class="service-icon mb-4">
             <img src="assets/img/specialized/heavy-duty.png" alt="">
           </div>
@@ -146,8 +177,8 @@ require_once('includes/header.php');
         </div>
       </div>
 
-      <div class="col-sm-4 my-4">
-        <div class="card card-body p-0 border-0 text-center">
+      <div class="col">
+        <div class="text-center my-2">
           <div class="service-icon mb-4">
             <img src="assets/img/specialized/special-purpose-vehicle.png" alt="">
           </div>
@@ -156,8 +187,8 @@ require_once('includes/header.php');
         </div>
       </div>
 
-      <div class="col-sm-4 my-4">
-        <div class="card card-body p-0 border-0 text-center">
+      <div class="col">
+        <div class="text-center my-2">
           <div class="service-icon mb-4">
             <img src="assets/img/specialized/ambulance.png" alt="">
           </div>
@@ -166,8 +197,8 @@ require_once('includes/header.php');
         </div>
       </div>
 
-      <div class="col-sm-4 my-4">
-        <div class="card card-body p-0 border-0 text-center">
+      <div class="col">
+        <div class="text-center my-2">
           <div class="service-icon mb-4">
             <img src="assets/img/specialized/bus.png" alt="">
           </div>
@@ -176,8 +207,8 @@ require_once('includes/header.php');
         </div>
       </div>
 
-      <div class="col-sm-4 my-4">
-        <div class="card card-body p-0 border-0 text-center">
+      <div class="col">
+        <div class="text-center my-2">
           <div class="service-icon mb-4">
             <img src="assets/img/specialized/heavy-equipment.png" alt="">
           </div>
@@ -191,10 +222,10 @@ require_once('includes/header.php');
 
 <section class="section section-products">
   <div class="container">
-    <h2 class="mb-5 text-center">Our products</h2>
+    <h2 class="mb-6 text-center">Our products</h2>
     <div class="row">
       <div class="col">
-        <ul class="nav nav-underline justify-content-center gap-4 pb-2 mb-4" role="tablist">
+        <ul class="nav nav-underline justify-content-center gap-4 mb-5" role="tablist">
           <li class="nav-item" role="presentation">
             <button type="button" id="heavy-duty-tab" class="nav-link active" data-bs-toggle="pill" data-bs-target="#heavy-duty-content" role="tab" aria-controls="heavy-duty-content" aria-selected="true">Heavy Duty</button>
           </li>
@@ -212,316 +243,169 @@ require_once('includes/header.php');
           </li>
         </ul>
 
-        <div class="tab-content">
-          <div id="heavy-duty-content" class="tab-pane active" role="tabpanel" aria-labelledby="heavy-duty-tab" tabindex="0">
-            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 g-xl-4">
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-duty/prod-01.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-duty/prod-01@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-duty">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
+        <div class="tab-content mb-6">
+          <?php
+          $product_categories = [
+            'heavy_duty' => [],
+            'special_purpose' => [],
+            'ambulance' => [],
+            'bus' => [],
+            'heavy_equipment' => [],
+          ];
+
+          $product_category_counts = [
+            'heavy_duty' => 8,
+            'special_purpose' => 8,
+            'ambulance' => 2,
+            'bus' => 3,
+            'heavy_equipment' => 8
+          ];
+
+          foreach ($product_category_counts as $category => $count) {
+            for ($i = 1; $i <= $count; $i++) {
+              $formattedNumber = str_pad($i, 2, '0', STR_PAD_LEFT);
+
+              $product_categories[$category][] = [
+                'image' => "prod-$formattedNumber.jpg",
+                'image_2x' => "prod-$formattedNumber@2x.jpg",
+                'image_3x' => "prod-$formattedNumber@3x.jpg",
+                'image_lbox' => "prod-$formattedNumber@lbox.jpg",
+                'alt' => "Product $formattedNumber",
+              ];
+            }
+          }
+          ?>
+
+          <div id="heavy-duty-content" class="tab-pane <?php echo $current_tab === 'heavy-duty' || $current_tab === null ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="heavy-duty-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
+              <?php
+              foreach ($product_categories['heavy_duty'] as $product) {
+              ?>
+                <div class="col">
+                  <div class="card card-element-hover">
+                    <picture>
+                      <source
+                        data-srcset="assets/uploads/products/heavy-duty/<?php echo $product['image']; ?> 1x, assets/uploads/products/heavy-duty/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/heavy-duty/<?php echo $product['image_3x']; ?> 3x"
+                        type="image/jpeg" />
+                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-duty/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
+                    </picture>
+                    <div class="card-img-overlay">
+                      <a href="assets/uploads/products/heavy-duty/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="heavy-duty">
+                        <i class="bi bi-zoom-in" aria-hidden="true"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-duty/prod-02.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-duty/prod-02@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-duty">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-duty/prod-03.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-duty/prod-03@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-duty">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-duty/prod-04.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-duty/prod-04@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-duty">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-duty/prod-05.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-duty/prod-05@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-duty">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-duty/prod-06.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-duty/prod-06@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-duty">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-duty/prod-07.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-duty/prod-07@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-duty">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-duty/prod-08.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-duty/prod-08@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-duty">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <?php
+              }
+              ?>
             </div>
           </div>
-          <div id="special-purpose-content" class="tab-pane" role="tabpanel" aria-labelledby="special-purpose-tab" tabindex="0">
-            <div class="row row-cols-4 gy-4">
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/special-purpose/prod-01.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/special-purpose/prod-01@2x.jpg" class="product-lightbox stretched-link" data-gallery="special-purpose">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
+          <div id="special-purpose-content" class="tab-pane <?php echo $current_tab === 'special-purpose' ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="special-purpose-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
+              <?php
+              foreach ($product_categories['special_purpose'] as $product) {
+              ?>
+                <div class="col">
+                  <div class="card card-element-hover">
+                    <picture>
+                      <source
+                        data-srcset="assets/uploads/products/special-purpose/<?php echo $product['image']; ?> 1x, assets/uploads/products/special-purpose/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/special-purpose/<?php echo $product['image_3x']; ?> 3x"
+                        type="image/jpeg" />
+                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/special-purpose/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
+                    </picture>
+                    <div class="card-img-overlay">
+                      <a href="assets/uploads/products/special-purpose/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="special-purpose">
+                        <i class="bi bi-zoom-in" aria-hidden="true"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/special-purpose/prod-02.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/special-purpose/prod-02@2x.jpg" class="product-lightbox stretched-link" data-gallery="special-purpose">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/special-purpose/prod-03.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/special-purpose/prod-03@2x.jpg" class="product-lightbox stretched-link" data-gallery="special-purpose">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/special-purpose/prod-04.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/special-purpose/prod-04@2x.jpg" class="product-lightbox stretched-link" data-gallery="special-purpose">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/special-purpose/prod-05.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/special-purpose/prod-05@2x.jpg" class="product-lightbox stretched-link" data-gallery="special-purpose">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/special-purpose/prod-06.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/special-purpose/prod-06@2x.jpg" class="product-lightbox stretched-link" data-gallery="special-purpose">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/special-purpose/prod-07.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/special-purpose/prod-07@2x.jpg" class="product-lightbox stretched-link" data-gallery="special-purpose">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/special-purpose/prod-08.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/special-purpose/prod-08@2x.jpg" class="product-lightbox stretched-link" data-gallery="special-purpose">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <?php
+              }
+              ?>
             </div>
           </div>
-          <div id="ambulance-content" class="tab-pane" role="tabpanel" aria-labelledby="ambulance-tab" tabindex="0">
-            <div class="row row-cols-4 gy-4">
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/ambulance/prod-01.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/ambulance/prod-01@2x.jpg" class="product-lightbox stretched-link" data-gallery="ambulance">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
+          <div id="ambulance-content" class="tab-pane <?php echo $current_tab === 'ambulance' ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="ambulance-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
+              <?php
+              foreach ($product_categories['ambulance'] as $product) {
+              ?>
+                <div class="col">
+                  <div class="card card-element-hover">
+                    <picture>
+                      <source
+                        data-srcset="assets/uploads/products/ambulance/<?php echo $product['image']; ?> 1x, assets/uploads/products/ambulance/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/ambulance/<?php echo $product['image_3x']; ?> 3x"
+                        type="image/jpeg" />
+                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/ambulance/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
+                    </picture>
+                    <div class="card-img-overlay">
+                      <a href="assets/uploads/products/ambulance/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="ambulance">
+                        <i class="bi bi-zoom-in" aria-hidden="true"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/ambulance/prod-02.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/ambulance/prod-02@2x.jpg" class="product-lightbox stretched-link" data-gallery="ambulance">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <?php
+              }
+              ?>
             </div>
           </div>
-          <div id="bus-content" class="tab-pane" role="tabpanel" aria-labelledby="bus-tab" tabindex="0">
-            <div class="row row-cols-4 gy-4">
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/bus/prod-01.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/bus/prod-01@2x.jpg" class="product-lightbox stretched-link" data-gallery="bus">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
+          <div id="bus-content" class="tab-pane <?php echo $current_tab === 'bus' ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="bus-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
+              <?php
+              foreach ($product_categories['bus'] as $product) {
+              ?>
+                <div class="col">
+                  <div class="card card-element-hover">
+                    <picture>
+                      <source
+                        data-srcset="assets/uploads/products/bus/<?php echo $product['image']; ?> 1x, assets/uploads/products/bus/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/bus/<?php echo $product['image_3x']; ?> 3x"
+                        type="image/jpeg" />
+                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/bus/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
+                    </picture>
+                    <div class="card-img-overlay">
+                      <a href="assets/uploads/products/bus/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="bus">
+                        <i class="bi bi-zoom-in" aria-hidden="true"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/bus/prod-02.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/bus/prod-02@2x.jpg" class="product-lightbox stretched-link" data-gallery="bus">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/bus/prod-03.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/bus/prod-03@2x.jpg" class="product-lightbox stretched-link" data-gallery="bus">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <?php
+              }
+              ?>
             </div>
           </div>
-          <div id="heavy-equipment-content" class="tab-pane" role="tabpanel" aria-labelledby="heavy-equipment-tab" tabindex="0">
-            <div class="row row-cols-4 gy-4">
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-equipment/prod-01.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-equipment/prod-01@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
+          <div id="heavy-equipment-content" class="tab-pane <?php echo $current_tab === 'heavy-equipment' ? 'active' : ''; ?>" role="tabpanel" aria-labelledby="heavy-equipment-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
+              <?php
+              foreach ($product_categories['heavy_equipment'] as $product) {
+              ?>
+                <div class="col">
+                  <div class="card card-element-hover">
+                    <picture>
+                      <source
+                        data-srcset="assets/uploads/products/heavy-equipment/<?php echo $product['image']; ?> 1x, assets/uploads/products/heavy-equipment/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/heavy-equipment/<?php echo $product['image_3x']; ?> 3x"
+                        type="image/jpeg" />
+                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-equipment/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
+                    </picture>
+                    <div class="card-img-overlay">
+                      <a href="assets/uploads/products/heavy-equipment/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
+                        <i class="bi bi-zoom-in" aria-hidden="true"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-equipment/prod-02.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-equipment/prod-02@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-equipment/prod-03.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-equipment/prod-03@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-equipment/prod-04.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-equipment/prod-04@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-equipment/prod-05.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-equipment/prod-05@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-equipment/prod-06.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-equipment/prod-06@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-equipment/prod-07.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-equipment/prod-07@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card-element-hover">
-                  <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-equipment/prod-08.jpg" class="card-img lazyload" alt="">
-                  <div class="card-img-overlay">
-                    <a href="assets/uploads/products/heavy-equipment/prod-08@2x.jpg" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
-                      <i class="bi bi-zoom-in" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <?php
+              }
+              ?>
             </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-auto justify-content-center">
+          <div class="col">
+            <a href="products.php" class="btn btn-primary">View all products</a>
           </div>
         </div>
       </div>
@@ -531,11 +415,14 @@ require_once('includes/header.php');
 
 <section class="section section-customers bg-dark">
   <div class="container">
-    <h2 class="pb-2 mb-4">Our customers</h2>
+    <h2 class="mb-6">Our customers</h2>
     <div class="swiper customers-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <picture>
+            <source
+              data-srcset="assets/uploads/customers/webp/dlh.webp 1x, assets/uploads/customers/webp/dlh@2x.webp 2x"
+              type="image/webp" />
             <source
               data-srcset="assets/uploads/customers/dlh.png 1x, assets/uploads/customers/dlh@2x.png 2x"
               type="image/png" />
@@ -545,6 +432,9 @@ require_once('includes/header.php');
         <div class="swiper-slide">
           <picture>
             <source
+              data-srcset="assets/uploads/customers/webp/pupr.webp 1x, assets/uploads/customers/webp/pupr@2x.webp 2x"
+              type="image/webp" />
+            <source
               data-srcset="assets/uploads/customers/pupr.png 1x, assets/uploads/customers/pupr@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/pupr.png" class="lazyload" alt="Kementerian PUPR" title="Kementerian PUPR">
@@ -552,6 +442,9 @@ require_once('includes/header.php');
         </div>
         <div class="swiper-slide">
           <picture>
+            <source
+              data-srcset="assets/uploads/customers/webp/imigrasi.webp 1x, assets/uploads/customers/webp/imigrasi@2x.webp 2x"
+              type="image/webp" />
             <source
               data-srcset="assets/uploads/customers/imigrasi.png 1x, assets/uploads/customers/imigrasi@2x.png 2x"
               type="image/png" />
@@ -561,6 +454,9 @@ require_once('includes/header.php');
         <div class="swiper-slide">
           <picture>
             <source
+              data-srcset="assets/uploads/customers/webp/humbang_hasundutan.webp 1x, assets/uploads/customers/webp/humbang_hasundutan@2x.webp 2x"
+              type="image/webp" />
+            <source
               data-srcset="assets/uploads/customers/humbang_hasundutan.png 1x, assets/uploads/customers/humbang_hasundutan@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/humbang_hasundutan.png" class="lazyload" alt="Dinas Perhubungan Kabupaten Humbang Hasundutan" title="Dinas Perhubungan Kabupaten Humbang Hasundutan">
@@ -568,6 +464,9 @@ require_once('includes/header.php');
         </div>
         <div class="swiper-slide">
           <picture>
+            <source
+              data-srcset="assets/uploads/customers/webp/batubara.webp 1x, assets/uploads/customers/webp/batubara@2x.webp 2x"
+              type="image/webp" />
             <source
               data-srcset="assets/uploads/customers/batubara.png 1x, assets/uploads/customers/batubara@2x.png 2x"
               type="image/png" />
@@ -577,6 +476,9 @@ require_once('includes/header.php');
         <div class="swiper-slide">
           <picture>
             <source
+              data-srcset="assets/uploads/customers/webp/kemenhub.webp 1x, assets/uploads/customers/webp/kemenhub@2x.webp 2x"
+              type="image/webp" />
+            <source
               data-srcset="assets/uploads/customers/kemenhub.png 1x, assets/uploads/customers/kemenhub@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/kemenhub.png" class="lazyload" alt="Kementerian Perhubungan" title="Kementerian Perhubungan">
@@ -584,6 +486,9 @@ require_once('includes/header.php');
         </div>
         <div class="swiper-slide">
           <picture>
+            <source
+              data-srcset="assets/uploads/customers/webp/jember.webp 1x, assets/uploads/customers/webp/jember@2x.webp 2x"
+              type="image/webp" />
             <source
               data-srcset="assets/uploads/customers/jember.png 1x, assets/uploads/customers/jember@2x.png 2x"
               type="image/png" />
@@ -593,6 +498,9 @@ require_once('includes/header.php');
         <div class="swiper-slide">
           <picture>
             <source
+              data-srcset="assets/uploads/customers/webp/tapanuli_utara.webp 1x, assets/uploads/customers/webp/tapanuli_utara@2x.webp 2x"
+              type="image/webp" />
+            <source
               data-srcset="assets/uploads/customers/tapanuli_utara.png 1x, assets/uploads/customers/tapanuli_utara@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/tapanuli_utara.png" class="lazyload" alt="DLH Kabupaten Tapanuli Utara" title="DLH Kabupaten Tapanuli Utara">
@@ -600,6 +508,9 @@ require_once('includes/header.php');
         </div>
         <div class="swiper-slide">
           <picture>
+            <source
+              data-srcset="assets/uploads/customers/webp/batu.webp 1x, assets/uploads/customers/webp/batu@2x.webp 2x"
+              type="image/webp" />
             <source
               data-srcset="assets/uploads/customers/batu.png 1x, assets/uploads/customers/batu@2x.png 2x"
               type="image/png" />
@@ -609,6 +520,9 @@ require_once('includes/header.php');
         <div class="swiper-slide">
           <picture>
             <source
+              data-srcset="assets/uploads/customers/webp/malang.webp 1x, assets/uploads/customers/webp/malang@2x.webp 2x"
+              type="image/webp" />
+            <source
               data-srcset="assets/uploads/customers/malang.png 1x, assets/uploads/customers/malang@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/malang.png" class="lazyload" alt="DLH Kota Malang" title="DLH Kota Malang">
@@ -616,6 +530,9 @@ require_once('includes/header.php');
         </div>
         <div class="swiper-slide">
           <picture>
+            <source
+              data-srcset="assets/uploads/customers/webp/tangerang.webp 1x, assets/uploads/customers/webp/tangerang@2x.webp 2x"
+              type="image/webp" />
             <source
               data-srcset="assets/uploads/customers/tangerang.png 1x, assets/uploads/customers/tangerang@2x.png 2x"
               type="image/png" />
@@ -625,6 +542,9 @@ require_once('includes/header.php');
         <div class="swiper-slide">
           <picture>
             <source
+              data-srcset="assets/uploads/customers/webp/bulukumba.webp 1x, assets/uploads/customers/webp/bulukumba@2x.webp 2x"
+              type="image/webp" />
+            <source
               data-srcset="assets/uploads/customers/bulukumba.png 1x, assets/uploads/customers/bulukumba@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/bulukumba.png" class="lazyload" alt="DLHK Kabupaten Bulukumba" title="DLHK Kabupaten Bulukumba">
@@ -632,6 +552,9 @@ require_once('includes/header.php');
         </div>
         <div class="swiper-slide">
           <picture>
+            <source
+              data-srcset="assets/uploads/customers/webp/sumedang.webp 1x, assets/uploads/customers/webp/sumedang@2x.webp 2x"
+              type="image/webp" />
             <source
               data-srcset="assets/uploads/customers/sumedang.png 1x, assets/uploads/customers/sumedang@2x.png 2x"
               type="image/png" />
@@ -641,6 +564,9 @@ require_once('includes/header.php');
         <div class="swiper-slide">
           <picture>
             <source
+              data-srcset="assets/uploads/customers/webp/depok.webp 1x, assets/uploads/customers/webp/depok@2x.webp 2x"
+              type="image/webp" />
+            <source
               data-srcset="assets/uploads/customers/depok.png 1x, assets/uploads/customers/depok@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/depok.png" class="lazyload" alt="DLHK Kota Depok" title="DLHK Kota Depok">
@@ -648,6 +574,9 @@ require_once('includes/header.php');
         </div>
         <div class="swiper-slide">
           <picture>
+            <source
+              data-srcset="assets/uploads/customers/webp/tegal.webp 1x, assets/uploads/customers/webp/tegal@2x.webp 2x"
+              type="image/webp" />
             <source
               data-srcset="assets/uploads/customers/tegal.png 1x, assets/uploads/customers/tegal@2x.png 2x"
               type="image/png" />
@@ -662,9 +591,9 @@ require_once('includes/header.php');
 
 <section class="section section-instagram">
   <div class="container">
-    <div class="text-center mb-5">
-      <p class="h4 mb-3">@senangjayagroup</p>
-      <p>Follow us for the latest projects and updates!</p>
+    <div class="text-center mb-6">
+      <p class="h4 mb-4">@senangjayagroup</p>
+      <p class="mb-0">Follow us for the latest projects and updates!</p>
     </div>
     <div class="swiper instafeed-swiper">
       <div class="swiper-wrapper">
