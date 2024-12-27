@@ -269,8 +269,8 @@ require_once('includes/header.php');
     <h2 class="mb-6 text-center">Our products</h2>
     <div class="row">
       <div class="col">
-        <div class="d-flex nav-wrapper">
-          <ul class="nav nav-underline flex-nowrap flex-lg-wrap gap-4 mb-5 mx-auto" role="tablist">
+        <div class="d-flex nav-wrapper mb-5">
+          <ul class="nav nav-underline flex-nowrap flex-lg-wrap gap-4 mx-auto" role="tablist">
             <li class="nav-item" role="presentation">
               <button type="button" id="heavy-duty-tab" class="nav-link active" data-bs-toggle="pill" data-bs-target="#heavy-duty-content" role="tab" aria-controls="heavy-duty-content" aria-selected="true">Heavy Duty</button>
             </li>
