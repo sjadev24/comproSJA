@@ -7,8 +7,7 @@
 }
 
 .navbar-brand img {
-  width: 17.5rem;
-  height: auto;
+  max-width: 17.5rem;
 }
 
 .search-dropdown .dropdown-toggle {
@@ -62,7 +61,7 @@
 
 @media (max-width: 480px) {
   .navbar-brand img {
-    width: 15rem;
+    max-width: 15rem;
   }
 
   .navbar-toggler {
@@ -72,6 +71,6 @@
 
 @media (max-width: 380px) {
   .navbar-brand img {
-    width: 13.5rem;
+    max-width: 13.5rem;
   }
 }

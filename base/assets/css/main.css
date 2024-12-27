@@ -513,8 +513,7 @@ Mobile style's
 }
 
 .navbar-brand img {
-  width: 17.5rem;
-  height: auto;
+  max-width: 17.5rem;
 }
 
 .search-dropdown .dropdown-toggle {
@@ -566,7 +565,7 @@ Mobile style's
 }
 @media (max-width: 480px) {
   .navbar-brand img {
-    width: 15rem;
+    max-width: 15rem;
   }
   .navbar-toggler {
     --bs-navbar-toggler-padding-x: 0;
@@ -574,7 +573,7 @@ Mobile style's
 }
 @media (max-width: 380px) {
   .navbar-brand img {
-    width: 13.5rem;
+    max-width: 13.5rem;
   }
 }
 .menu > ul {
@@ -868,7 +867,7 @@ Mobile style's
 --------------------------------------------------------------*/
 .section-aboutbackground {
   height: 80vh;
-  background: url("../img/about/jpg/office-03.jpg") no-repeat center/cover fixed;
+  background: url("../img/office-03.jpg") no-repeat center/cover fixed;
 }
 
 /*--------------------------------------------------------------
@@ -939,7 +938,7 @@ Mobile style's
   --bs-heading-color: var(--bs-white);
   --section-color: var(--bs-gray-500);
   position: relative;
-  background: url("../img/about/jpg/cta.jpg") no-repeat center/cover fixed;
+  background: url("../uploads/slider-4.jpg") no-repeat center/cover fixed;
 }
 
 .section-aboutcta .container {
