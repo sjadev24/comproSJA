@@ -16,12 +16,15 @@ require_once('includes/header.php');
             <div class="p-md-4">
               <picture>
                 <source
-                  data-srcset="assets/img/webp/who-we-are.webp 1x, assets/img/webp/who-we-are@2x.webp 2x"
+                  data-srcset="assets/img/about/avif/who-we-are.avif 1x, assets/img/about/avif/who-we-are@2x.avif 2x"
+                  type="image/avif" />
+                <source
+                  data-srcset="assets/img/about/webp/who-we-are.webp 1x, assets/img/about/webp/who-we-are@2x.webp 2x"
                   type="image/webp" />
                 <source
-                  data-srcset="assets/img/who-we-are.jpg 1x, assets/img/who-we-are@2x.jpg 2x"
+                  data-srcset="assets/img/about/jpg/who-we-are.jpg 1x, assets/img/about/jpg/who-we-are@2x.jpg 2x"
                   type="image/jpeg" />
-                <img src="assets/img/placehold.png" data-src="assets/img/who-we-are.jpg" class="rounded lazyload" alt="">
+                <img src="assets/img/placehold.png" data-src="assets/img/about/jpg/who-we-are.jpg" class="rounded lazyload" alt="">
               </picture>
             </div>
           </div>
@@ -185,12 +188,15 @@ require_once('includes/header.php');
                 <div class="img-effect dotted p-md-4">
                   <picture>
                     <source
-                      data-srcset="assets/img/webp/what-we-do-01.webp 1x, assets/img/webp/what-we-do-01@2x.webp 2x"
+                      data-srcset="assets/img/about/avif/what-we-do-01.avif 1x, assets/img/about/avif/what-we-do-01@2x.avif 2x"
+                      type="image/avif" />
+                    <source
+                      data-srcset="assets/img/about/webp/what-we-do-01.webp 1x, assets/img/about/webp/what-we-do-01@2x.webp 2x"
                       type="image/webp" />
                     <source
-                      data-srcset="assets/img/what-we-do-01.jpg 1x, assets/img/what-we-do-01@2x.jpg 2x"
+                      data-srcset="assets/img/about/jpg/what-we-do-01.jpg 1x, assets/img/about/jpg/what-we-do-01@2x.jpg 2x"
                       type="image/jpeg" />
-                    <img src="assets/img/placehold.png" data-src="assets/img/what-we-do-01.jpg" class="rounded lazyload" alt="">
+                    <img src="assets/img/placehold.png" data-src="assets/img/about/jpg/what-we-do-01.jpg" class="rounded lazyload" alt="">
                   </picture>
                 </div>
               </div>
@@ -198,12 +204,15 @@ require_once('includes/header.php');
                 <div class="img-effect dotted last p-md-4">
                   <picture>
                     <source
-                      data-srcset="assets/img/webp/what-we-do-02.webp 1x, assets/img/webp/what-we-do-02@2x.webp 2x"
+                      data-srcset="assets/img/about/avif/what-we-do-02.avif 1x, assets/img/about/avif/what-we-do-02@2x.avif 2x"
+                      type="image/avif" />
+                    <source
+                      data-srcset="assets/img/about/webp/what-we-do-02.webp 1x, assets/img/about/webp/what-we-do-02@2x.webp 2x"
                       type="image/webp" />
                     <source
-                      data-srcset="assets/img/what-we-do-02.jpg 1x, assets/img/what-we-do-02@2x.jpg 2x"
+                      data-srcset="assets/img/about/jpg/what-we-do-02.jpg 1x, assets/img/about/jpg/what-we-do-02@2x.jpg 2x"
                       type="image/jpeg" />
-                    <img src="assets/img/placehold.png" data-src="assets/img/what-we-do-02.jpg" class="rounded lazyload" alt="">
+                    <img src="assets/img/placehold.png" data-src="assets/img/about/jpg/what-we-do-02.jpg" class="rounded lazyload" alt="">
                   </picture>
                 </div>
               </div>
@@ -350,7 +359,11 @@ require_once('includes/header.php');
           <div class="col">
             <div class="text-center my-2">
               <div class="avatar px-2 mb-3">
-                <img class="rounded-circle" src="assets/img/marketing-01.jpg" alt="Rian">
+                <picture>
+                  <source srcset="assets/img/about/avif/marketing-01.avif" type="image/avif" />
+                  <source srcset="assets/img/about/webp/marketing-01.webp" type="image/webp" />
+                  <img class="rounded-circle" src="assets/img/about/jpg/marketing-01.jpg" alt="Rian">
+                </picture>
               </div>
               <h4 class="h6">Rian</h4>
               <small>Marketing 1</small>
@@ -359,7 +372,11 @@ require_once('includes/header.php');
           <div class="col">
             <div class="text-center my-2">
               <div class="avatar px-2 mb-3">
-                <img class="rounded-circle" src="assets/img/marketing-02.jpg" alt="Abdul Rouf">
+                <picture>
+                  <source srcset="assets/img/about/avif/marketing-02.avif" type="image/avif" />
+                  <source srcset="assets/img/about/webp/marketing-02.webp" type="image/webp" />
+                  <img class="rounded-circle" src="assets/img/about/jpg/marketing-02.jpg" alt="Abdul Rouf">
+                </picture>
               </div>
               <h4 class="h6">Abdul Rouf</h4>
               <small>Marketing 2</small>
@@ -368,7 +385,11 @@ require_once('includes/header.php');
           <div class="col">
             <div class="text-center my-2">
               <div class="avatar px-2 mb-3">
-                <img class="rounded-circle" src="assets/img/marketing-03.jpg" alt="Hasan Karim">
+                <picture>
+                  <source srcset="assets/img/about/avif/marketing-03.avif" type="image/avif" />
+                  <source srcset="assets/img/about/webp/marketing-03.webp" type="image/webp" />
+                  <img class="rounded-circle" src="assets/img/about/jpg/marketing-03.jpg" alt="Hasan Karim">
+                </picture>
               </div>
               <h4 class="h6">Hasan Karim</h4>
               <small>Marketing 3</small>
@@ -391,166 +412,208 @@ require_once('includes/header.php');
           <div class="col">
             <picture>
               <source
+                data-srcset="assets/uploads/customers/avif/dlh.avif 1x, assets/uploads/customers/avif/dlh@2x.avif 2x"
+                type="image/avif" />
+              <source
                 data-srcset="assets/uploads/customers/webp/dlh.webp 1x, assets/uploads/customers/webp/dlh@2x.webp 2x"
                 type="image/webp" />
               <source
-                data-srcset="assets/uploads/customers/dlh.png 1x, assets/uploads/customers/dlh@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/dlh.png 1x, assets/uploads/customers/png/dlh@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/dlh.png" class="lazyload" alt="Dinas Lingkungan Hidup" title="Dinas Lingkungan Hidup">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/dlh.png" class="lazyload" alt="Dinas Lingkungan Hidup" title="Dinas Lingkungan Hidup">
             </picture>
           </div>
           <div class="col">
             <picture>
+              <source
+                data-srcset="assets/uploads/customers/avif/pupr.avif 1x, assets/uploads/customers/avif/pupr@2x.avif 2x"
+                type="image/avif" />
               <source
                 data-srcset="assets/uploads/customers/webp/pupr.webp 1x, assets/uploads/customers/webp/pupr@2x.webp 2x"
                 type="image/webp" />
               <source
-                data-srcset="assets/uploads/customers/pupr.png 1x, assets/uploads/customers/pupr@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/pupr.png 1x, assets/uploads/customers/png/pupr@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/pupr.png" class="lazyload" alt="Kementerian PUPR" title="Kementerian PUPR">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/pupr.png" class="lazyload" alt="Kementerian PUPR" title="Kementerian PUPR">
             </picture>
           </div>
           <div class="col">
             <picture>
+              <source
+                data-srcset="assets/uploads/customers/avif/imigrasi.avif 1x, assets/uploads/customers/avif/imigrasi@2x.avif 2x"
+                type="image/avif" />
               <source
                 data-srcset="assets/uploads/customers/webp/imigrasi.webp 1x, assets/uploads/customers/webp/imigrasi@2x.webp 2x"
                 type="image/webp" />
               <source
-                data-srcset="assets/uploads/customers/imigrasi.png 1x, assets/uploads/customers/imigrasi@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/imigrasi.png 1x, assets/uploads/customers/png/imigrasi@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/imigrasi.png" class="lazyload" alt="Rumah Detensi Imigrasi" title="Rumah Detensi Imigrasi">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/imigrasi.png" class="lazyload" alt="Rumah Detensi Imigrasi" title="Rumah Detensi Imigrasi">
             </picture>
           </div>
           <div class="col">
             <picture>
+              <source
+                data-srcset="assets/uploads/customers/avif/humbang_hasundutan.avif 1x, assets/uploads/customers/avif/humbang_hasundutan@2x.avif 2x"
+                type="image/avif" />
               <source
                 data-srcset="assets/uploads/customers/webp/humbang_hasundutan.webp 1x, assets/uploads/customers/webp/humbang_hasundutan@2x.webp 2x"
                 type="image/webp" />
               <source
-                data-srcset="assets/uploads/customers/humbang_hasundutan.png 1x, assets/uploads/customers/humbang_hasundutan@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/humbang_hasundutan.png 1x, assets/uploads/customers/png/humbang_hasundutan@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/humbang_hasundutan.png" class="lazyload" alt="Dinas Perhubungan Kabupaten Humbang Hasundutan" title="Dinas Perhubungan Kabupaten Humbang Hasundutan">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/humbang_hasundutan.png" class="lazyload" alt="Dinas Perhubungan Kabupaten Humbang Hasundutan" title="Dinas Perhubungan Kabupaten Humbang Hasundutan">
             </picture>
           </div>
           <div class="col">
             <picture>
+              <source
+                data-srcset="assets/uploads/customers/avif/batubara.avif 1x, assets/uploads/customers/avif/batubara@2x.avif 2x"
+                type="image/avif" />
               <source
                 data-srcset="assets/uploads/customers/webp/batubara.webp 1x, assets/uploads/customers/webp/batubara@2x.webp 2x"
                 type="image/webp" />
               <source
-                data-srcset="assets/uploads/customers/batubara.png 1x, assets/uploads/customers/batubara@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/batubara.png 1x, assets/uploads/customers/png/batubara@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/batubara.png" class="lazyload" alt="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara" title="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/batubara.png" class="lazyload" alt="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara" title="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara">
             </picture>
           </div>
           <div class="col">
             <picture>
+              <source
+                data-srcset="assets/uploads/customers/avif/kemenhub.avif 1x, assets/uploads/customers/avif/kemenhub@2x.avif 2x"
+                type="image/avif" />
               <source
                 data-srcset="assets/uploads/customers/webp/kemenhub.webp 1x, assets/uploads/customers/webp/kemenhub@2x.webp 2x"
                 type="image/webp" />
               <source
-                data-srcset="assets/uploads/customers/kemenhub.png 1x, assets/uploads/customers/kemenhub@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/kemenhub.png 1x, assets/uploads/customers/png/kemenhub@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/kemenhub.png" class="lazyload" alt="Kementerian Perhubungan" title="Kementerian Perhubungan">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/kemenhub.png" class="lazyload" alt="Kementerian Perhubungan" title="Kementerian Perhubungan">
             </picture>
           </div>
           <div class="col">
             <picture>
+              <source
+                data-srcset="assets/uploads/customers/avif/jember.avif 1x, assets/uploads/customers/avif/jember@2x.avif 2x"
+                type="image/avif" />
               <source
                 data-srcset="assets/uploads/customers/webp/jember.webp 1x, assets/uploads/customers/webp/jember@2x.webp 2x"
                 type="image/webp" />
               <source
-                data-srcset="assets/uploads/customers/jember.png 1x, assets/uploads/customers/jember@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/jember.png 1x, assets/uploads/customers/png/jember@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/jember.png" class="lazyload" alt="DLH Kabupaten Jember" title="DLH Kabupaten Jember">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/jember.png" class="lazyload" alt="DLH Kabupaten Jember" title="DLH Kabupaten Jember">
             </picture>
           </div>
           <div class="col">
             <picture>
+              <source
+                data-srcset="assets/uploads/customers/avif/tapanuli_utara.avif 1x, assets/uploads/customers/avif/tapanuli_utara@2x.avif 2x"
+                type="image/avif" />
               <source
                 data-srcset="assets/uploads/customers/webp/tapanuli_utara.webp 1x, assets/uploads/customers/webp/tapanuli_utara@2x.webp 2x"
                 type="image/webp" />
               <source
-                data-srcset="assets/uploads/customers/tapanuli_utara.png 1x, assets/uploads/customers/tapanuli_utara@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/tapanuli_utara.png 1x, assets/uploads/customers/png/tapanuli_utara@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/tapanuli_utara.png" class="lazyload" alt="DLH Kabupaten Tapanuli Utara" title="DLH Kabupaten Tapanuli Utara">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/tapanuli_utara.png" class="lazyload" alt="DLH Kabupaten Tapanuli Utara" title="DLH Kabupaten Tapanuli Utara">
             </picture>
           </div>
           <div class="col">
             <picture>
+              <source
+                data-srcset="assets/uploads/customers/avif/batu.avif 1x, assets/uploads/customers/avif/batu@2x.avif 2x"
+                type="image/avif" />
               <source
                 data-srcset="assets/uploads/customers/webp/batu.webp 1x, assets/uploads/customers/webp/batu@2x.webp 2x"
                 type="image/webp" />
               <source
-                data-srcset="assets/uploads/customers/batu.png 1x, assets/uploads/customers/batu@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/batu.png 1x, assets/uploads/customers/png/batu@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/batu.png" class="lazyload" alt="DLH Kota Batu" title="DLH Kota Batu">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/batu.png" class="lazyload" alt="DLH Kota Batu" title="DLH Kota Batu">
             </picture>
           </div>
           <div class="col">
             <picture>
+              <source
+                data-srcset="assets/uploads/customers/avif/malang.avif 1x, assets/uploads/customers/avif/malang@2x.avif 2x"
+                type="image/avif" />
               <source
                 data-srcset="assets/uploads/customers/webp/malang.webp 1x, assets/uploads/customers/webp/malang@2x.webp 2x"
                 type="image/webp" />
               <source
-                data-srcset="assets/uploads/customers/malang.png 1x, assets/uploads/customers/malang@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/malang.png 1x, assets/uploads/customers/png/malang@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/malang.png" class="lazyload" alt="DLH Kota Malang" title="DLH Kota Malang">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/malang.png" class="lazyload" alt="DLH Kota Malang" title="DLH Kota Malang">
             </picture>
           </div>
           <div class="col">
             <picture>
+              <source
+                data-srcset="assets/uploads/customers/avif/tangerang.avif 1x, assets/uploads/customers/avif/tangerang@2x.avif 2x"
+                type="image/avif" />
               <source
                 data-srcset="assets/uploads/customers/webp/tangerang.webp 1x, assets/uploads/customers/webp/tangerang@2x.webp 2x"
                 type="image/webp" />
               <source
-                data-srcset="assets/uploads/customers/tangerang.png 1x, assets/uploads/customers/tangerang@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/tangerang.png 1x, assets/uploads/customers/png/tangerang@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/tangerang.png" class="lazyload" alt="DLH Kota Tangerang" title="DLH Kota Tangerang">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/tangerang.png" class="lazyload" alt="DLH Kota Tangerang" title="DLH Kota Tangerang">
             </picture>
           </div>
           <div class="col">
             <picture>
+              <source
+                data-srcset="assets/uploads/customers/avif/bulukumba.avif 1x, assets/uploads/customers/avif/bulukumba@2x.avif 2x"
+                type="image/avif" />
               <source
                 data-srcset="assets/uploads/customers/webp/bulukumba.webp 1x, assets/uploads/customers/webp/bulukumba@2x.webp 2x"
                 type="image/webp" />
               <source
-                data-srcset="assets/uploads/customers/bulukumba.png 1x, assets/uploads/customers/bulukumba@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/bulukumba.png 1x, assets/uploads/customers/png/bulukumba@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/bulukumba.png" class="lazyload" alt="DLHK Kabupaten Bulukumba" title="DLHK Kabupaten Bulukumba">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/bulukumba.png" class="lazyload" alt="DLHK Kabupaten Bulukumba" title="DLHK Kabupaten Bulukumba">
             </picture>
           </div>
           <div class="col">
             <picture>
+              <source
+                data-srcset="assets/uploads/customers/avif/sumedang.avif 1x, assets/uploads/customers/avif/sumedang@2x.avif 2x"
+                type="image/avif" />
               <source
                 data-srcset="assets/uploads/customers/webp/sumedang.webp 1x, assets/uploads/customers/webp/sumedang@2x.webp 2x"
                 type="image/webp" />
               <source
-                data-srcset="assets/uploads/customers/sumedang.png 1x, assets/uploads/customers/sumedang@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/sumedang.png 1x, assets/uploads/customers/png/sumedang@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/sumedang.png" class="lazyload" alt="DLHK Kabupaten Sumedang" title="DLHK Kabupaten Sumedang">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/sumedang.png" class="lazyload" alt="DLHK Kabupaten Sumedang" title="DLHK Kabupaten Sumedang">
             </picture>
           </div>
           <div class="col">
             <picture>
+              <source
+                data-srcset="assets/uploads/customers/avif/depok.avif 1x, assets/uploads/customers/avif/depok@2x.avif 2x"
+                type="image/avif" />
               <source
                 data-srcset="assets/uploads/customers/webp/depok.webp 1x, assets/uploads/customers/webp/depok@2x.webp 2x"
                 type="image/webp" />
               <source
-                data-srcset="assets/uploads/customers/depok.png 1x, assets/uploads/customers/depok@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/depok.png 1x, assets/uploads/customers/png/depok@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/depok.png" class="lazyload" alt="DLHK Kota Depok" title="DLHK Kota Depok">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/depok.png" class="lazyload" alt="DLHK Kota Depok" title="DLHK Kota Depok">
             </picture>
           </div>
           <div class="col">
             <picture>
               <source
-                data-srcset="assets/uploads/customers/webp/tegal.webp 1x, assets/uploads/customers/webp/tegal@2x.webp 2x"
-                type="image/webp" />
+                data-srcset="assets/uploads/customers/avif/tegal.avif 1x, assets/uploads/customers/avif/tegal@2x.avif 2x"
+                type="image/avif" />
               <source
-                data-srcset="assets/uploads/customers/tegal.png 1x, assets/uploads/customers/tegal@2x.png 2x"
+                data-srcset="assets/uploads/customers/png/tegal.png 1x, assets/uploads/customers/png/tegal@2x.png 2x"
                 type="image/png" />
-              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/tegal.png" class="lazyload" alt="DPUPR Kota Tegal" title="DPUPR Kota Tegal">
+              <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/tegal.png" class="lazyload" alt="DPUPR Kota Tegal" title="DPUPR Kota Tegal">
             </picture>
           </div>
         </div>
