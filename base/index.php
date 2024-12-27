@@ -269,23 +269,25 @@ require_once('includes/header.php');
     <h2 class="mb-6 text-center">Our products</h2>
     <div class="row">
       <div class="col">
-        <ul class="nav nav-underline justify-content-center gap-4 mb-5" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button type="button" id="heavy-duty-tab" class="nav-link active" data-bs-toggle="pill" data-bs-target="#heavy-duty-content" role="tab" aria-controls="heavy-duty-content" aria-selected="true">Heavy Duty</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button type="button" id="special-purpose-tab" class="nav-link" data-bs-toggle="pill" data-bs-target="#special-purpose-content" role="tab" aria-controls="special-purpose-content" aria-selected="false">Special purpose vehicle</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button type="button" id="ambulance-tab" class="nav-link" data-bs-toggle="pill" data-bs-target="#ambulance-content" role="tab" aria-controls="ambulance-content" aria-selected="false">Ambulance</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button type="button" id="bus-tab" class="nav-link" data-bs-toggle="pill" data-bs-target="#bus-content" role="tab" aria-controls="bus-content" aria-selected="false">Bus</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button type="button" id="heavy-equipment-tab" class="nav-link" data-bs-toggle="pill" data-bs-target="#heavy-equipment-content" role="tab" aria-controls="heavy-equipment-content" aria-selected="false">Heavy equipment</button>
-          </li>
-        </ul>
+        <div class="d-flex nav-wrapper">
+          <ul class="nav nav-underline flex-nowrap flex-lg-wrap gap-4 mb-5 mx-auto" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button type="button" id="heavy-duty-tab" class="nav-link active" data-bs-toggle="pill" data-bs-target="#heavy-duty-content" role="tab" aria-controls="heavy-duty-content" aria-selected="true">Heavy Duty</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button type="button" id="special-purpose-tab" class="nav-link" data-bs-toggle="pill" data-bs-target="#special-purpose-content" role="tab" aria-controls="special-purpose-content" aria-selected="false">Special purpose vehicle</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button type="button" id="ambulance-tab" class="nav-link" data-bs-toggle="pill" data-bs-target="#ambulance-content" role="tab" aria-controls="ambulance-content" aria-selected="false">Ambulance</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button type="button" id="bus-tab" class="nav-link" data-bs-toggle="pill" data-bs-target="#bus-content" role="tab" aria-controls="bus-content" aria-selected="false">Bus</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button type="button" id="heavy-equipment-tab" class="nav-link" data-bs-toggle="pill" data-bs-target="#heavy-equipment-content" role="tab" aria-controls="heavy-equipment-content" aria-selected="false">Heavy equipment</button>
+            </li>
+          </ul>
+        </div>
 
         <div class="tab-content mb-6">
           <?php
