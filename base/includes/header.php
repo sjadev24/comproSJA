@@ -56,7 +56,11 @@ $success_message1 = '';
 					<a href="index.php" class="navbar-brand">
 						<picture>
 							<source srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x, assets/img/logo@3x.png 3x" type="image/png">
+<<<<<<< HEAD
 							<img src="assets/img/logo.png" alt="logo" width="216" height="37">
+=======
+							<img src="assets/img/logo.png" alt="logo">
+>>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
 						</picture>
 					</a>
 				</h1>

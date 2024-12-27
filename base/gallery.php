@@ -34,6 +34,7 @@ require_once('includes/header.php');
             <div class="card card-element-hover">
               <picture>
                 <source
+<<<<<<< HEAD
                   srcset="assets/uploads/processes/avif/process-01.avif 1x, assets/uploads/processes/avif/process-01@2x.avif 2x, assets/uploads/processes/avif/process-01@3x.avif 3x"
                   type="image/avif" />
                 <source
@@ -46,6 +47,14 @@ require_once('includes/header.php');
               </picture>
               <div class="card-img-overlay">
                 <a href="assets/uploads/processes/jpg/process-01@lbox.jpg" class="process-lightbox stretched-link">
+=======
+                  srcset="assets/uploads/processes/process-01.jpg 1x, assets/uploads/processes/process-01@2x.jpg 2x, assets/uploads/processes/process-01@3x.jpg 3x"
+                  type="image/jpeg" />
+                <img src="uploads/processes/process-01.jpg" class="card-img" alt="process 01">
+              </picture>
+              <div class="card-img-overlay">
+                <a href="assets/uploads/processes/process-01@lbox.jpg" class="process-lightbox stretched-link">
+>>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                   <i class="bi bi-zoom-in" aria-hidden="true"></i>
                 </a>
               </div>
@@ -56,6 +65,7 @@ require_once('includes/header.php');
             <div class="card card-element-hover">
               <picture>
                 <source
+<<<<<<< HEAD
                   srcset="assets/uploads/processes/avif/process-02.avif 1x, assets/uploads/processes/avif/process-02@2x.avif 2x, assets/uploads/processes/avif/process-02@3x.avif 3x"
                   type="image/avif" />
                 <source
@@ -68,6 +78,14 @@ require_once('includes/header.php');
               </picture>
               <div class="card-img-overlay">
                 <a href="assets/uploads/processes/jpg/process-02@lbox.jpg" class="process-lightbox stretched-link">
+=======
+                  srcset="assets/uploads/processes/process-02.jpg 1x, assets/uploads/processes/process-02@2x.jpg 2x, assets/uploads/processes/process-02@3x.jpg 3x"
+                  type="image/jpeg" />
+                <img src="uploads/processes/process-02.jpg" class="card-img" alt="process 02">
+              </picture>
+              <div class="card-img-overlay">
+                <a href="assets/uploads/processes/process-02@lbox.jpg" class="process-lightbox stretched-link">
+>>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                   <i class="bi bi-zoom-in" aria-hidden="true"></i>
                 </a>
               </div>
@@ -78,6 +96,7 @@ require_once('includes/header.php');
             <div class="card card-element-hover">
               <picture>
                 <source
+<<<<<<< HEAD
                   srcset="assets/uploads/processes/avif/process-04.avif 1x, assets/uploads/processes/avif/process-04@2x.avif 2x, assets/uploads/processes/avif/process-04@3x.avif 3x"
                   type="image/avif" />
                 <source
@@ -90,6 +109,14 @@ require_once('includes/header.php');
               </picture>
               <div class="card-img-overlay">
                 <a href="assets/uploads/processes/jpg/process-04@lbox.jpg" class="process-lightbox stretched-link">
+=======
+                  srcset="assets/uploads/processes/process-04.jpg 1x, assets/uploads/processes/process-04@2x.jpg 2x, assets/uploads/processes/process-04@3x.jpg 3x"
+                  type="image/jpeg" />
+                <img src="uploads/processes/process-04.jpg" class="card-img" alt="process 04">
+              </picture>
+              <div class="card-img-overlay">
+                <a href="assets/uploads/processes/process-04@lbox.jpg" class="process-lightbox stretched-link">
+>>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                   <i class="bi bi-zoom-in" aria-hidden="true"></i>
                 </a>
               </div>
@@ -100,6 +127,7 @@ require_once('includes/header.php');
             <div class="card card-element-hover">
               <picture>
                 <source
+<<<<<<< HEAD
                   srcset="assets/uploads/processes/avif/process-05.avif 1x, assets/uploads/processes/avif/process-05@2x.avif 2x, assets/uploads/processes/avif/process-05@3x.avif 3x"
                   type="image/avif" />
                 <source
@@ -112,6 +140,14 @@ require_once('includes/header.php');
               </picture>
               <div class="card-img-overlay">
                 <a href="assets/uploads/processes/jpg/process-05@lbox.jpg" class="process-lightbox stretched-link">
+=======
+                  srcset="assets/uploads/processes/process-05.jpg 1x, assets/uploads/processes/process-05@2x.jpg 2x, assets/uploads/processes/process-05@3x.jpg 3x"
+                  type="image/jpeg" />
+                <img src="uploads/processes/process-05.jpg" class="card-img" alt="process 05">
+              </picture>
+              <div class="card-img-overlay">
+                <a href="assets/uploads/processes/process-05@lbox.jpg" class="process-lightbox stretched-link">
+>>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                   <i class="bi bi-zoom-in" aria-hidden="true"></i>
                 </a>
               </div>
@@ -122,6 +158,7 @@ require_once('includes/header.php');
             <div class="card card-element-hover">
               <picture>
                 <source
+<<<<<<< HEAD
                   srcset="assets/uploads/processes/avif/process-06.avif 1x, assets/uploads/processes/avif/process-06@2x.avif 2x, assets/uploads/processes/avif/process-06@3x.avif 3x"
                   type="image/avif" />
                 <source
@@ -134,6 +171,14 @@ require_once('includes/header.php');
               </picture>
               <div class="card-img-overlay">
                 <a href="assets/uploads/processes/jpg/process-06@lbox.jpg" class="process-lightbox stretched-link">
+=======
+                  srcset="assets/uploads/processes/process-06.jpg 1x, assets/uploads/processes/process-06@2x.jpg 2x, assets/uploads/processes/process-06@3x.jpg 3x"
+                  type="image/jpeg" />
+                <img src="uploads/processes/process-06.jpg" class="card-img" alt="process 06">
+              </picture>
+              <div class="card-img-overlay">
+                <a href="assets/uploads/processes/process-06@lbox.jpg" class="process-lightbox stretched-link">
+>>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                   <i class="bi bi-zoom-in" aria-hidden="true"></i>
                 </a>
               </div>
@@ -144,6 +189,7 @@ require_once('includes/header.php');
             <div class="card card-element-hover">
               <picture>
                 <source
+<<<<<<< HEAD
                   srcset="assets/uploads/processes/avif/process-07.avif 1x, assets/uploads/processes/avif/process-07@2x.avif 2x, assets/uploads/processes/avif/process-07@3x.avif 3x"
                   type="image/avif" />
                 <source
@@ -156,6 +202,14 @@ require_once('includes/header.php');
               </picture>
               <div class="card-img-overlay">
                 <a href="assets/uploads/processes/jpg/process-07@lbox.jpg" class="process-lightbox stretched-link">
+=======
+                  srcset="assets/uploads/processes/process-07.jpg 1x, assets/uploads/processes/process-07@2x.jpg 2x, assets/uploads/processes/process-07@3x.jpg 3x"
+                  type="image/jpeg" />
+                <img src="uploads/processes/process-07.jpg" class="card-img" alt="process 07">
+              </picture>
+              <div class="card-img-overlay">
+                <a href="assets/uploads/processes/process-07@lbox.jpg" class="process-lightbox stretched-link">
+>>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                   <i class="bi bi-zoom-in" aria-hidden="true"></i>
                 </a>
               </div>
@@ -166,6 +220,7 @@ require_once('includes/header.php');
             <div class="card card-element-hover">
               <picture>
                 <source
+<<<<<<< HEAD
                   srcset="assets/uploads/processes/avif/process-08.avif 1x, assets/uploads/processes/avif/process-08@2x.avif 2x, assets/uploads/processes/avif/process-08@3x.avif 3x"
                   type="image/avif" />
                 <source
@@ -178,6 +233,14 @@ require_once('includes/header.php');
               </picture>
               <div class="card-img-overlay">
                 <a href="assets/uploads/processes/jpg/process-08@lbox.jpg" class="process-lightbox stretched-link">
+=======
+                  srcset="assets/uploads/processes/process-08.jpg 1x, assets/uploads/processes/process-08@2x.jpg 2x, assets/uploads/processes/process-08@3x.jpg 3x"
+                  type="image/jpeg" />
+                <img src="uploads/processes/process-08.jpg" class="card-img" alt="process 08">
+              </picture>
+              <div class="card-img-overlay">
+                <a href="assets/uploads/processes/process-08@lbox.jpg" class="process-lightbox stretched-link">
+>>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                   <i class="bi bi-zoom-in" aria-hidden="true"></i>
                 </a>
               </div>
@@ -188,6 +251,7 @@ require_once('includes/header.php');
             <div class="card card-element-hover">
               <picture>
                 <source
+<<<<<<< HEAD
                   srcset="assets/uploads/processes/avif/process-09.avif 1x, assets/uploads/processes/avif/process-09@2x.avif 2x, assets/uploads/processes/avif/process-09@3x.avif 3x"
                   type="image/avif" />
                 <source
@@ -200,6 +264,14 @@ require_once('includes/header.php');
               </picture>
               <div class="card-img-overlay">
                 <a href="assets/uploads/processes/jpg/process-09@lbox.jpg" class="process-lightbox stretched-link">
+=======
+                  srcset="assets/uploads/processes/process-09.jpg 1x, assets/uploads/processes/process-09@2x.jpg 2x, assets/uploads/processes/process-09@3x.jpg 3x"
+                  type="image/jpeg" />
+                <img src="uploads/processes/process-09.jpg" class="card-img" alt="process 09">
+              </picture>
+              <div class="card-img-overlay">
+                <a href="assets/uploads/processes/process-09@lbox.jpg" class="process-lightbox stretched-link">
+>>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                   <i class="bi bi-zoom-in" aria-hidden="true"></i>
                 </a>
               </div>
@@ -210,6 +282,7 @@ require_once('includes/header.php');
             <div class="card card-element-hover">
               <picture>
                 <source
+<<<<<<< HEAD
                   srcset="assets/uploads/processes/avif/process-10.avif 1x, assets/uploads/processes/avif/process-10@2x.avif 2x, assets/uploads/processes/avif/process-10@3x.avif 3x"
                   type="image/avif" />
                 <source
@@ -222,6 +295,14 @@ require_once('includes/header.php');
               </picture>
               <div class="card-img-overlay">
                 <a href="assets/uploads/processes/jpg/process-10@lbox.jpg" class="process-lightbox stretched-link">
+=======
+                  srcset="assets/uploads/processes/process-10.jpg 1x, assets/uploads/processes/process-10@2x.jpg 2x, assets/uploads/processes/process-10@3x.jpg 3x"
+                  type="image/jpeg" />
+                <img src="uploads/processes/process-10.jpg" class="card-img" alt="process 10">
+              </picture>
+              <div class="card-img-overlay">
+                <a href="assets/uploads/processes/process-10@lbox.jpg" class="process-lightbox stretched-link">
+>>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                   <i class="bi bi-zoom-in" aria-hidden="true"></i>
                 </a>
               </div>
@@ -232,6 +313,7 @@ require_once('includes/header.php');
             <div class="card card-element-hover">
               <picture>
                 <source
+<<<<<<< HEAD
                   srcset="assets/uploads/processes/avif/process-13.avif 1x, assets/uploads/processes/avif/process-13@2x.avif 2x, assets/uploads/processes/avif/process-13@3x.avif 3x"
                   type="image/avif" />
                 <source
@@ -244,6 +326,14 @@ require_once('includes/header.php');
               </picture>
               <div class="card-img-overlay">
                 <a href="assets/uploads/processes/jpg/process-13@lbox.jpg" class="process-lightbox stretched-link">
+=======
+                  srcset="assets/uploads/processes/process-13.jpg 1x, assets/uploads/processes/process-13@2x.jpg 2x, assets/uploads/processes/process-13@3x.jpg 3x"
+                  type="image/jpeg" />
+                <img src="uploads/processes/process-13.jpg" class="card-img" alt="process 13">
+              </picture>
+              <div class="card-img-overlay">
+                <a href="assets/uploads/processes/process-13@lbox.jpg" class="process-lightbox stretched-link">
+>>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                   <i class="bi bi-zoom-in" aria-hidden="true"></i>
                 </a>
               </div>
@@ -254,6 +344,7 @@ require_once('includes/header.php');
             <div class="card card-element-hover">
               <picture>
                 <source
+<<<<<<< HEAD
                   srcset="assets/uploads/processes/avif/process-03.avif 1x, assets/uploads/processes/avif/process-03@2x.avif 2x, assets/uploads/processes/avif/process-03@3x.avif 3x"
                   type="image/avif" />
                 <source
@@ -266,6 +357,14 @@ require_once('includes/header.php');
               </picture>
               <div class="card-img-overlay">
                 <a href="assets/uploads/processes/jpg/process-03@lbox.jpg" class="process-lightbox stretched-link">
+=======
+                  srcset="assets/uploads/processes/process-03.jpg 1x, assets/uploads/processes/process-03@2x.jpg 2x, assets/uploads/processes/process-03@3x.jpg 3x"
+                  type="image/jpeg" />
+                <img src="uploads/processes/process-03.jpg" class="card-img" alt="process 03">
+              </picture>
+              <div class="card-img-overlay">
+                <a href="assets/uploads/processes/process-03@lbox.jpg" class="process-lightbox stretched-link">
+>>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                   <i class="bi bi-zoom-in" aria-hidden="true"></i>
                 </a>
               </div>
