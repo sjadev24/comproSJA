@@ -58,7 +58,6 @@ require_once('includes/header.php');
               $formattedNumber = str_pad($i, 2, '0', STR_PAD_LEFT);
 
               $product_categories[$category][] = [
-<<<<<<< HEAD
                 'image' => [
                   'jpg' => [
                     '1x' => "prod-$formattedNumber.jpg",
@@ -80,13 +79,6 @@ require_once('includes/header.php');
                   ],
                 ],
                 'alt' => ucwords(str_replace("_", " ", $category)) . ' ' . $formattedNumber,
-=======
-                'image' => "prod-$formattedNumber.jpg",
-                'image_2x' => "prod-$formattedNumber@2x.jpg",
-                'image_3x' => "prod-$formattedNumber@3x.jpg",
-                'image_lbox' => "prod-$formattedNumber@lbox.jpg",
-                'alt' => "Product $formattedNumber",
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
               ];
             }
           }
@@ -101,7 +93,6 @@ require_once('includes/header.php');
                   <div class="card card-element-hover">
                     <picture>
                       <source
-<<<<<<< HEAD
                         data-srcset="assets/uploads/products/heavy-duty/avif/<?php echo $product['image']['avif']['1x']; ?> 1x, assets/uploads/products/heavy-duty/avif/<?php echo $product['image']['avif']['2x']; ?> 2x, assets/uploads/products/heavy-duty/avif/<?php echo $product['image']['avif']['3x']; ?> 3x"
                         type="image/avif" />
                       <source
@@ -114,14 +105,6 @@ require_once('includes/header.php');
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/heavy-duty/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="heavy-duty">
-=======
-                        data-srcset="assets/uploads/products/heavy-duty/<?php echo $product['image']; ?> 1x, assets/uploads/products/heavy-duty/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/heavy-duty/<?php echo $product['image_3x']; ?> 3x"
-                        type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-duty/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
-                    </picture>
-                    <div class="card-img-overlay">
-                      <a href="assets/uploads/products/heavy-duty/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="heavy-duty">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -141,7 +124,6 @@ require_once('includes/header.php');
                   <div class="card card-element-hover">
                     <picture>
                       <source
-<<<<<<< HEAD
                         data-srcset="assets/uploads/products/special-purpose/avif/<?php echo $product['image']['avif']['1x']; ?> 1x, assets/uploads/products/special-purpose/avif/<?php echo $product['image']['avif']['2x']; ?> 2x, assets/uploads/products/special-purpose/avif/<?php echo $product['image']['avif']['3x']; ?> 3x"
                         type="image/avif" />
                       <source
@@ -154,14 +136,6 @@ require_once('includes/header.php');
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/special-purpose/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="special-purpose">
-=======
-                        data-srcset="assets/uploads/products/special-purpose/<?php echo $product['image']; ?> 1x, assets/uploads/products/special-purpose/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/special-purpose/<?php echo $product['image_3x']; ?> 3x"
-                        type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/special-purpose/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
-                    </picture>
-                    <div class="card-img-overlay">
-                      <a href="assets/uploads/products/special-purpose/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="special-purpose">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -181,7 +155,6 @@ require_once('includes/header.php');
                   <div class="card card-element-hover">
                     <picture>
                       <source
-<<<<<<< HEAD
                         data-srcset="assets/uploads/products/ambulance/avif/<?php echo $product['image']['avif']['1x']; ?> 1x, assets/uploads/products/ambulance/avif/<?php echo $product['image']['avif']['2x']; ?> 2x, assets/uploads/products/ambulance/avif/<?php echo $product['image']['avif']['3x']; ?> 3x"
                         type="image/avif" />
                       <source
@@ -194,14 +167,6 @@ require_once('includes/header.php');
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/ambulance/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="ambulance">
-=======
-                        data-srcset="assets/uploads/products/ambulance/<?php echo $product['image']; ?> 1x, assets/uploads/products/ambulance/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/ambulance/<?php echo $product['image_3x']; ?> 3x"
-                        type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/ambulance/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
-                    </picture>
-                    <div class="card-img-overlay">
-                      <a href="assets/uploads/products/ambulance/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="ambulance">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -221,7 +186,6 @@ require_once('includes/header.php');
                   <div class="card card-element-hover">
                     <picture>
                       <source
-<<<<<<< HEAD
                         data-srcset="assets/uploads/products/bus/avif/<?php echo $product['image']['avif']['1x']; ?> 1x, assets/uploads/products/bus/avif/<?php echo $product['image']['avif']['2x']; ?> 2x, assets/uploads/products/bus/avif/<?php echo $product['image']['avif']['3x']; ?> 3x"
                         type="image/avif" />
                       <source
@@ -234,14 +198,6 @@ require_once('includes/header.php');
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/bus/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="bus">
-=======
-                        data-srcset="assets/uploads/products/bus/<?php echo $product['image']; ?> 1x, assets/uploads/products/bus/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/bus/<?php echo $product['image_3x']; ?> 3x"
-                        type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/bus/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
-                    </picture>
-                    <div class="card-img-overlay">
-                      <a href="assets/uploads/products/bus/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="bus">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -261,7 +217,6 @@ require_once('includes/header.php');
                   <div class="card card-element-hover">
                     <picture>
                       <source
-<<<<<<< HEAD
                         data-srcset="assets/uploads/products/heavy-equipment/avif/<?php echo $product['image']['avif']['1x']; ?> 1x, assets/uploads/products/heavy-equipment/avif/<?php echo $product['image']['avif']['2x']; ?> 2x, assets/uploads/products/heavy-equipment/avif/<?php echo $product['image']['avif']['3x']; ?> 3x"
                         type="image/avif" />
                       <source
@@ -274,14 +229,6 @@ require_once('includes/header.php');
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/heavy-equipment/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
-=======
-                        data-srcset="assets/uploads/products/heavy-equipment/<?php echo $product['image']; ?> 1x, assets/uploads/products/heavy-equipment/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/heavy-equipment/<?php echo $product['image_3x']; ?> 3x"
-                        type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-equipment/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
-                    </picture>
-                    <div class="card-img-overlay">
-                      <a href="assets/uploads/products/heavy-equipment/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>

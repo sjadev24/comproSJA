@@ -8,7 +8,6 @@ require_once('includes/header.php');
   <div class="swiper hero-swiper">
     <div class="swiper-wrapper">
       <?php
-<<<<<<< HEAD
       // $i = 0;
       // $statement = $pdo->prepare("SELECT * FROM tbl_slider");
       // $statement->execute();
@@ -33,36 +32,10 @@ require_once('includes/header.php');
                 <h2 class="h1 mb-3" data-swiper-parallax="-1000">Innovation and Excellence</h2>
                 <p class="mb-5" data-swiper-parallax="-1200">Innovative designs and precision craftsmanship that elevate your vehicle to the next level.</p>
                 <div data-swiper-parallax="-1250"><a href="products.php" target="_blank" class="btn btn-primary">Explore Our Designs</a></div>
-=======
-      $i = 0;
-      $statement = $pdo->prepare("SELECT * FROM tbl_slider");
-      $statement->execute();
-      $result = $statement->fetchAll(PDO::FETCH_ASSOC);
-      foreach ($result as $row) {
-        $photo = $row['photo'];
-        $photoAlt = substr($photo, 0, strrpos($photo, '.'));
-        $pos = $row['position'];
-      ?>
-        <div class="d-flex align-items-center swiper-slide <?php if ($i == 0) {
-                                                              echo 'active';
-                                                            } ?>">
-          <div class="hero-slide-img">
-            <img src="assets/uploads/<?php echo $photo; ?>" alt="<?php echo $photoAlt; ?>">
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-lg-5">
-                <div class="hero-slide-content">
-                  <h2 class="h1 mb-3" data-swiper-parallax="-1000"><?php echo $row['heading']; ?></h2>
-                  <p class="mb-5" data-swiper-parallax="-1200"><?php echo nl2br($row['content']); ?></p>
-                  <div data-swiper-parallax="-1250"><a href="<?php echo $row['button_url']; ?>" target="_blank" class="btn btn-primary"><?php echo $row['button_text']; ?></a></div>
-                </div>
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
               </div>
             </div>
           </div>
         </div>
-<<<<<<< HEAD
       </div>
       <div class="d-flex align-items-center swiper-slide">
         <div class="hero-slide-img">
@@ -107,11 +80,6 @@ require_once('includes/header.php');
       <?php
       // $i++;
       //}
-=======
-      <?php
-        $i++;
-      }
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
       ?>
     </div>
     <div class="swiper-pagination"></div>
@@ -125,14 +93,9 @@ require_once('includes/header.php');
         <div class="row pe-lg-4 pe-xl-5 g-5 g-lg-4">
           <div class="col-sm-6">
             <picture>
-<<<<<<< HEAD
               <source data-srcset="assets/img/about/avif/office-01.avif" type="image/avif" />
               <source data-srcset="assets/img/about/webp/office-01.webp" type="image/webp" />
               <img src="assets/img/placehold.png" data-src="assets/img/about/jpg/office-01.jpg" class="rounded lazyload" alt="office 01">
-=======
-              <source data-srcset="assets/img/webp/office-01.webp" type="image/webp" />
-              <img src="assets/img/placehold.png" data-src="assets/img/office-01.jpg" class="rounded lazyload" alt="office 01">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
             </picture>
           </div>
 
@@ -152,14 +115,9 @@ require_once('includes/header.php');
               </div>
             </div>
             <picture>
-<<<<<<< HEAD
               <source data-srcset="assets/img/about/avif/office-02.avif" type="image/avif" />
               <source data-srcset="assets/img/about/webp/office-02.webp" type="image/webp" />
               <img src="assets/img/placehold.png" data-src="assets/img/about/jpg/office-02.jpg" class="rounded lazyload" alt="office 01">
-=======
-              <source data-srcset="assets/img/webp/office-02.webp" type="image/webp" />
-              <img src="assets/img/placehold.png" data-src="assets/img/office-02.jpg" class="rounded lazyload" alt="office 02">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
             </picture>
           </div>
         </div>
@@ -198,90 +156,50 @@ require_once('includes/header.php');
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <picture>
-<<<<<<< HEAD
             <source data-srcset="assets/uploads/partners/avif/hino.avif" type="image/avif" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/hino.png" class="lazyload" alt="Hino" title="Hino">
-=======
-            <source data-srcset="assets/uploads/partners/webp/hino.webp" type="image/webp" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/hino.png" class="lazyload" alt="Hino" title="Hino">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
-<<<<<<< HEAD
             <source data-srcset="assets/uploads/partners/avif/armindo.avif" type="image/avif" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/armindo.png" class="lazyload" alt="Armindo" title="Armindo">
-=======
-            <source data-srcset="assets/uploads/partners/webp/armindo.webp" type="image/webp" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/armindo.png" class="lazyload" alt="Armindo" title="Armindo">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
-<<<<<<< HEAD
             <source data-srcset="assets/uploads/partners/avif/cemaco.avif" type="image/avif" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/cemaco.png" class="lazyload" alt="Cemaco" title="Cemaco">
-=======
-            <source data-srcset="assets/uploads/partners/webp/cemaco.webp" type="image/webp" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/cemaco.png" class="lazyload" alt="Cemaco" title="Cemaco">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
-<<<<<<< HEAD
             <source data-srcset="assets/uploads/partners/avif/auto2000.avif" type="image/avif" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/auto2000.png" class="lazyload" alt="Auto2000" title="Auto2000">
-=======
-            <source data-srcset="assets/uploads/partners/webp/auto2000.webp" type="image/webp" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/auto2000.png" class="lazyload" alt="Auto2000" title="Auto2000">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
-<<<<<<< HEAD
             <source data-srcset="assets/uploads/partners/avif/arista.avif" type="image/avif" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/arista.png" class="lazyload" alt="Arista" title="Arista">
-=======
-            <source data-srcset="assets/uploads/partners/webp/arista.webp" type="image/webp" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/arista.png" class="lazyload" alt="Arista" title="Arista">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
-<<<<<<< HEAD
             <source data-srcset="assets/uploads/partners/avif/indomobil.avif" type="image/avif" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/indomobil.png" class="lazyload" alt="Indomobil" title="Indomobil">
-=======
-            <source data-srcset="assets/uploads/partners/webp/indomobil.webp" type="image/webp" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/indomobil.png" class="lazyload" alt="Indomobil" title="Indomobil">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
-<<<<<<< HEAD
             <source data-srcset="assets/uploads/partners/avif/nasmoco.avif" type="image/avif" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/nasmoco.png" class="lazyload" alt="Nasmoco" title="Nasmoco">
-=======
-            <source data-srcset="assets/uploads/partners/webp/nasmoco.webp" type="image/webp" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/nasmoco.png" class="lazyload" alt="Nasmoco" title="Nasmoco">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
-<<<<<<< HEAD
             <source data-srcset="assets/uploads/partners/avif/tejaberlian.avif" type="image/avif" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/tejaberlian.png" class="lazyload" alt="Teja Berlian" title="Teja Berlian">
-=======
-            <source data-srcset="assets/uploads/partners/webp/tejaberlian.webp" type="image/webp" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/tejaberlian.png" class="lazyload" alt="Teja Berlian" title="Teja Berlian">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
       </div>
@@ -392,7 +310,6 @@ require_once('includes/header.php');
               $formattedNumber = str_pad($i, 2, '0', STR_PAD_LEFT);
 
               $product_categories[$category][] = [
-<<<<<<< HEAD
                 'image' => [
                   'jpg' => [
                     '1x' => "prod-$formattedNumber.jpg",
@@ -414,13 +331,6 @@ require_once('includes/header.php');
                   ],
                 ],
                 'alt' => ucwords(str_replace("_", " ", $category)) . ' ' . $formattedNumber,
-=======
-                'image' => "prod-$formattedNumber.jpg",
-                'image_2x' => "prod-$formattedNumber@2x.jpg",
-                'image_3x' => "prod-$formattedNumber@3x.jpg",
-                'image_lbox' => "prod-$formattedNumber@lbox.jpg",
-                'alt' => "Product $formattedNumber",
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
               ];
             }
           }
@@ -435,7 +345,6 @@ require_once('includes/header.php');
                   <div class="card card-element-hover">
                     <picture>
                       <source
-<<<<<<< HEAD
                         data-srcset="assets/uploads/products/heavy-duty/avif/<?php echo $product['image']['avif']['1x']; ?> 1x, assets/uploads/products/heavy-duty/avif/<?php echo $product['image']['avif']['2x']; ?> 2x, assets/uploads/products/heavy-duty/avif/<?php echo $product['image']['avif']['3x']; ?> 3x"
                         type="image/avif" />
                       <source
@@ -448,14 +357,6 @@ require_once('includes/header.php');
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/heavy-duty/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="heavy-duty">
-=======
-                        data-srcset="assets/uploads/products/heavy-duty/<?php echo $product['image']; ?> 1x, assets/uploads/products/heavy-duty/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/heavy-duty/<?php echo $product['image_3x']; ?> 3x"
-                        type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-duty/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
-                    </picture>
-                    <div class="card-img-overlay">
-                      <a href="assets/uploads/products/heavy-duty/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="heavy-duty">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -475,7 +376,6 @@ require_once('includes/header.php');
                   <div class="card card-element-hover">
                     <picture>
                       <source
-<<<<<<< HEAD
                         data-srcset="assets/uploads/products/special-purpose/avif/<?php echo $product['image']['avif']['1x']; ?> 1x, assets/uploads/products/special-purpose/avif/<?php echo $product['image']['avif']['2x']; ?> 2x, assets/uploads/products/special-purpose/avif/<?php echo $product['image']['avif']['3x']; ?> 3x"
                         type="image/avif" />
                       <source
@@ -488,14 +388,6 @@ require_once('includes/header.php');
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/special-purpose/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="special-purpose">
-=======
-                        data-srcset="assets/uploads/products/special-purpose/<?php echo $product['image']; ?> 1x, assets/uploads/products/special-purpose/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/special-purpose/<?php echo $product['image_3x']; ?> 3x"
-                        type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/special-purpose/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
-                    </picture>
-                    <div class="card-img-overlay">
-                      <a href="assets/uploads/products/special-purpose/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="special-purpose">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -515,7 +407,6 @@ require_once('includes/header.php');
                   <div class="card card-element-hover">
                     <picture>
                       <source
-<<<<<<< HEAD
                         data-srcset="assets/uploads/products/ambulance/avif/<?php echo $product['image']['avif']['1x']; ?> 1x, assets/uploads/products/ambulance/avif/<?php echo $product['image']['avif']['2x']; ?> 2x, assets/uploads/products/ambulance/avif/<?php echo $product['image']['avif']['3x']; ?> 3x"
                         type="image/avif" />
                       <source
@@ -528,14 +419,6 @@ require_once('includes/header.php');
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/ambulance/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="ambulance">
-=======
-                        data-srcset="assets/uploads/products/ambulance/<?php echo $product['image']; ?> 1x, assets/uploads/products/ambulance/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/ambulance/<?php echo $product['image_3x']; ?> 3x"
-                        type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/ambulance/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
-                    </picture>
-                    <div class="card-img-overlay">
-                      <a href="assets/uploads/products/ambulance/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="ambulance">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -555,7 +438,6 @@ require_once('includes/header.php');
                   <div class="card card-element-hover">
                     <picture>
                       <source
-<<<<<<< HEAD
                         data-srcset="assets/uploads/products/bus/avif/<?php echo $product['image']['avif']['1x']; ?> 1x, assets/uploads/products/bus/avif/<?php echo $product['image']['avif']['2x']; ?> 2x, assets/uploads/products/bus/avif/<?php echo $product['image']['avif']['3x']; ?> 3x"
                         type="image/avif" />
                       <source
@@ -568,14 +450,6 @@ require_once('includes/header.php');
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/bus/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="bus">
-=======
-                        data-srcset="assets/uploads/products/bus/<?php echo $product['image']; ?> 1x, assets/uploads/products/bus/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/bus/<?php echo $product['image_3x']; ?> 3x"
-                        type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/bus/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
-                    </picture>
-                    <div class="card-img-overlay">
-                      <a href="assets/uploads/products/bus/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="bus">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -595,7 +469,6 @@ require_once('includes/header.php');
                   <div class="card card-element-hover">
                     <picture>
                       <source
-<<<<<<< HEAD
                         data-srcset="assets/uploads/products/heavy-equipment/avif/<?php echo $product['image']['avif']['1x']; ?> 1x, assets/uploads/products/heavy-equipment/avif/<?php echo $product['image']['avif']['2x']; ?> 2x, assets/uploads/products/heavy-equipment/avif/<?php echo $product['image']['avif']['3x']; ?> 3x"
                         type="image/avif" />
                       <source
@@ -608,14 +481,6 @@ require_once('includes/header.php');
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/heavy-equipment/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
-=======
-                        data-srcset="assets/uploads/products/heavy-equipment/<?php echo $product['image']; ?> 1x, assets/uploads/products/heavy-equipment/<?php echo $product['image_2x']; ?> 2x, assets/uploads/products/heavy-equipment/<?php echo $product['image_3x']; ?> 3x"
-                        type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-equipment/<?php echo $product['image']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
-                    </picture>
-                    <div class="card-img-overlay">
-                      <a href="assets/uploads/products/heavy-equipment/<?php echo $product['image_lbox']; ?>" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -646,7 +511,6 @@ require_once('includes/header.php');
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/dlh.avif 1x, assets/uploads/customers/avif/dlh@2x.avif 2x"
               type="image/avif" />
             <source
@@ -656,20 +520,11 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/dlh.png 1x, assets/uploads/customers/png/dlh@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/dlh.png" class="lazyload" alt="Dinas Lingkungan Hidup" title="Dinas Lingkungan Hidup">
-=======
-              data-srcset="assets/uploads/customers/webp/dlh.webp 1x, assets/uploads/customers/webp/dlh@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/dlh.png 1x, assets/uploads/customers/dlh@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/dlh.png" class="lazyload" alt="Dinas Lingkungan Hidup" title="Dinas Lingkungan Hidup">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/pupr.avif 1x, assets/uploads/customers/avif/pupr@2x.avif 2x"
               type="image/avif" />
             <source
@@ -679,20 +534,11 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/pupr.png 1x, assets/uploads/customers/png/pupr@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/pupr.png" class="lazyload" alt="Kementerian PUPR" title="Kementerian PUPR">
-=======
-              data-srcset="assets/uploads/customers/webp/pupr.webp 1x, assets/uploads/customers/webp/pupr@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/pupr.png 1x, assets/uploads/customers/pupr@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/pupr.png" class="lazyload" alt="Kementerian PUPR" title="Kementerian PUPR">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/imigrasi.avif 1x, assets/uploads/customers/avif/imigrasi@2x.avif 2x"
               type="image/avif" />
             <source
@@ -702,20 +548,11 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/imigrasi.png 1x, assets/uploads/customers/png/imigrasi@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/imigrasi.png" class="lazyload" alt="Rumah Detensi Imigrasi" title="Rumah Detensi Imigrasi">
-=======
-              data-srcset="assets/uploads/customers/webp/imigrasi.webp 1x, assets/uploads/customers/webp/imigrasi@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/imigrasi.png 1x, assets/uploads/customers/imigrasi@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/imigrasi.png" class="lazyload" alt="Rumah Detensi Imigrasi" title="Rumah Detensi Imigrasi">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/humbang_hasundutan.avif 1x, assets/uploads/customers/avif/humbang_hasundutan@2x.avif 2x"
               type="image/avif" />
             <source
@@ -725,20 +562,11 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/humbang_hasundutan.png 1x, assets/uploads/customers/png/humbang_hasundutan@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/humbang_hasundutan.png" class="lazyload" alt="Dinas Perhubungan Kabupaten Humbang Hasundutan" title="Dinas Perhubungan Kabupaten Humbang Hasundutan">
-=======
-              data-srcset="assets/uploads/customers/webp/humbang_hasundutan.webp 1x, assets/uploads/customers/webp/humbang_hasundutan@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/humbang_hasundutan.png 1x, assets/uploads/customers/humbang_hasundutan@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/humbang_hasundutan.png" class="lazyload" alt="Dinas Perhubungan Kabupaten Humbang Hasundutan" title="Dinas Perhubungan Kabupaten Humbang Hasundutan">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/batubara.avif 1x, assets/uploads/customers/avif/batubara@2x.avif 2x"
               type="image/avif" />
             <source
@@ -748,20 +576,11 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/batubara.png 1x, assets/uploads/customers/png/batubara@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/batubara.png" class="lazyload" alt="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara" title="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara">
-=======
-              data-srcset="assets/uploads/customers/webp/batubara.webp 1x, assets/uploads/customers/webp/batubara@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/batubara.png 1x, assets/uploads/customers/batubara@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/batubara.png" class="lazyload" alt="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara" title="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/kemenhub.avif 1x, assets/uploads/customers/avif/kemenhub@2x.avif 2x"
               type="image/avif" />
             <source
@@ -771,20 +590,11 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/kemenhub.png 1x, assets/uploads/customers/png/kemenhub@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/kemenhub.png" class="lazyload" alt="Kementerian Perhubungan" title="Kementerian Perhubungan">
-=======
-              data-srcset="assets/uploads/customers/webp/kemenhub.webp 1x, assets/uploads/customers/webp/kemenhub@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/kemenhub.png 1x, assets/uploads/customers/kemenhub@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/kemenhub.png" class="lazyload" alt="Kementerian Perhubungan" title="Kementerian Perhubungan">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/jember.avif 1x, assets/uploads/customers/avif/jember@2x.avif 2x"
               type="image/avif" />
             <source
@@ -794,20 +604,11 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/jember.png 1x, assets/uploads/customers/png/jember@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/jember.png" class="lazyload" alt="DLH Kabupaten Jember" title="DLH Kabupaten Jember">
-=======
-              data-srcset="assets/uploads/customers/webp/jember.webp 1x, assets/uploads/customers/webp/jember@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/jember.png 1x, assets/uploads/customers/jember@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/jember.png" class="lazyload" alt="DLH Kabupaten Jember" title="DLH Kabupaten Jember">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/tapanuli_utara.avif 1x, assets/uploads/customers/avif/tapanuli_utara@2x.avif 2x"
               type="image/avif" />
             <source
@@ -817,20 +618,11 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/tapanuli_utara.png 1x, assets/uploads/customers/png/tapanuli_utara@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/tapanuli_utara.png" class="lazyload" alt="DLH Kabupaten Tapanuli Utara" title="DLH Kabupaten Tapanuli Utara">
-=======
-              data-srcset="assets/uploads/customers/webp/tapanuli_utara.webp 1x, assets/uploads/customers/webp/tapanuli_utara@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/tapanuli_utara.png 1x, assets/uploads/customers/tapanuli_utara@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/tapanuli_utara.png" class="lazyload" alt="DLH Kabupaten Tapanuli Utara" title="DLH Kabupaten Tapanuli Utara">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/batu.avif 1x, assets/uploads/customers/avif/batu@2x.avif 2x"
               type="image/avif" />
             <source
@@ -840,20 +632,11 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/batu.png 1x, assets/uploads/customers/png/batu@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/batu.png" class="lazyload" alt="DLH Kota Batu" title="DLH Kota Batu">
-=======
-              data-srcset="assets/uploads/customers/webp/batu.webp 1x, assets/uploads/customers/webp/batu@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/batu.png 1x, assets/uploads/customers/batu@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/batu.png" class="lazyload" alt="DLH Kota Batu" title="DLH Kota Batu">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/malang.avif 1x, assets/uploads/customers/avif/malang@2x.avif 2x"
               type="image/avif" />
             <source
@@ -863,20 +646,11 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/malang.png 1x, assets/uploads/customers/png/malang@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/malang.png" class="lazyload" alt="DLH Kota Malang" title="DLH Kota Malang">
-=======
-              data-srcset="assets/uploads/customers/webp/malang.webp 1x, assets/uploads/customers/webp/malang@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/malang.png 1x, assets/uploads/customers/malang@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/malang.png" class="lazyload" alt="DLH Kota Malang" title="DLH Kota Malang">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/tangerang.avif 1x, assets/uploads/customers/avif/tangerang@2x.avif 2x"
               type="image/avif" />
             <source
@@ -886,20 +660,11 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/tangerang.png 1x, assets/uploads/customers/png/tangerang@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/tangerang.png" class="lazyload" alt="DLH Kota Tangerang" title="DLH Kota Tangerang">
-=======
-              data-srcset="assets/uploads/customers/webp/tangerang.webp 1x, assets/uploads/customers/webp/tangerang@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/tangerang.png 1x, assets/uploads/customers/tangerang@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/tangerang.png" class="lazyload" alt="DLH Kota Tangerang" title="DLH Kota Tangerang">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/bulukumba.avif 1x, assets/uploads/customers/avif/bulukumba@2x.avif 2x"
               type="image/avif" />
             <source
@@ -909,20 +674,11 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/bulukumba.png 1x, assets/uploads/customers/png/bulukumba@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/bulukumba.png" class="lazyload" alt="DLHK Kabupaten Bulukumba" title="DLHK Kabupaten Bulukumba">
-=======
-              data-srcset="assets/uploads/customers/webp/bulukumba.webp 1x, assets/uploads/customers/webp/bulukumba@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/bulukumba.png 1x, assets/uploads/customers/bulukumba@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/bulukumba.png" class="lazyload" alt="DLHK Kabupaten Bulukumba" title="DLHK Kabupaten Bulukumba">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/sumedang.avif 1x, assets/uploads/customers/avif/sumedang@2x.avif 2x"
               type="image/avif" />
             <source
@@ -932,20 +688,11 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/sumedang.png 1x, assets/uploads/customers/png/sumedang@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/sumedang.png" class="lazyload" alt="DLHK Kabupaten Sumedang" title="DLHK Kabupaten Sumedang">
-=======
-              data-srcset="assets/uploads/customers/webp/sumedang.webp 1x, assets/uploads/customers/webp/sumedang@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/sumedang.png 1x, assets/uploads/customers/sumedang@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/sumedang.png" class="lazyload" alt="DLHK Kabupaten Sumedang" title="DLHK Kabupaten Sumedang">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/depok.avif 1x, assets/uploads/customers/avif/depok@2x.avif 2x"
               type="image/avif" />
             <source
@@ -955,20 +702,11 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/depok.png 1x, assets/uploads/customers/png/depok@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/depok.png" class="lazyload" alt="DLHK Kota Depok" title="DLHK Kota Depok">
-=======
-              data-srcset="assets/uploads/customers/webp/depok.webp 1x, assets/uploads/customers/webp/depok@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/depok.png 1x, assets/uploads/customers/depok@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/depok.png" class="lazyload" alt="DLHK Kota Depok" title="DLHK Kota Depok">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source
-<<<<<<< HEAD
               data-srcset="assets/uploads/customers/avif/tegal.avif 1x, assets/uploads/customers/avif/tegal@2x.avif 2x"
               type="image/avif" />
             <source
@@ -978,14 +716,6 @@ require_once('includes/header.php');
               data-srcset="assets/uploads/customers/png/tegal.png 1x, assets/uploads/customers/png/tegal@2x.png 2x"
               type="image/png" />
             <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/tegal.png" class="lazyload" alt="DPUPR Kota Tegal" title="DPUPR Kota Tegal">
-=======
-              data-srcset="assets/uploads/customers/webp/tegal.webp 1x, assets/uploads/customers/webp/tegal@2x.webp 2x"
-              type="image/webp" />
-            <source
-              data-srcset="assets/uploads/customers/tegal.png 1x, assets/uploads/customers/tegal@2x.png 2x"
-              type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/tegal.png" class="lazyload" alt="DPUPR Kota Tegal" title="DPUPR Kota Tegal">
->>>>>>> 0cf846ae6a5e58aa41610eb790cca555d2418e5e
           </picture>
         </div>
       </div>
