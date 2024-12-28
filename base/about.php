@@ -311,7 +311,7 @@ require_once('includes/header.php');
             <p class="step-number">1</p>
             <div class="d-flex flex-column pt-1">
               <h4 class="h5">
-                <a href="assets/uploads/awards_certifications/certification-01.jpg" class=" link-underline link-underline-opacity-0 link-underline-opacity-100-hover certification-lightbox">ISO 9001:2015 &amp; ISO 45001:2018</a>
+                <a href="assets/uploads/certifications/jpg/certification-01.jpg" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover certification-lightbox">ISO 9001:2015 &amp; ISO 45001:2018</a>
               </h4>
               <p class="mb-0">
                 Certified by ACS Registrars | Occuptional Health and Safety Management System in the scope of Manufacturing of Chassis for Motor Vehicle.</p>
@@ -321,7 +321,7 @@ require_once('includes/header.php');
             <p class="step-number">2</p>
             <div class="d-flex flex-column pt-1">
               <h4 class="h5">
-                <a href="assets/uploads/awards_certifications/certification-02.jpg" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover certification-lightbox">IATF 16949:2016</a>
+                <a href="assets/uploads/certifications/jpg/certification-02.jpg" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover certification-lightbox">IATF 16949:2016</a>
               </h4>
               <p class="mb-0">
                 Certified by Integrated Assessment Services | Quality Management System in the scope of Manufacturing of Chassis for Motor Vehicle.</p>
@@ -331,7 +331,7 @@ require_once('includes/header.php');
             <p class="step-number">3</p>
             <div class="d-flex flex-column pt-1">
               <h4 class="h5">
-                <a href="assets/uploads/awards_certifications/certification-03.jpg" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover certification-lightbox">ISO 14001:2015</a>
+                <a href="assets/uploads/certifications/jpg/certification-03.jpg" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover certification-lightbox">ISO 14001:2015</a>
               </h4>
               <p class="mb-0">
                 Certified by Peers Quality Assurance Limited | Operates a Environmental Management System in the scope of Manufacturing of Chassis for Motor Vehicle.

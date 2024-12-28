@@ -844,6 +844,25 @@ Mobile style's
   --bs-card-inner-border-radius: 0;
 }
 
+.instafeed-swiper .swiper-button-next,
+.instafeed-swiper .swiper-button-prev {
+  --swiper-navigation-size: 32px;
+  --swiper-navigation-color: var(--bs-dark);
+  width: 32px;
+  background-color: var(--bs-white);
+  border-radius: 50%;
+}
+
+.instafeed-swiper .swiper-button-next:hover,
+.instafeed-swiper .swiper-button-prev:hover {
+  opacity: 0.9;
+}
+
+.instafeed-swiper .swiper-button-next:after,
+.instafeed-swiper .swiper-button-prev:after {
+  --swiper-navigation-size: 14px;
+}
+
 @media (max-width: 575px) {
   .hero-slide-content .h1 {
     font-size: 1.65rem;

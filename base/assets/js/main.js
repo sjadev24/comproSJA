@@ -30,8 +30,8 @@ const on = (type, el, listener, all = false) => {
  * Init swipers
  */
 const heroSwiper = select('.hero-swiper');
-const customersSwiper = select('.customers-swiper');
 const partnersSwiper = select('.partners-swiper');
+const customersSwiper = select('.customers-swiper');
 const instafeedSwiper = select('.instafeed-swiper');
 
 if (heroSwiper) {
@@ -60,43 +60,11 @@ if (heroSwiper) {
   });
 }
 
-if (customersSwiper) {
-  new Swiper('.customers-swiper', {
-    speed: 1000,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 10,
-      },
-      480: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-        spaceBetween: 10,
-      },
-      768: {
-        slidesPerView: 5,
-        slidesPerGroup: 5,
-        spaceBetween: 10,
-      },
-      992: {
-        slidesPerView: 6,
-        slidesPerGroup: 6,
-        spaceBetween: 20,
-      },
-    },
-  });
-}
-
 if (partnersSwiper) {
   new Swiper('.partners-swiper', {
-    speed: 600,
+    speed: 800,
     autoplay: {
-      delay: 2500,
+      delay: 2000,
     },
     breakpoints: {
       0: {
@@ -128,12 +96,11 @@ if (partnersSwiper) {
   });
 }
 
-if (instafeedSwiper) {
-  new Swiper('.instafeed-swiper', {
-    speed: 600,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+if (customersSwiper) {
+  new Swiper('.customers-swiper', {
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
     },
     breakpoints: {
       0: {
@@ -150,6 +117,38 @@ if (instafeedSwiper) {
         slidesPerView: 5,
         slidesPerGroup: 1,
         spaceBetween: 10,
+      },
+      992: {
+        slidesPerView: 6,
+        slidesPerGroup: 1,
+        spaceBetween: 24,
+      },
+    },
+  });
+}
+
+if (instafeedSwiper) {
+  new Swiper('.instafeed-swiper', {
+    speed: 600,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 3,
+        slidesPerGroup: 1,
+        spaceBetween: 12,
+      },
+      768: {
+        slidesPerView: 4,
+        slidesPerGroup: 1,
+        spaceBetween: 16,
+      },
+      992: {
+        slidesPerView: 5,
+        slidesPerGroup: 1,
+        spaceBetween: 24,
       },
     },
   });
