@@ -136,9 +136,14 @@ if (instafeedSwiper) {
     },
     breakpoints: {
       0: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         slidesPerGroup: 1,
         spaceBetween: 12,
+      },
+      576: {
+        slidesPerView: 3,
+        slidesPerGroup: 1,
+        spaceBetween: 16,
       },
       768: {
         slidesPerView: 4,

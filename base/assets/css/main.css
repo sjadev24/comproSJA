@@ -189,7 +189,7 @@ ul {
 }
 
 .navbar-nav {
-  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-x: 0.6rem;
   --bs-nav-link-padding-y: 1rem;
   --bs-navbar-nav-link-padding-x: 1.5rem;
 }
@@ -295,6 +295,11 @@ ul {
   .nav-underline.flex-lg-column .nav-link.active::before {
     transform: scaleY(1);
     transform-origin: top left;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    --bs-gutter-x: 2rem;
   }
 }
 @media (max-width: 1199px) {
@@ -544,6 +549,10 @@ Mobile style's
   right: 0;
 }
 
+.search-dropdown form {
+  margin-left: 0.6rem;
+}
+
 .search-dropdown .form-control {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -562,6 +571,9 @@ Mobile style's
   .search-dropdown .form-control:focus {
     border-color: transparent;
     box-shadow: none;
+  }
+  .search-dropdown form {
+    margin-left: 0;
   }
 }
 @media (max-width: 480px) {
@@ -848,6 +860,7 @@ Mobile style's
 .instafeed-swiper .swiper-button-prev {
   --swiper-navigation-size: 32px;
   --swiper-navigation-color: var(--bs-dark);
+  --swiper-navigation-sides-offset: 6px;
   width: 32px;
   background-color: var(--bs-white);
   border-radius: 50%;

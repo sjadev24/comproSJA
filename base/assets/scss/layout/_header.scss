@@ -38,6 +38,10 @@
   right: 0;
 }
 
+.search-dropdown form {
+  margin-left: 0.6rem;
+}
+
 .search-dropdown .form-control {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -57,6 +61,10 @@
   .search-dropdown .form-control:focus {
     border-color: transparent;
     box-shadow: none;
+  }
+
+  .search-dropdown form {
+    margin-left: 0;
   }
 }
 

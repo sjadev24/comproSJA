@@ -88,9 +88,9 @@ require_once('includes/header.php');
 
 <section class="section section-homeabout pb-0">
   <div class="container">
-    <div class="row g-4 align-items-xl-center">
+    <div class="row g-4 align-items-xl-center gy-5">
       <div class="col-lg-7">
-        <div class="row pe-lg-4 pe-xl-5 g-5 g-lg-4">
+        <div class="row pe-lg-4 pe-xl-5 gy-4">
           <div class="col-sm-6">
             <picture>
               <source data-srcset="assets/img/about/avif/office-01.avif" type="image/avif" />

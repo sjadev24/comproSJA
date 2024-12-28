@@ -194,7 +194,7 @@ ul {
 }
 
 .navbar-nav {
-  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-x: 0.6rem;
   --bs-nav-link-padding-y: 1rem;
   --bs-navbar-nav-link-padding-x: 1.5rem;
 }
@@ -306,6 +306,12 @@ ul {
   .nav-underline.flex-lg-column .nav-link.active::before {
     transform: scaleY(1);
     transform-origin: top left;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    --bs-gutter-x: 2rem;
   }
 }
 

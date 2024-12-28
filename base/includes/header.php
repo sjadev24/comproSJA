@@ -60,7 +60,7 @@ $success_message1 = '';
 						</picture>
 					</a>
 				</h1>
-				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<button class="navbar-toggler px-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
 						<i class="fa-solid fa-bars" aria-hidden="true"></i>
 					</span>
@@ -72,7 +72,7 @@ $success_message1 = '';
 					<div class="offcanvas-body">
 						<?php $current_page = basename($_SERVER['PHP_SELF']); ?>
 
-						<ul class="navbar-nav flex-grow-1 pe-3">
+						<ul class="navbar-nav">
 							<li class="nav-item"><a href="index.php" class="nav-link <?php echo $current_page === 'index.php' ? 'active' : ''; ?>" aria-current="page">Home</a></li>
 							<li class="nav-item"><a href="products.php" class="nav-link <?php echo $current_page === 'products.php' ? 'active' : ''; ?>">Products</a></li>
 							<li class="nav-item"><a href="about.php" class="nav-link <?php echo $current_page === 'about.php' ? 'active' : ''; ?>">About</a></li>
@@ -84,7 +84,7 @@ $success_message1 = '';
 										<i class="fas fa-magnifying-glass" aria-hidden="true"></i>
 									</button>
 									<div class="dropdown-menu shadow-sm mt-3">
-										<form class="form-inline d-flex" role="search" action="search-result.php" method="get">
+										<form class="d-flex" role="search" action="search-result.php" method="get">
 											<?php $csrf->echoInputField(); ?>
 											<input type="text" class="form-control pe-0" placeholder="Search Product" name="search_text">
 											<button type="submit" class="btn">
@@ -94,7 +94,7 @@ $success_message1 = '';
 									</div>
 								</div>
 								<div class="d-block d-lg-none">
-									<form class="form-inline d-flex ps-3 pt-1 mt-2" role="search" action="search-result.php" method="get">
+									<form class="d-flex pt-1 mt-2" role="search" action="search-result.php" method="get">
 										<?php $csrf->echoInputField(); ?>
 										<div class="input-group">
 											<input type="text" class="form-control" placeholder="Search Product" name="search_text">

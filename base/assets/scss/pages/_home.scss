@@ -127,6 +127,7 @@
 .instafeed-swiper .swiper-button-prev {
   --swiper-navigation-size: 32px;
   --swiper-navigation-color: var(--bs-dark);
+  --swiper-navigation-sides-offset: 6px;
   width: 32px;
   background-color: var(--bs-white);
   border-radius: 50%;
