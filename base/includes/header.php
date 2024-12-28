@@ -1,4 +1,3 @@
-<!-- This is main configuration File -->
 <?php
 ob_start();
 session_start();
@@ -23,7 +22,7 @@ $success_message1 = '';
 	<meta name="description" content="<?php echo $meta_description; ?>">
 
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="assets/uploads/favicon.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
