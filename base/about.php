@@ -63,7 +63,7 @@ require_once('includes/header.php');
                   <ul class="d-flex flex-column gap-2 mb-0">
                     <li>
                       <i class="fas fa-circle" aria-hidden="true"></i>
-                      <span>To become a leading automotive and bodywork manufacturing company that is recognized globally, through technological innovation, superior product quality, and sustainable contributions to industrial progress and societal welfare.</span>
+                      <span>To become a globally recognized leading automotive and body manufacturing company, through technological innovation, superior product quality, and sustainable contribution to industrial progress and community welfare.</span>
                     </li>
                   </ul>
                 </div>

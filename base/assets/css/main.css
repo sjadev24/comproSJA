@@ -297,7 +297,7 @@ ul {
     transform-origin: top left;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .container {
     --bs-gutter-x: 2rem;
   }
@@ -462,6 +462,17 @@ ul {
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Mobile style's
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 991px) {
+  .nav-wrapper {
+    overflow-x: auto;
+  }
+  .nav-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .nav-item {
+    width: max-content;
+  }
+}
 @media only screen and (max-width: 959px) {
   .menu-mobile {
     display: block;
@@ -884,14 +895,6 @@ Mobile style's
     font-size: 1rem;
   }
 }
-@media (max-width: 991px) {
-  .section-products .nav-item {
-    width: max-content;
-  }
-  .section-products .nav-wrapper {
-    overflow-x: auto;
-  }
-}
 /*--------------------------------------------------------------
 # Section Who We Are
 --------------------------------------------------------------*/
@@ -979,14 +982,6 @@ Mobile style's
   z-index: 1;
 }
 
-@media (max-width: 991px) {
-  .section-gallery .nav-item {
-    width: max-content;
-  }
-  .section-gallery .nav-wrapper {
-    overflow-x: auto;
-  }
-}
 .contact-info a:hover {
   text-decoration: underline;
 }

@@ -47,11 +47,6 @@ require_once('includes/header.php');
                         <p class="h6 pb-2">Call us:</p>
                         <ul class="d-flex flex-column gap-3 mb-0">
                             <li>
-                                <a class="text-primary" href="tel:+6281993118977">
-                                    +62 819-9311-8977
-                                </a>
-                            </li>
-                            <li>
                                 <a class="text-primary" href="tel:+6281386641546">
                                     +62 813-8664-1546
                                 </a>

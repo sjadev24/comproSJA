@@ -68,11 +68,11 @@ foreach ($result as $row) {
 						<h3 class="h5 pb-1 mb-3">Partnership</h3>
 						<ul class="d-flex flex-column gap-3-cs mb-0">
 							<li>PT. Hino Motors Manufacturing Indonesia</li>
-							<li>PT. Armindo</li>
+							<li>PT. Armindo Perkasa</li>
 							<li>Auto 2000</li>
-							<li>PT. Cemaco</li>
-							<li>PT. Daya guna Motor Indonesia</li>
-							<li>Indomobil</li>
+							<li>PT. Cemaco Makmur Corporatama</li>
+							<li>PT. Daya Guna Motor Indonesia</li>
+							<li>PT. Indomobil Prima Niaga</li>
 							<li>Nasmoco</li>
 							<li>PT. Teja Berlian</li>
 						</ul>
@@ -123,7 +123,6 @@ foreach ($result as $row) {
 <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="assets/js/vendor/lazysizes.min.js"></script>
-<script src="assets/js/vendor/megamenu.js"></script>
 <script src="assets/js/vendor/aos.min.js"></script>
 <script src="assets/js/vendor/glightbox.min.js"></script>
 <?php
