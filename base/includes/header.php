@@ -50,6 +50,57 @@ $success_message1 = '';
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" defer></script>
 
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@graph": [{
+					"@type": "Organization",
+					"name": "Karoseri Senang Jaya",
+					"url": "https://www.karoserisenangjaya.com/sja",
+					"logo": "https://www.karoserisenangjaya.com/sja/assets/img/logo.png",
+					"contactPoint": {
+						"@type": "ContactPoint",
+						"telephone": "+62-853-5139-9807",
+						"contactType": "customer service"
+					}
+				},
+				{
+					"@type": "BreadcrumbList",
+					"itemListElement": [{
+							"@type": "ListItem",
+							"position": 1,
+							"name": "Home",
+							"item": "https://www.karoserisenangjaya.com/sja"
+						},
+						{
+							"@type": "ListItem",
+							"position": 2,
+							"name": "Products",
+							"item": "https://www.karoserisenangjaya.com/sja/products.php"
+						},
+						{
+							"@type": "ListItem",
+							"position": 3,
+							"name": "About",
+							"item": "https://www.karoserisenangjaya.com/sja/about.php"
+						},
+						{
+							"@type": "ListItem",
+							"position": 4,
+							"name": "Gallery",
+							"item": "https://www.karoserisenangjaya.com/sja/gallery.php"
+						},
+						{
+							"@type": "ListItem",
+							"position": 5,
+							"name": "Contact",
+							"item": "https://www.karoserisenangjaya.com/sja/contact.php"
+						}
+					]
+				}
+			]
+		}
+	</script>
 	<!-- <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5993ef01e2587a001253a261&product=inline-share-buttons"></script> -->
 </head>
 
