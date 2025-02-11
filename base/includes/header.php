@@ -58,11 +58,36 @@ $success_message1 = '';
 					"name": "Karoseri Senang Jaya",
 					"url": "https://www.karoserisenangjaya.com/sja",
 					"logo": "https://www.karoserisenangjaya.com/sja/assets/img/logo.png",
-					"contactPoint": {
-						"@type": "ContactPoint",
-						"telephone": "+62-853-5139-9807",
-						"contactType": "customer service"
-					}
+					"address": {
+						"@type": "PostalAddress",
+						"streetAddress": "Jl. Cirebon - Losari Km. 13,6 Rawaurip",
+						"addressLocality": "Pangenan",
+						"addressRegion": "Jawa Barat",
+						"postalCode": "45100",
+						"addressCountry": "ID"
+					},
+					"contactPoint": [{
+							"@type": "ContactPoint",
+							"telephone": "+62-853-5139-9807",
+							"contactType": "customer service",
+							"areaServed": "ID",
+							"availableLanguage": ["id"]
+						},
+						{
+							"@type": "ContactPoint",
+							"telephone": "+62-819-1580-3535",
+							"contactType": "customer service",
+							"areaServed": "ID",
+							"availableLanguage": ["id"]
+						},
+						{
+							"@type": "ContactPoint",
+							"telephone": "+62-812-6553-3700",
+							"contactType": "customer service",
+							"areaServed": "ID",
+							"availableLanguage": ["id"]
+						}
+					]
 				},
 				{
 					"@type": "BreadcrumbList",
@@ -135,7 +160,7 @@ $success_message1 = '';
 							<li class="nav-item"><a href="about.php" class="nav-link <?php echo $current_page === 'about.php' ? 'active' : ''; ?>">About</a></li>
 							<li class="nav-item"><a href="gallery.php" class="nav-link <?php echo $current_page === 'gallery.php' ? 'active' : ''; ?>">Gallery</a></li>
 							<li class="nav-item"><a href="contact.php" class="nav-link <?php echo $current_page === 'contact.php' ? 'active' : ''; ?>">Contact</a></li>
-							<li class="nav-item dropdown search-dropdown row">
+							<!-- <li class="nav-item dropdown search-dropdown row">
 								<div class="d-none d-lg-flex">
 									<button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Search">
 										<i class="fas fa-magnifying-glass" aria-hidden="true"></i>
@@ -161,7 +186,7 @@ $success_message1 = '';
 										</div>
 									</form>
 								</div>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</div>

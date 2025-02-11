@@ -45,40 +45,91 @@ require_once('includes/header.php');
             'heavy_equipment' => [],
           ];
 
-          $product_category_counts = [
-            'heavy_duty' => 15,
-            'special_purpose' => 26,
-            'ambulance' => 2,
-            'bus' => 3,
-            'heavy_equipment' => 11
+          $products_by_category = [
+            'heavy_duty' => [
+              'truck-lowbed',
+              'mobil-towing-with-crane-hyva',
+              'mini-self-loader',
+              'tangki-air',
+              'arm-roll-with-kontainer',
+              'dump-truck-aero',
+              'dump-truck-standar',
+              'arm-roll-with-kontainer-hijau',
+              'mini-dump-hyva',
+              'sky-lift-traga',
+              'dump-truck-stainless',
+              'tangki-air-biru',
+              'mobil-towing',
+              'mini-roller',
+              'tangki-vacuum-10000-liter'
+            ],
+            'special_purpose' => [
+              'mobil-layanan-dapur-umum-bencana',
+              'mobil-dapur-umum',
+              'mobil-dapur-badan-pangan-nasional',
+              'mobil-videotron',
+              'mobil-konseling',
+              'mobil-pelayanan-e-ktp',
+              'mobil-imigration',
+              'mobil-tahanan',
+              'mobil-tahanan-imigrasi',
+              'mobil-angkutan-personil',
+              'mobil-angkutan-personil-dalmas',
+              'mobil-patroli',
+              'mobil-promosi-kesehatan',
+              'compactor-12m3',
+              'compactor',
+              'compactor-6m3',
+              'vacuum-jetting-s777a',
+              'vacuum-jetting',
+              'arm-roll-hyva-underground',
+              'unit-crane-hyva-12t',
+              'derek-with-crane-hyva',
+              'truck-sky-lift-23m',
+              'mobil-toilet',
+              'mobil-toilet-portable',
+              'derek-double-cabin',
+              'angkutan-personil-dalmas'
+            ],
+            'ambulance' => ['ambulance-emergency', 'mobil-pelayanan-kesehatan'],
+            'bus' => ['medium-bus', 'bus-pelayanan', 'mobil-training-unit'],
+            'heavy_equipment' => [
+              'excavator-develon-dx220a-2',
+              'sd16-crawler-dozer',
+              'rc904-wheeled-tractor',
+              'backhoe-loader-jcb-3cx',
+              'tractor-cat-d6-gc',
+              'hitachi-zx210f-5g',
+              'wheel-loader-hitachi-zw140',
+              'mini-excavator-nsl-hd55',
+              'develon-sd200-wheel-loaders',
+              'hitachi-zx65usb-5a',
+              'motor-grader-sg14-b5',
+            ]
           ];
 
-          foreach ($product_category_counts as $category => $count) {
-            for ($i = 1; $i <= $count; $i++) {
-              $formattedNumber = str_pad($i, 2, '0', STR_PAD_LEFT);
-
+          foreach ($products_by_category as $category => $items) {
+            foreach ($items as $item) {
               $product_categories[$category][] = [
                 'image' => [
                   'jpg' => [
-                    '1x' => "prod-$formattedNumber.jpg",
-                    '2x' => "prod-$formattedNumber@2x.jpg",
-                    '3x' => "prod-$formattedNumber@3x.jpg",
-                    'lbox' => "prod-$formattedNumber@lbox.jpg",
+                    '1x' => "$item.jpg",
+                    '2x' => "$item@2x.jpg",
+                    '3x' => "$item@3x.jpg",
+                    'lbox' => "$item@lbox.jpg",
                   ],
                   'webp' => [
-                    '1x' => "prod-$formattedNumber.webp",
-                    '2x' => "prod-$formattedNumber@2x.webp",
-                    '3x' => "prod-$formattedNumber@3x.webp",
-                    'lbox' => "prod-$formattedNumber@lbox.webp",
+                    '1x' => "$item.webp",
+                    '2x' => "$item@2x.webp",
+                    '3x' => "$item@3x.webp",
                   ],
                   'avif' => [
-                    '1x' => "prod-$formattedNumber.avif",
-                    '2x' => "prod-$formattedNumber@2x.avif",
-                    '3x' => "prod-$formattedNumber@3x.avif",
-                    'lbox' => "prod-$formattedNumber@lbox.avif",
+                    '1x' => "$item.avif",
+                    '2x' => "$item@2x.avif",
+                    '3x' => "$item@3x.avif",
                   ],
                 ],
-                'alt' => ucwords(str_replace("_", " ", $category)) . ' ' . $formattedNumber,
+                'alt' => ucwords(str_replace("-", " ", $item)),
               ];
             }
           }
