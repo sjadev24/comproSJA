@@ -726,7 +726,7 @@ Mobile style's
   z-index: -1;
   width: 12rem;
   height: 12rem;
-  background: url("../img/logo-decoration.png") center/contain no-repeat;
+  background: url("../images/logo-decoration.png") center/contain no-repeat;
   filter: grayscale(1) opacity(0.15) brightness(0.4);
 }
 
@@ -903,7 +903,7 @@ Mobile style's
 --------------------------------------------------------------*/
 .section-aboutbackground {
   height: 80vh;
-  background: url("../img/about/jpg/office-03.jpg") no-repeat center/cover fixed;
+  background: url("../images/about/jpg/office-03.jpg") no-repeat center/cover fixed;
 }
 
 /*--------------------------------------------------------------
@@ -974,7 +974,7 @@ Mobile style's
   --bs-heading-color: var(--bs-white);
   --section-color: var(--bs-gray-500);
   position: relative;
-  background: url("../img/about/jpg/cta.jpg") no-repeat center/cover fixed;
+  background: url("../images/about/jpg/cta.jpg") no-repeat center/cover fixed;
 }
 
 .section-aboutcta .container {

@@ -10,6 +10,25 @@ $error_message = '';
 $success_message = '';
 $error_message1 = '';
 $success_message1 = '';
+
+if (!isset($_SESSION['lang'])) {
+	$_SESSION['lang'] = 'en';
+}
+
+if (isset($_GET['lang'])) {
+	$_SESSION['lang'] = $_GET['lang'];
+}
+
+$current_lang = $_SESSION['lang'];
+$translations = json_decode(file_get_contents(__DIR__ . '/lang/translations.json'), true);
+
+if (!isset($translations[$current_lang])) {
+	$current_lang = 'en';
+}
+
+$lang = $translations[$current_lang];
+
+print_r($lang['greeting']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,12 +41,12 @@ $success_message1 = '';
 	<meta name="description" content="<?php echo $meta_description; ?>">
 
 	<!-- Favicon -->
-	<link rel="icon" type="image/x-icon" href="assets/img/icons/favicon.ico">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="assets/img/icons/android-chrome-192x192.png">
-	<link rel="icon" type="image/png" sizes="512x512" href="assets/img/icons/android-chrome-512x512.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon.png">
-	<meta name="msapplication-TileImage" content="assets/img/icons/mstile.png">
+	<link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="assets/images/icons/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="assets/images/icons/android-chrome-512x512.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon.png">
+	<meta name="msapplication-TileImage" content="assets/images/icons/mstile.png">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 
@@ -57,7 +76,7 @@ $success_message1 = '';
 					"@type": "Organization",
 					"name": "Karoseri Senang Jaya",
 					"url": "https://www.karoserisenangjaya.com/sja",
-					"logo": "https://www.karoserisenangjaya.com/sja/assets/img/logo.png",
+					"logo": "https://www.karoserisenangjaya.com/sja/assets/images/logo.png",
 					"address": {
 						"@type": "PostalAddress",
 						"streetAddress": "Jl. Cirebon - Losari Km. 13,6 Rawaurip",
@@ -137,8 +156,8 @@ $success_message1 = '';
 					<span class="visually-hidden">Karoseri Senang Jaya Abadi</span>
 					<a href="index.php" class="navbar-brand">
 						<picture>
-							<source srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x, assets/img/logo@3x.png 3x" type="image/png">
-							<img src="assets/img/logo.png" alt="logo" width="216" height="37">
+							<source srcset="assets/images/logo.png 1x, assets/images/logo@2x.png 2x, assets/images/logo@3x.png 3x" type="image/png">
+							<img src="assets/images/logo.png" alt="logo" width="216" height="37">
 						</picture>
 					</a>
 				</h1>

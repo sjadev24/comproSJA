@@ -93,9 +93,9 @@ require_once('includes/header.php');
         <div class="row pe-lg-4 pe-xl-5 gy-4">
           <div class="col-sm-6">
             <picture>
-              <source data-srcset="assets/img/about/avif/office-01.avif" type="image/avif" />
-              <source data-srcset="assets/img/about/webp/office-01.webp" type="image/webp" />
-              <img src="assets/img/placehold.png" data-src="assets/img/about/jpg/office-01.jpg" class="rounded lazyload" alt="office 01">
+              <source data-srcset="assets/images/about/avif/office-01.avif" type="image/avif" />
+              <source data-srcset="assets/images/about/webp/office-01.webp" type="image/webp" />
+              <img src="assets/images/placehold.png" data-src="assets/images/about/jpg/office-01.jpg" class="rounded lazyload" alt="office 01">
             </picture>
           </div>
 
@@ -115,9 +115,9 @@ require_once('includes/header.php');
               </div>
             </div>
             <picture>
-              <source data-srcset="assets/img/about/avif/office-02.avif" type="image/avif" />
-              <source data-srcset="assets/img/about/webp/office-02.webp" type="image/webp" />
-              <img src="assets/img/placehold.png" data-src="assets/img/about/jpg/office-02.jpg" class="rounded lazyload" alt="office 01">
+              <source data-srcset="assets/images/about/avif/office-02.avif" type="image/avif" />
+              <source data-srcset="assets/images/about/webp/office-02.webp" type="image/webp" />
+              <img src="assets/images/placehold.png" data-src="assets/images/about/jpg/office-02.jpg" class="rounded lazyload" alt="office 01">
             </picture>
           </div>
         </div>
@@ -157,49 +157,49 @@ require_once('includes/header.php');
         <div class="swiper-slide">
           <picture>
             <source data-srcset="assets/uploads/partners/avif/hino.avif" type="image/avif" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/hino.png" class="lazyload" alt="Hino" title="Hino">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/partners/png/hino.png" class="lazyload" alt="Hino" title="Hino">
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source data-srcset="assets/uploads/partners/avif/armindo.avif" type="image/avif" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/armindo.png" class="lazyload" alt="Armindo" title="Armindo">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/partners/png/armindo.png" class="lazyload" alt="Armindo" title="Armindo">
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source data-srcset="assets/uploads/partners/avif/cemaco.avif" type="image/avif" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/cemaco.png" class="lazyload" alt="Cemaco" title="Cemaco">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/partners/png/cemaco.png" class="lazyload" alt="Cemaco" title="Cemaco">
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source data-srcset="assets/uploads/partners/avif/auto2000.avif" type="image/avif" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/auto2000.png" class="lazyload" alt="Auto2000" title="Auto2000">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/partners/png/auto2000.png" class="lazyload" alt="Auto2000" title="Auto2000">
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source data-srcset="assets/uploads/partners/avif/arista.avif" type="image/avif" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/arista.png" class="lazyload" alt="Arista" title="Arista">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/partners/png/arista.png" class="lazyload" alt="Arista" title="Arista">
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source data-srcset="assets/uploads/partners/avif/indomobil.avif" type="image/avif" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/indomobil.png" class="lazyload" alt="Indomobil" title="Indomobil">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/partners/png/indomobil.png" class="lazyload" alt="Indomobil" title="Indomobil">
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source data-srcset="assets/uploads/partners/avif/nasmoco.avif" type="image/avif" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/nasmoco.png" class="lazyload" alt="Nasmoco" title="Nasmoco">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/partners/png/nasmoco.png" class="lazyload" alt="Nasmoco" title="Nasmoco">
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source data-srcset="assets/uploads/partners/avif/tejaberlian.avif" type="image/avif" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/partners/png/tejaberlian.png" class="lazyload" alt="Teja Berlian" title="Teja Berlian">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/partners/png/tejaberlian.png" class="lazyload" alt="Teja Berlian" title="Teja Berlian">
           </picture>
         </div>
       </div>
@@ -214,7 +214,7 @@ require_once('includes/header.php');
       <div class="col">
         <div class="text-center my-2">
           <div class="service-icon mb-4">
-            <img src="assets/img/specialized/heavy-duty.png" alt="">
+            <img src="assets/images/specialized/heavy-duty.png" alt="">
           </div>
           <h3 class="h5 mb-3">Heavy Duty</h3>
           <p class="mb-0">Custom bodies for trucks and industrial vehicles, built to handle heavy loads and tough environments.</p>
@@ -224,7 +224,7 @@ require_once('includes/header.php');
       <div class="col">
         <div class="text-center my-2">
           <div class="service-icon mb-4">
-            <img src="assets/img/specialized/special-purpose-vehicle.png" alt="">
+            <img src="assets/images/specialized/special-purpose-vehicle.png" alt="">
           </div>
           <h3 class="h5 mb-3">Special Purpose Vehicle</h3>
           <p class="mb-0">Custom-built vehicles for unique applications, including mobile kitchens, mobile toilets, and more.</p>
@@ -234,7 +234,7 @@ require_once('includes/header.php');
       <div class="col">
         <div class="text-center my-2">
           <div class="service-icon mb-4">
-            <img src="assets/img/specialized/ambulance.png" alt="">
+            <img src="assets/images/specialized/ambulance.png" alt="">
           </div>
           <h3 class="h5 mb-3">Ambulance</h3>
           <p class="mb-0">Fully equipped, ergonomic ambulance bodies for quick medical response and patient care.</p>
@@ -244,7 +244,7 @@ require_once('includes/header.php');
       <div class="col">
         <div class="text-center my-2">
           <div class="service-icon mb-4">
-            <img src="assets/img/specialized/bus.png" alt="">
+            <img src="assets/images/specialized/bus.png" alt="">
           </div>
           <h3 class="h5 mb-3">Bus</h3>
           <p class="mb-0">Comfortable and safe bus bodies, designed for passenger transport, from city buses to luxury coaches.</p>
@@ -254,7 +254,7 @@ require_once('includes/header.php');
       <div class="col">
         <div class="text-center my-2">
           <div class="service-icon mb-4">
-            <img src="assets/img/specialized/heavy-equipment.png" alt="">
+            <img src="assets/images/specialized/heavy-equipment.png" alt="">
           </div>
           <h3 class="h5 mb-3">Heavy Equipment</h3>
           <p class="mb-0">Sturdy vehicle bodies built to transport heavy machinery with safety and ease of loading/unloading.</p>
@@ -299,40 +299,63 @@ require_once('includes/header.php');
             'heavy_equipment' => [],
           ];
 
-          $product_category_counts = [
-            'heavy_duty' => 8,
-            'special_purpose' => 8,
-            'ambulance' => 2,
-            'bus' => 3,
-            'heavy_equipment' => 8
+          $products_by_category = [
+            'heavy_duty' => [
+              'truck-lowbed',
+              'mobil-towing-with-crane-hyva',
+              'mini-self-loader',
+              'tangki-air',
+              'arm-roll-with-kontainer',
+              'dump-truck-aero',
+              'dump-truck-standar',
+              'arm-roll-with-kontainer-hijau'
+            ],
+            'special_purpose' => [
+              'mobil-layanan-dapur-umum-bencana',
+              'mobil-dapur-umum',
+              'mobil-dapur-badan-pangan-nasional',
+              'mobil-videotron',
+              'mobil-konseling',
+              'mobil-pelayanan-e-ktp',
+              'mobil-imigration',
+              'mobil-tahanan'
+            ],
+            'ambulance' => ['ambulance-emergency', 'mobil-pelayanan-kesehatan'],
+            'bus' => ['medium-bus', 'bus-pelayanan', 'mobil-training-unit'],
+            'heavy_equipment' => [
+              'excavator-develon-dx220a-2',
+              'sd16-crawler-dozer',
+              'rc904-wheeled-tractor',
+              'backhoe-loader-jcb-3cx',
+              'tractor-cat-d6-gc',
+              'hitachi-zx210f-5g',
+              'wheel-loader-hitachi-zw140',
+              'mini-excavator-nsl-hd55'
+            ]
           ];
 
-          foreach ($product_category_counts as $category => $count) {
-            for ($i = 1; $i <= $count; $i++) {
-              $formattedNumber = str_pad($i, 2, '0', STR_PAD_LEFT);
-
+          foreach ($products_by_category as $category => $items) {
+            foreach ($items as $item) {
               $product_categories[$category][] = [
                 'image' => [
                   'jpg' => [
-                    '1x' => "prod-$formattedNumber.jpg",
-                    '2x' => "prod-$formattedNumber@2x.jpg",
-                    '3x' => "prod-$formattedNumber@3x.jpg",
-                    'lbox' => "prod-$formattedNumber@lbox.jpg",
+                    '1x' => "$item.jpg",
+                    '2x' => "$item@2x.jpg",
+                    '3x' => "$item@3x.jpg",
+                    'lbox' => "$item@lbox.jpg",
                   ],
                   'webp' => [
-                    '1x' => "prod-$formattedNumber.webp",
-                    '2x' => "prod-$formattedNumber@2x.webp",
-                    '3x' => "prod-$formattedNumber@3x.webp",
-                    'lbox' => "prod-$formattedNumber@lbox.webp",
+                    '1x' => "$item.webp",
+                    '2x' => "$item@2x.webp",
+                    '3x' => "$item@3x.webp",
                   ],
                   'avif' => [
-                    '1x' => "prod-$formattedNumber.avif",
-                    '2x' => "prod-$formattedNumber@2x.avif",
-                    '3x' => "prod-$formattedNumber@3x.avif",
-                    'lbox' => "prod-$formattedNumber@lbox.avif",
+                    '1x' => "$item.avif",
+                    '2x' => "$item@2x.avif",
+                    '3x' => "$item@3x.avif",
                   ],
                 ],
-                'alt' => ucwords(str_replace("_", " ", $category)) . ' ' . $formattedNumber,
+                'alt' => ucwords(str_replace("-", " ", $item)),
               ];
             }
           }
@@ -355,7 +378,7 @@ require_once('includes/header.php');
                       <source
                         data-srcset="assets/uploads/products/heavy-duty/jpg/<?php echo $product['image']['jpg']['1x']; ?> 1x, assets/uploads/products/heavy-duty/jpg/<?php echo $product['image']['jpg']['2x']; ?> 2x, assets/uploads/products/heavy-duty/jpg/<?php echo $product['image']['jpg']['3x']; ?> 3x"
                         type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-duty/jpg/<?php echo $product['image']['jpg']['1x']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/heavy-duty/jpg/<?php echo $product['image']['jpg']['1x']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/heavy-duty/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="heavy-duty">
@@ -386,7 +409,7 @@ require_once('includes/header.php');
                       <source
                         data-srcset="assets/uploads/products/special-purpose/jpg/<?php echo $product['image']['jpg']['1x']; ?> 1x, assets/uploads/products/special-purpose/jpg/<?php echo $product['image']['jpg']['2x']; ?> 2x, assets/uploads/products/special-purpose/jpg/<?php echo $product['image']['jpg']['3x']; ?> 3x"
                         type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/special-purpose/jpg/<?php echo $product['image']['jpg']['1x']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/special-purpose/jpg/<?php echo $product['image']['jpg']['1x']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/special-purpose/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="special-purpose">
@@ -417,7 +440,7 @@ require_once('includes/header.php');
                       <source
                         data-srcset="assets/uploads/products/ambulance/jpg/<?php echo $product['image']['jpg']['1x']; ?> 1x, assets/uploads/products/ambulance/jpg/<?php echo $product['image']['jpg']['2x']; ?> 2x, assets/uploads/products/ambulance/jpg/<?php echo $product['image']['jpg']['3x']; ?> 3x"
                         type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/ambulance/jpg/<?php echo $product['image']['jpg']['1x']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/ambulance/jpg/<?php echo $product['image']['jpg']['1x']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/ambulance/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="ambulance">
@@ -448,7 +471,7 @@ require_once('includes/header.php');
                       <source
                         data-srcset="assets/uploads/products/bus/jpg/<?php echo $product['image']['jpg']['1x']; ?> 1x, assets/uploads/products/bus/jpg/<?php echo $product['image']['jpg']['2x']; ?> 2x, assets/uploads/products/bus/jpg/<?php echo $product['image']['jpg']['3x']; ?> 3x"
                         type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/bus/jpg/<?php echo $product['image']['jpg']['1x']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/bus/jpg/<?php echo $product['image']['jpg']['1x']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/bus/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="bus">
@@ -479,7 +502,7 @@ require_once('includes/header.php');
                       <source
                         data-srcset="assets/uploads/products/heavy-equipment/jpg/<?php echo $product['image']['jpg']['1x']; ?> 1x, assets/uploads/products/heavy-equipment/jpg/<?php echo $product['image']['jpg']['2x']; ?> 2x, assets/uploads/products/heavy-equipment/jpg/<?php echo $product['image']['jpg']['3x']; ?> 3x"
                         type="image/jpeg" />
-                      <img src="assets/img/placehold.png" data-src="assets/uploads/products/heavy-equipment/jpg/<?php echo $product['image']['jpg']['1x']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/heavy-equipment/jpg/<?php echo $product['image']['jpg']['1x']; ?>" class="card-img lazyload" alt="<?php echo $product['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
                       <a href="assets/uploads/products/heavy-equipment/jpg/<?php echo $product['image']['jpg']['lbox']; ?>" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
@@ -521,7 +544,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/dlh.png 1x, assets/uploads/customers/png/dlh@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/dlh.png" class="lazyload" alt="Dinas Lingkungan Hidup" title="Dinas Lingkungan Hidup">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/dlh.png" class="lazyload" alt="Dinas Lingkungan Hidup" title="Dinas Lingkungan Hidup">
           </picture>
         </div>
         <div class="swiper-slide">
@@ -535,7 +558,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/pupr.png 1x, assets/uploads/customers/png/pupr@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/pupr.png" class="lazyload" alt="Kementerian PUPR" title="Kementerian PUPR">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/pupr.png" class="lazyload" alt="Kementerian PUPR" title="Kementerian PUPR">
           </picture>
         </div>
         <div class="swiper-slide">
@@ -549,7 +572,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/imigrasi.png 1x, assets/uploads/customers/png/imigrasi@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/imigrasi.png" class="lazyload" alt="Rumah Detensi Imigrasi" title="Rumah Detensi Imigrasi">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/imigrasi.png" class="lazyload" alt="Rumah Detensi Imigrasi" title="Rumah Detensi Imigrasi">
           </picture>
         </div>
         <div class="swiper-slide">
@@ -563,7 +586,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/humbang_hasundutan.png 1x, assets/uploads/customers/png/humbang_hasundutan@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/humbang_hasundutan.png" class="lazyload" alt="Dinas Perhubungan Kabupaten Humbang Hasundutan" title="Dinas Perhubungan Kabupaten Humbang Hasundutan">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/humbang_hasundutan.png" class="lazyload" alt="Dinas Perhubungan Kabupaten Humbang Hasundutan" title="Dinas Perhubungan Kabupaten Humbang Hasundutan">
           </picture>
         </div>
         <div class="swiper-slide">
@@ -577,7 +600,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/batubara.png 1x, assets/uploads/customers/png/batubara@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/batubara.png" class="lazyload" alt="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara" title="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/batubara.png" class="lazyload" alt="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara" title="Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup Kabupaten Batubara">
           </picture>
         </div>
         <div class="swiper-slide">
@@ -591,7 +614,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/kemenhub.png 1x, assets/uploads/customers/png/kemenhub@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/kemenhub.png" class="lazyload" alt="Kementerian Perhubungan" title="Kementerian Perhubungan">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/kemenhub.png" class="lazyload" alt="Kementerian Perhubungan" title="Kementerian Perhubungan">
           </picture>
         </div>
         <div class="swiper-slide">
@@ -605,7 +628,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/jember.png 1x, assets/uploads/customers/png/jember@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/jember.png" class="lazyload" alt="DLH Kabupaten Jember" title="DLH Kabupaten Jember">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/jember.png" class="lazyload" alt="DLH Kabupaten Jember" title="DLH Kabupaten Jember">
           </picture>
         </div>
         <div class="swiper-slide">
@@ -619,7 +642,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/tapanuli_utara.png 1x, assets/uploads/customers/png/tapanuli_utara@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/tapanuli_utara.png" class="lazyload" alt="DLH Kabupaten Tapanuli Utara" title="DLH Kabupaten Tapanuli Utara">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/tapanuli_utara.png" class="lazyload" alt="DLH Kabupaten Tapanuli Utara" title="DLH Kabupaten Tapanuli Utara">
           </picture>
         </div>
         <div class="swiper-slide">
@@ -633,7 +656,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/batu.png 1x, assets/uploads/customers/png/batu@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/batu.png" class="lazyload" alt="DLH Kota Batu" title="DLH Kota Batu">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/batu.png" class="lazyload" alt="DLH Kota Batu" title="DLH Kota Batu">
           </picture>
         </div>
         <div class="swiper-slide">
@@ -647,7 +670,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/malang.png 1x, assets/uploads/customers/png/malang@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/malang.png" class="lazyload" alt="DLH Kota Malang" title="DLH Kota Malang">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/malang.png" class="lazyload" alt="DLH Kota Malang" title="DLH Kota Malang">
           </picture>
         </div>
         <div class="swiper-slide">
@@ -661,7 +684,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/tangerang.png 1x, assets/uploads/customers/png/tangerang@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/tangerang.png" class="lazyload" alt="DLH Kota Tangerang" title="DLH Kota Tangerang">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/tangerang.png" class="lazyload" alt="DLH Kota Tangerang" title="DLH Kota Tangerang">
           </picture>
         </div>
         <div class="swiper-slide">
@@ -675,7 +698,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/bulukumba.png 1x, assets/uploads/customers/png/bulukumba@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/bulukumba.png" class="lazyload" alt="DLHK Kabupaten Bulukumba" title="DLHK Kabupaten Bulukumba">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/bulukumba.png" class="lazyload" alt="DLHK Kabupaten Bulukumba" title="DLHK Kabupaten Bulukumba">
           </picture>
         </div>
         <div class="swiper-slide">
@@ -689,7 +712,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/sumedang.png 1x, assets/uploads/customers/png/sumedang@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/sumedang.png" class="lazyload" alt="DLHK Kabupaten Sumedang" title="DLHK Kabupaten Sumedang">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/sumedang.png" class="lazyload" alt="DLHK Kabupaten Sumedang" title="DLHK Kabupaten Sumedang">
           </picture>
         </div>
         <div class="swiper-slide">
@@ -703,7 +726,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/depok.png 1x, assets/uploads/customers/png/depok@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/depok.png" class="lazyload" alt="DLHK Kota Depok" title="DLHK Kota Depok">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/depok.png" class="lazyload" alt="DLHK Kota Depok" title="DLHK Kota Depok">
           </picture>
         </div>
         <div class="swiper-slide">
@@ -717,7 +740,7 @@ require_once('includes/header.php');
             <source
               data-srcset="assets/uploads/customers/png/tegal.png 1x, assets/uploads/customers/png/tegal@2x.png 2x"
               type="image/png" />
-            <img src="assets/img/placehold.png" data-src="assets/uploads/customers/png/tegal.png" class="lazyload" alt="DPUPR Kota Tegal" title="DPUPR Kota Tegal">
+            <img src="assets/images/placehold.png" data-src="assets/uploads/customers/png/tegal.png" class="lazyload" alt="DPUPR Kota Tegal" title="DPUPR Kota Tegal">
           </picture>
         </div>
       </div>
@@ -735,7 +758,7 @@ require_once('includes/header.php');
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="card card-element-hover">
-            <img src="assets/img/insta-feed/img-01.jpg" class="card-img" alt="A featured product from our Instagram feed">
+            <img src="assets/images/insta-feed/img-01.jpg" class="card-img" alt="A featured product from our Instagram feed">
             <div class="card-img-overlay">
               <a href="https://www.instagram.com/senangjayagroup" class="stretched-link" target="_blank">
                 <i class="fab fa-instagram" aria-hidden="true"></i>
@@ -745,7 +768,7 @@ require_once('includes/header.php');
         </div>
         <div class="swiper-slide">
           <div class="card card-element-hover">
-            <img src="assets/img/insta-feed/img-02.jpg" class="card-img" alt="A featured product from our Instagram feed">
+            <img src="assets/images/insta-feed/img-02.jpg" class="card-img" alt="A featured product from our Instagram feed">
             <div class="card card-img-overlay">
               <a href="https://www.instagram.com/senangjayagroup" class="stretched-link" target="_blank">
                 <i class="fab fa-instagram" aria-hidden="true"></i>
@@ -755,7 +778,7 @@ require_once('includes/header.php');
         </div>
         <div class="swiper-slide">
           <div class="card card-element-hover">
-            <img src="assets/img/insta-feed/img-03.jpg" class="card-img" alt="A featured product from our Instagram feed">
+            <img src="assets/images/insta-feed/img-03.jpg" class="card-img" alt="A featured product from our Instagram feed">
             <div class="card card-img-overlay">
               <a href="https://www.instagram.com/senangjayagroup" class="stretched-link" target="_blank">
                 <i class="fab fa-instagram" aria-hidden="true"></i>
@@ -765,7 +788,7 @@ require_once('includes/header.php');
         </div>
         <div class="swiper-slide">
           <div class="card card-element-hover">
-            <img src="assets/img/insta-feed/img-04.jpg" class="card-img" alt="A featured product from our Instagram feed">
+            <img src="assets/images/insta-feed/img-04.jpg" class="card-img" alt="A featured product from our Instagram feed">
             <div class="card card-img-overlay">
               <a href="https://www.instagram.com/senangjayagroup" class="stretched-link" target="_blank">
                 <i class="fab fa-instagram" aria-hidden="true"></i>
@@ -775,7 +798,7 @@ require_once('includes/header.php');
         </div>
         <div class="swiper-slide">
           <div class="card card-element-hover">
-            <img src="assets/img/insta-feed/img-05.jpg" class="card-img" alt="A featured product from our Instagram feed">
+            <img src="assets/images/insta-feed/img-05.jpg" class="card-img" alt="A featured product from our Instagram feed">
             <div class="card card-img-overlay">
               <a href="https://www.instagram.com/senangjayagroup" class="stretched-link" target="_blank">
                 <i class="fab fa-instagram" aria-hidden="true"></i>
@@ -785,7 +808,7 @@ require_once('includes/header.php');
         </div>
         <div class="swiper-slide">
           <div class="card card-element-hover">
-            <img src="assets/img/insta-feed/img-01.jpg" class="card-img" alt="A featured product from our Instagram feed">
+            <img src="assets/images/insta-feed/img-01.jpg" class="card-img" alt="A featured product from our Instagram feed">
             <div class="card-img-overlay">
               <a href="https://www.instagram.com/senangjayagroup" class="stretched-link" target="_blank">
                 <i class="fab fa-instagram" aria-hidden="true"></i>

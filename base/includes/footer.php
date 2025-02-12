@@ -17,8 +17,8 @@ foreach ($result as $row) {
 					<div class="d-flex">
 						<a href="index.php" class="footer-logo">
 							<picture>
-								<source srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x, assets/img/logo@3x.png 3x" type="image/png">
-								<img src="assets/img/logo.png" alt="logo">
+								<source srcset="assets/images/logo.png 1x, assets/images/logo@2x.png 2x, assets/images/logo@3x.png 3x" type="image/png">
+								<img src="assets/images/logo.png" alt="logo">
 							</picture>
 						</a>
 					</div>
@@ -81,7 +81,7 @@ foreach ($result as $row) {
 						<div class="mb-6">
 							<h3 class="h5 pb-1 mb-3">Help &amp; Support</h3>
 							<a href='https://e-katalog.lkpp.go.id/id/search-produk?authenticityToken=46ea77a9b4b2a270776b6ed764554b8878435fc7&q=senang+jaya&order=relevance&limit=12&offset=1' aria-label="e-catalog">
-								<img src="assets/img/lkpp.png" class="img-lkpp" alt="">
+								<img src="assets/images/lkpp.png" class="img-lkpp" alt="">
 							</a>
 						</div>
 						<div>
