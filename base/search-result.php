@@ -1,4 +1,4 @@
-<?php require_once('includes/header.php'); ?>
+<?php require_once 'includes/header.php'; ?>
 
 <?php
 if (!isset($_REQUEST['search_text'])) {
@@ -251,5 +251,5 @@ foreach ($result as $row) {
 
 <?php
 $scripts = array();
-require_once('includes/footer.php');
+require_once 'includes/footer.php';
 ?>

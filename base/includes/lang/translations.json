@@ -1,0 +1,886 @@
+{
+  "en": {
+    "menu": [
+      {
+        "title": "Home",
+        "link": "./"
+      },
+      {
+        "title": "Products",
+        "link": "products.php"
+      },
+      {
+        "title": "About",
+        "link": "about.php"
+      },
+      {
+        "title": "Gallery",
+        "link": "gallery.php"
+      },
+      {
+        "title": "Contact",
+        "link": "contact.php"
+      }
+    ],
+    "home": {
+      "section_hero": {
+        "slides": [
+          {
+            "image": {
+              "slug": "hero-01",
+              "alt": "hero 01"
+            },
+            "title": "Innovation and Excellence",
+            "description": "Innovative designs and precision craftsmanship that elevate your vehicle to the next level.",
+            "button": {
+              "text": "Explore Our Designs",
+              "link": "products.php"
+            },
+            "data_swiper_parallax": {
+              "title": "-1000",
+              "description": "-1200",
+              "button": "-1250"
+            }
+          },
+          {
+            "image": {
+              "slug": "hero-02",
+              "alt": "hero 02"
+            },
+            "title": "Trusted Expertise",
+            "description": "With decades of experience, we create durable, reliable, and industry-leading karoseri solutions.",
+            "button": {
+              "text": "Explore Our Expertise",
+              "link": "about.php"
+            },
+            "data_swiper_parallax": {
+              "title": "-1000",
+              "description": "-1200",
+              "button": "-1250"
+            }
+          },
+          {
+            "image": {
+              "slug": "hero-03",
+              "alt": "hero 03"
+            },
+            "title": "Customer Satisfaction",
+            "description": "We bring your vision to life with custom designs that combine functionality, beauty, and long-term value.",
+            "button": {
+              "text": "Start Now",
+              "link": "contact.php"
+            },
+            "data_swiper_parallax": {
+              "title": "-1000",
+              "description": "-1200",
+              "button": "-1250"
+            }
+          }
+        ]
+      },
+      "section_homeabout": {},
+      "section_partners": {
+        "title": "Our trusted partners"
+      },
+      "section_specialize": {
+        "title": "What we specialize in",
+        "categories": [
+          {
+            "icon": "heavy-duty.png",
+            "title": "Heavy Duty",
+            "description": "Custom bodies for trucks and industrial vehicles, built to handle heavy loads and tough environments."
+          },
+          {
+            "icon": "special-purpose-vehicle.png",
+            "title": "Special Purpose Vehicle",
+            "description": "Custom-built vehicles for unique applications, including mobile kitchens, mobile toilets, and more."
+          },
+          {
+            "icon": "ambulance.png",
+            "title": "Ambulance",
+            "description": "Fully equipped, ergonomic ambulance bodies for quick medical response and patient care."
+          },
+          {
+            "icon": "bus.png",
+            "title": "Bus",
+            "description": "Comfortable and safe bus bodies, designed for passenger transport, from city buses to luxury coaches."
+          },
+          {
+            "icon": "heavy-equipment.png",
+            "title": "Heavy Equipment",
+            "description": "Sturdy vehicle bodies built to transport heavy machinery with safety and ease of loading/unloading."
+          }
+        ]
+      },
+      "section_customers": {
+        "title": "Our customers"
+      },
+      "section_instagram": {
+        "title": "@senangjayagroup",
+        "description": "Follow us for the latest projects and updates!"
+      }
+    },
+    "products": {
+      "section": {
+        "title": "Our products",
+        "filters": [
+          {
+            "id": "heavy-duty",
+            "title": "Heavy duty"
+          },
+          {
+            "id": "special-purpose",
+            "title": "Special purpose vehicle"
+          },
+          {
+            "id": "ambulance",
+            "title": "Ambulance"
+          },
+          {
+            "id": "bus",
+            "title": "Bus"
+          },
+          {
+            "id": "heavy-equipment",
+            "title": "Heavy equipment"
+          }
+        ],
+        "button_text": "View all products"
+      }
+    },
+    "about": {
+      "section_whoweare": {
+        "title": "Who we are",
+        "subtitle": "From vision to reality",
+        "description": "PT. Senang Jaya Abadi moves in the field of hydraulic distributors. In 2009, PT. Senang Jaya Abadi began to build the carpooling of plates, dump trucks, water tanks and loading tanks. With the best quality and materials and supported with the latest technology and worked by a team of experienced experts in its field, thus producing quality products. <br><br> Since the beginning, the aspiration of PT. Senang Jaya Abadi is to create quality products so that they can compete in the national market. With the ISO 9001-2008 Quality Management System Certification, the products produced are expected to be more quality and stable. Get all the facilities and services from our company, which we will provide to serve any operational fleet needs, in order to improve the performance and profitability of the company.",
+        "our_vision": {
+          "title": "Our vision",
+          "content": [
+            "To become a globally recognized leading automotive and body manufacturing company, through technological innovation, superior product quality, and sustainable contribution to industrial progress and community welfare."
+          ]
+        },
+        "our_mission": {
+          "title": "Our mission",
+          "content": [
+            "Producing high-tech vehicles and automotive solutions that meet international standards, answering evolving market needs, and providing added value to customers.",
+            "Providing comprehensive services covering assembly, modification, and maintenance of vehicles and heavy equipment, with a focus on customer satisfaction and operational efficiency.",
+            "Encouraging innovation and continuous improvement through investment in cutting-edge technology and development of qualified and professional human resources.",
+            "Maintaining high standards of quality, safety, and occupational health with compliance with international certifications, and creating a safe and sustainable working environment.",
+            "Playing an active role in the development of the national and global automotive industry by strengthening strategic partnerships, creating new business opportunities, and providing positive impacts on communities and the environment."
+          ]
+        }
+      },
+      "section_ourvalues": {
+        "title": "Our values",
+        "subtitle": "Crafting customized solutions",
+        "description": "At PT. Senang Jaya Abadi, we specialize in crafting high-quality custom vehicle bodies for a wide range of applications, including commercial trucks, buses, and specialized vehicles. Our expertise lies in transforming raw chassis into functional and aesthetically appealing vehicles that meet the unique needs of our clients.",
+        "values": [
+          {
+            "icon": "fas fa-medal",
+            "title": "Quality",
+            "description": "Commitment to high standards in materials and craftsmanship."
+          },
+          {
+            "icon": "far fa-lightbulb",
+            "title": "Innovation",
+            "description": "Adoption of new technologies and creative designs."
+          },
+          {
+            "icon": "bi bi-shield-fill-check",
+            "title": "Safety",
+            "description": "Ensuring products meet safety regulations and standards."
+          },
+          {
+            "icon": "fas fa-person-rays",
+            "title": "Customer Focus",
+            "description": "Prioritizing customer needs and satisfaction."
+          },
+          {
+            "icon": "far fa-handshake",
+            "title": "Integrity",
+            "description": "Upholding honesty and transparency in all dealings."
+          },
+          {
+            "icon": "fab fa-envira",
+            "title": "Sustainability",
+            "description": "Promoting eco-friendly practices and materials."
+          }
+        ]
+      },
+      "section_whatwedo": {
+        "title": "What we do",
+        "subtitle": "Delivering Custom Vehicle Solutions",
+        "description": "We design and manufacture custom vehicle bodies, transforming raw chassis into purpose-built solutions for businesses across industries. Our process ensures precision, safety, and high-quality craftsmanship at every stage—from concept to completion.",
+        "steps": [
+          {
+            "title": "Design and Engineering",
+            "description": "Developing blueprints and designs tailored to customer requirements, including ergonomics and safety standards."
+          },
+          {
+            "title": "Fabrication",
+            "description": "Constructing the body frame and structure using various materials, such as steel, aluminum, or fiberglass."
+          },
+          {
+            "title": "Assembly",
+            "description": "Putting together different components, including the chassis, doors, windows, and interiors."
+          },
+          {
+            "title": "Customization",
+            "description": "Modifying vehicles for specific purposes, such as passenger transport, delivery, or specialized services (e.g., ambulances, food trucks)."
+          },
+          {
+            "title": "Finishing",
+            "description": "Applying paint and other finishes to enhance appearance and durability."
+          },
+          {
+            "title": "Quality Control",
+            "description": "Ensuring that all products meet safety and quality standards through testing and inspections."
+          },
+          {
+            "title": "After-sales Support",
+            "description": "Providing maintenance, repairs, and parts for the vehicles produced."
+          }
+        ]
+      },
+      "section_awards": {
+        "title": "Awards and Certifications",
+        "subtitle": "Commitment to excellence",
+        "description": "We take pride in our achievements within the karoseri industry, having received numerous awards and certifications that highlight our commitment to quality and innovation. These recognitions not only validate our expertise but also demonstrate our dedication to exceeding industry standards and delivering exceptional value to our clients. Each accolade represents our relentless pursuit of excellence in every project we undertake.",
+        "certifications": [
+          {
+            "image": "certification-01.jpg",
+            "title": "ISO 9001:2015 & ISO 45001:2018",
+            "description": "Certified by ACS Registrars | Occupational Health and Safety Management System in the scope of Manufacturing of Chassis for Motor Vehicle."
+          },
+          {
+            "image": "certification-02.jpg",
+            "title": "IATF 16949:2016",
+            "description": "Certified by Integrated Assessment Services | Quality Management System in the scope of Manufacturing of Chassis for Motor Vehicle."
+          },
+          {
+            "image": "certification-03.jpg",
+            "title": "ISO 14001:2015",
+            "description": "Certified by Peers Quality Assurance Limited | Operates an Environmental Management System in the scope of Manufacturing of Chassis for Motor Vehicle."
+          }
+        ]
+      },
+      "section_ourteam": {
+        "title": "Our team",
+        "subtitle": "People behind the scenes",
+        "description": "At the core of our success is a group of skilled and passionate professionals committed to delivering top-quality karoseri solutions. Each member of our team brings specialized expertise in design, engineering, and production, ensuring that we meet the highest standards in the vehicle body manufacturing industry."
+      },
+      "section_ourcustomers": {
+        "title": "Our customers"
+      },
+      "section_aboutcta": {
+        "title": "Connect with our experts",
+        "description": "Have questions about our services or need personalized advice? Reach out today and let us help you find the perfect solution for your needs!",
+        "button_text": "Get in touch"
+      }
+    },
+    "gallery": {
+      "section": {
+        "title": "Our gallery",
+        "filters": [
+          {
+            "data_filter": "*",
+            "title": "Show All"
+          },
+          {
+            "data_filter": ".cutting",
+            "title": "Cutting"
+          },
+          {
+            "data_filter": ".painting",
+            "title": "Painting"
+          },
+          {
+            "data_filter": ".finishing",
+            "title": "Finishing"
+          }
+        ],
+        "processes": [
+          {
+            "category": "cutting",
+            "image": {
+              "slug": "cutting-01",
+              "alt": "cutting 01"
+            }
+          },
+          {
+            "category": "cutting",
+            "image": {
+              "slug": "cutting-02",
+              "alt": "cutting 02"
+            }
+          },
+          {
+            "category": "painting",
+            "image": {
+              "slug": "painting-01",
+              "alt": "painting 01"
+            }
+          },
+          {
+            "category": "finishing",
+            "image": {
+              "slug": "finishing-01",
+              "alt": "finishing 01"
+            }
+          },
+          {
+            "category": "finishing",
+            "image": {
+              "slug": "finishing-02",
+              "alt": "finishing 02"
+            }
+          },
+          {
+            "category": "painting",
+            "image": {
+              "slug": "painting-02",
+              "alt": "painting 02"
+            }
+          },
+          {
+            "category": "painting",
+            "image": {
+              "slug": "painting-03",
+              "alt": "painting 03"
+            }
+          },
+          {
+            "category": "finishing",
+            "image": {
+              "slug": "finishing-03",
+              "alt": "finishing 03"
+            }
+          },
+          {
+            "category": "cutting",
+            "image": {
+              "slug": "cutting-03",
+              "alt": "cutting 03"
+            }
+          },
+          {
+            "category": "finishing",
+            "image": {
+              "slug": "finishing-04",
+              "alt": "finishing 04"
+            }
+          },
+          {
+            "category": "cutting",
+            "image": {
+              "slug": "cutting-04",
+              "alt": "cutting 04"
+            }
+          }
+        ]
+      }
+    },
+    "contact": {
+      "section": {
+        "title": "Contact Us",
+        "subtitle": "Want to talk <span class=\"text-primary\">in person?</span> Call us or visit us",
+        "description": "We believe in the power of personal connections! If you have questions, or need assistance, we're here for you. Whether you prefer to call us or visit our office, our friendly team is ready to help. Reach out to us anytime—we look forward to hearing from you!",
+        "contact_info": [
+          {
+            "title": "Locations",
+            "content": [
+              {
+                "title": "Factory & Workshop",
+                "description": "Jl. Cirebon - Losari Km. 13,6 Rawaurip, Kec. Pangenan, Kabupaten Cirebon, Jawa Barat 45100"
+              },
+              {
+                "title": "After Sales Service",
+                "description": "Jl. Pangkalan V, RT.001/RW.003, Cikiwul, Bantargebang, Kota Bekasi, Jawa Barat 17152"
+              }
+            ]
+          },
+          {
+            "title": "Email",
+            "content": [
+              "ptsenangjayaabadi@yahoo.com",
+              "senangjayaabadi@gmail.com"
+            ]
+          },
+          {
+            "title": "Call us",
+            "content": {
+              "phone_number": {
+                "href": "+6281386641546",
+                "text": "+62 813-8664-1546"
+              },
+              "whatsapp": [
+                {
+                  "title": "Marketing 1",
+                  "link": "https://api.whatsapp.com/send?phone=+6281818168119&text=Hi...Dengan Karoseri Senang Jaya Abadi...?"
+                },
+                {
+                  "title": "Marketing 2",
+                  "link": "https://api.whatsapp.com/send?phone=+6281915803535&text=Hi...Dengan Karoseri Senang Jaya Abadi...?"
+                },
+                {
+                  "title": "Marketing 3",
+                  "link": "https://api.whatsapp.com/send?phone=+6281993118977&text=Hi...Dengan Karoseri Senang Jaya Abadi...?"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "footer": {
+      "navigation": {
+        "categories": "Categories",
+        "partnership": "Partnership",
+        "support": "Help & Support",
+        "go_to": "Go To"
+      }
+    }
+  },
+  "id": {
+    "menu": [
+      {
+        "title": "Beranda",
+        "link": "./"
+      },
+      {
+        "title": "Produk",
+        "link": "products.php"
+      },
+      {
+        "title": "Tentang kami",
+        "link": "about.php"
+      },
+      {
+        "title": "Galeri",
+        "link": "gallery.php"
+      },
+      {
+        "title": "Kontak",
+        "link": "contact.php"
+      }
+    ],
+    "home": {
+      "section_hero": {
+        "slides": [
+          {
+            "image": {
+              "slug": "hero-01",
+              "alt": "hero 01"
+            },
+            "title": "Inovasi dan Keunggulan",
+            "description": "Desain inovatif dan pengerjaan presisi untuk membawa kendaraan Anda ke level berikutnya.",
+            "button": {
+              "text": "Lihat Desain Kami",
+              "link": "products.php"
+            },
+            "data_swiper_parallax": {
+              "title": "-1000",
+              "description": "-1200",
+              "button": "-1250"
+            }
+          },
+          {
+            "image": {
+              "slug": "hero-02",
+              "alt": "hero 02"
+            },
+            "title": "Keahlian Terpercaya",
+            "description": "Dengan pengalaman bertahun-tahun, kami menghadirkan solusi karoseri yang kuat, handal, dan selalu terdepan.",
+            "button": {
+              "text": "Kenali Keahlian Kami",
+              "link": "about.php"
+            },
+            "data_swiper_parallax": {
+              "title": "-1000",
+              "description": "-1200",
+              "button": "-1250"
+            }
+          },
+          {
+            "image": {
+              "slug": "hero-03",
+              "alt": "hero 03"
+            },
+            "title": "Kepuasan Anda Prioritas Kami",
+            "description": "Kami mewujudkan ide-ide Anda menjadi desain unik yang mengutamakan fungsi, estetika, dan nilai jangka panjang.",
+            "button": {
+              "text": "Mulai Sekarang",
+              "link": "contact.php"
+            },
+            "data_swiper_parallax": {
+              "title": "-1000",
+              "description": "-1200",
+              "button": "-1250"
+            }
+          }
+        ]
+      },
+      "section_homeabout": {},
+      "section_partners": {
+        "title": "Mitra terpercaya kami"
+      },
+      "section_specialize": {
+        "title": "Keahlian Kami",
+        "categories": [
+          {
+            "icon": "heavy-duty.png",
+            "title": "Kendaraan Berat",
+            "description": "Karoseri khusus untuk truk dan kendaraan industri, dirancang untuk menangani beban berat dan lingkungan yang ekstrem."
+          },
+          {
+            "icon": "special-purpose-vehicle.png",
+            "title": "Kendaraan Khusus",
+            "description": "Kendaraan custom untuk berbagai aplikasi unik, termasuk mobil dapur, mobil toilet, dan lainnya."
+          },
+          {
+            "icon": "ambulance.png",
+            "title": "Ambulans",
+            "description": "Karoseri ambulans yang ergonomis dan lengkap, dirancang untuk respons medis cepat dan perawatan pasien."
+          },
+          {
+            "icon": "bus.png",
+            "title": "Bus",
+            "description": "Karoseri bus yang nyaman dan aman, cocok untuk transportasi penumpang, mulai dari bus kota hingga bus mewah."
+          },
+          {
+            "icon": "heavy-equipment.png",
+            "title": "Kendaraan Alat Berat",
+            "description": "Karoseri kokoh untuk mengangkut mesin berat dengan aman serta kemudahan dalam proses bongkar muat."
+          }
+        ]
+      },
+      "section_customers": {
+        "title": "Pelanggan kami"
+      },
+      "section_instagram": {
+        "title": "@senangjayagroup",
+        "description": "Follow kami untuk lihat proyek terbaru dan info menarik lainnya!"
+      }
+    },
+    "products": {
+      "section": {
+        "title": "Produk kami",
+        "filters": [
+          {
+            "id": "heavy-duty",
+            "title": "Kendaraan berat"
+          },
+          {
+            "id": "special-purpose",
+            "title": "Kendaraan khusus"
+          },
+          {
+            "id": "ambulance",
+            "title": "Ambulans"
+          },
+          {
+            "id": "bus",
+            "title": "Bus"
+          },
+          {
+            "id": "heavy-equipment",
+            "title": "Kendaraan alat berat"
+          }
+        ],
+        "button_text": "Lihat semua produk"
+      }
+    },
+    "about": {
+      "section_whoweare": {
+        "title": "Siapa kami",
+        "subtitle": "Dari visi menjadi kenyataan",
+        "description": "PT. Senang Jaya Abadi bergerak di bidang distribusi hidrolik. Pada tahun 2009, PT. Senang Jaya Abadi mulai membangun karoseri untuk bak plat, dump truk, tangki air, dan tangki muatan. Dengan kualitas terbaik, material unggulan, serta didukung oleh teknologi terbaru dan tenaga ahli yang berpengalaman di bidangnya, kami menghasilkan produk berkualitas tinggi. <br><br> Sejak awal, aspirasi PT. Senang Jaya Abadi adalah menciptakan produk berkualitas yang dapat bersaing di pasar nasional. Dengan Sertifikasi Sistem Manajemen Mutu ISO 9001-2008, produk yang dihasilkan diharapkan semakin berkualitas dan stabil. Dapatkan semua fasilitas dan layanan dari perusahaan kami, yang kami sediakan untuk memenuhi kebutuhan armada operasional Anda, guna meningkatkan kinerja dan profitabilitas perusahaan.",
+        "our_vision": {
+          "title": "Visi kami",
+          "content": [
+            "Menjadi perusahaan manufaktur otomotif dan karoseri terdepan yang diakui secara global, melalui inovasi teknologi, kualitas produk unggul, serta kontribusi berkelanjutan bagi kemajuan industri dan kesejahteraan masyarakat."
+          ]
+        },
+        "our_mission": {
+          "title": "Misi kami",
+          "content": [
+            "Menghasilkan kendaraan dan solusi otomotif berteknologi tinggi yang memenuhi standar internasional, menjawab kebutuhan pasar yang terus berkembang, serta memberikan nilai tambah bagi pelanggan.",
+            "Menyediakan layanan komprehensif yang meliputi perakitan, modifikasi, dan perawatan kendaraan serta alat berat, dengan fokus pada kepuasan pelanggan dan efisiensi operasional.",
+            "Mendorong inovasi dan peningkatan berkelanjutan melalui investasi pada teknologi mutakhir serta pengembangan sumber daya manusia yang berkualitas dan profesional.",
+            "Mempertahankan standar kualitas, keamanan, dan kesehatan kerja yang tinggi dengan kepatuhan terhadap sertifikasi internasional, serta menciptakan lingkungan kerja yang aman dan berkelanjutan.",
+            "Berperan aktif dalam pengembangan industri otomotif nasional dan global dengan memperkuat kemitraan strategis, menciptakan peluang usaha baru, serta memberikan dampak positif bagi komunitas dan lingkungan."
+          ]
+        }
+      },
+      "section_ourvalues": {
+        "title": "Nilai-nilai kami",
+        "subtitle": "Mewujudkan solusi yang tepat sesuai kebutuhan",
+        "description": "Di PT. Senang Jaya Abadi, kami mengkhususkan diri dalam pembuatan bodi kendaraan custom berkualitas tinggi untuk berbagai kebutuhan, termasuk truk komersial, bus, dan kendaraan khusus. Keahlian kami terletak pada mengubah sasis menjadi kendaraan yang fungsional dan menarik, sesuai dengan kebutuhan unik setiap pelanggan.",
+        "values": [
+          {
+            "icon": "fas fa-medal",
+            "title": "Kualitas",
+            "description": "Komitmen terhadap standar tinggi dalam material dan pengerjaan."
+          },
+          {
+            "icon": "far fa-lightbulb",
+            "title": "Inovasi",
+            "description": "Mengadopsi teknologi baru dan desain kreatif."
+          },
+          {
+            "icon": "bi bi-shield-fill-check",
+            "title": "Keamanan",
+            "description": "Memastikan produk memenuhi peraturan dan standar keselamatan."
+          },
+          {
+            "icon": "fas fa-person-rays",
+            "title": "Fokus pada Pelanggan",
+            "description": "Memprioritaskan kebutuhan dan kepuasan pelanggan."
+          },
+          {
+            "icon": "far fa-handshake",
+            "title": "Integritas",
+            "description": "Menjunjung tinggi kejujuran dan transparansi dalam setiap transaksi."
+          },
+          {
+            "icon": "fab fa-envira",
+            "title": "Keberlanjutan",
+            "description": "Mendorong penggunaan bahan dan praktik ramah lingkungan."
+          }
+        ]
+      },
+      "section_whatwedo": {
+        "title": "Apa yang kami kerjakan",
+        "subtitle": "Menyediakan Solusi Kendaraan Custom",
+        "description": "Kami merancang dan memproduksi bodi kendaraan custom, mengubah sasis menjadi solusi yang sesuai bagi berbagai industri. Proses kami memastikan presisi, keamanan, dan keahlian tinggi dalam setiap tahap—mulai dari konsep hingga penyelesaian.",
+        "steps": [
+          {
+            "title": "Desain dan Rekayasa",
+            "description": "Merancang desain yang nyaman dan aman sesuai kebutuhan pelanggan."
+          },
+          {
+            "title": "Fabrikasi",
+            "description": "Membangun rangka dan struktur bodi menggunakan berbagai material, seperti baja, aluminium, atau fiberglass."
+          },
+          {
+            "title": "Perakitan",
+            "description": "Merakit berbagai komponen, termasuk sasis, pintu, jendela, dan interior."
+          },
+          {
+            "title": "Kustomisasi",
+            "description": "Memodifikasi kendaraan untuk keperluan khusus, seperti transportasi penumpang, pengiriman, atau layanan khusus (misalnya ambulans, food truck)."
+          },
+          {
+            "title": "Penyelesaian",
+            "description": "Menerapkan cat dan finishing lainnya untuk meningkatkan tampilan dan daya tahan."
+          },
+          {
+            "title": "Kontrol Kualitas",
+            "description": "Memastikan semua produk memenuhi standar keselamatan dan kualitas melalui pengujian dan inspeksi."
+          },
+          {
+            "title": "Dukungan Purna Jual",
+            "description": "Menyediakan layanan perawatan, perbaikan, dan suku cadang untuk kendaraan yang telah diproduksi."
+          }
+        ]
+      },
+      "section_awards": {
+        "title": "Penghargaan dan Sertifikasi",
+        "subtitle": "Komitmen terhadap keunggulan",
+        "description": "Kami bangga dengan berbagai penghargaan dan sertifikasi yang telah kami raih di industri karoseri. Ini adalah bukti dari dedikasi kami dalam menghadirkan inovasi dan kualitas terbaik untuk pelanggan. Setiap pencapaian ini semakin memotivasi kami untuk terus berkembang dan memberikan layanan terbaik di setiap proyek yang kami kerjakan.",
+        "certifications": [
+          {
+            "image": "certification-01.jpg",
+            "title": "ISO 9001:2015 & ISO 45001:2018",
+            "description": "Disertifikasi oleh ACS Registrars | Occupational Health and Safety Management System dalam lingkup Manufacturing of Chassis for Motor Vehicle."
+          },
+          {
+            "image": "certification-02.jpg",
+            "title": "IATF 16949:2016",
+            "description": "Disertifikasi oleh Integrated Assessment Services | Quality Management System dalam lingkup Manufacturing of Chassis for Motor Vehicle."
+          },
+          {
+            "image": "certification-03.jpg",
+            "title": "ISO 14001:2015",
+            "description": "Disertifikasi oleh Peers Quality Assurance Limited | Operates an Environmental Management System dalam lingkup Manufacturing of Chassis for Motor Vehicle."
+          }
+        ]
+      },
+      "section_ourteam": {
+        "title": "Tim kami",
+        "subtitle": "Tim di balik layar",
+        "description": "Di balik kesuksesan kami, terdapat tim profesional yang terampil dan penuh dedikasi dalam menghadirkan solusi karoseri berkualitas tinggi. Setiap anggota tim kami memiliki keahlian khusus dalam desain, teknik, dan produksi, untuk memastikan bahwa kami memenuhi standar tertinggi dalam industri manufaktur bodi kendaraan."
+      },
+      "section_ourcustomers": {
+        "title": "Pelanggan kami"
+      },
+      "section_aboutcta": {
+        "title": "Hubungi tim kami",
+        "description": "Punya pertanyaan seputar layanan kami atau butuh solusi yang lebih personal? Jangan ragu untuk menghubungi kami. Kami siap membantu Anda menemukan solusi terbaik!",
+        "button_text": "Hubungi kami"
+      }
+    },
+    "gallery": {
+      "section": {
+        "title": "Galeri kami",
+        "filters": [
+          {
+            "data_filter": "*",
+            "title": "Tampilkan Semua"
+          },
+          {
+            "data_filter": ".cutting",
+            "title": "Pemotongan"
+          },
+          {
+            "data_filter": ".painting",
+            "title": "Pengecatan"
+          },
+          {
+            "data_filter": ".finishing",
+            "title": "Penyelesaian"
+          }
+        ],
+        "processes": [
+          {
+            "category": "cutting",
+            "image": {
+              "slug": "cutting-01",
+              "alt": "pemotongan 01"
+            }
+          },
+          {
+            "category": "cutting",
+            "image": {
+              "slug": "cutting-02",
+              "alt": "pemotongan 02"
+            }
+          },
+          {
+            "category": "painting",
+            "image": {
+              "slug": "painting-01",
+              "alt": "pengecatan 01"
+            }
+          },
+          {
+            "category": "finishing",
+            "image": {
+              "slug": "finishing-01",
+              "alt": "penyelesaian 01"
+            }
+          },
+          {
+            "category": "finishing",
+            "image": {
+              "slug": "finishing-02",
+              "alt": "penyelesaian 02"
+            }
+          },
+          {
+            "category": "painting",
+            "image": {
+              "slug": "painting-02",
+              "alt": "pengecatan 02"
+            }
+          },
+          {
+            "category": "painting",
+            "image": {
+              "slug": "painting-03",
+              "alt": "pengecatan 03"
+            }
+          },
+          {
+            "category": "finishing",
+            "image": {
+              "slug": "finishing-03",
+              "alt": "penyelesaian 03"
+            }
+          },
+          {
+            "category": "cutting",
+            "image": {
+              "slug": "cutting-03",
+              "alt": "pemotongan 03"
+            }
+          },
+          {
+            "category": "finishing",
+            "image": {
+              "slug": "finishing-04",
+              "alt": "penyelesaian 04"
+            }
+          },
+          {
+            "category": "cutting",
+            "image": {
+              "slug": "cutting-04",
+              "alt": "pemotongan 04"
+            }
+          }
+        ]
+      }
+    },
+    "contact": {
+      "section": {
+        "title": "Hubungi Kami",
+        "subtitle": "Ingin berbicara langsung? Hubungi atau kunjungi kami",
+        "description": "Kami percaya bahwa interaksi langsung adalah kunci dalam membangun hubungan yang baik. Jika Anda memiliki pertanyaan atau membutuhkan bantuan, tim kami siap melayani dengan sepenuh hati. Hubungi kami melalui telepon atau kunjungi kantor kami, dan kami dengan senang hati akan membantu Anda. Kami menantikan kabar dari Anda!",
+        "contact_info": [
+          {
+            "title": "Lokasi",
+            "content": [
+              {
+                "title": "Pabrik & Bengkel",
+                "description": "Jl. Cirebon - Losari Km. 13,6 Rawaurip, Kec. Pangenan, Kabupaten Cirebon, Jawa Barat 45100"
+              },
+              {
+                "title": "Layanan Purna Jual",
+                "description": "Jl. Pangkalan V, RT.001/RW.003, Cikiwul, Bantargebang, Kota Bekasi, Jawa Barat 17152"
+              }
+            ]
+          },
+          {
+            "title": "Email",
+            "content": [
+              "ptsenangjayaabadi@yahoo.com",
+              "senangjayaabadi@gmail.com"
+            ]
+          },
+          {
+            "title": "Informasi kontak",
+            "content": {
+              "phone_number": {
+                "href": "+6281386641546",
+                "text": "+62 813-8664-1546"
+              },
+              "whatsapp": [
+                {
+                  "title": "Marketing 1",
+                  "link": "https://api.whatsapp.com/send?phone=+6281818168119&text=Hi...Dengan Karoseri Senang Jaya Abadi...?"
+                },
+                {
+                  "title": "Marketing 2",
+                  "link": "https://api.whatsapp.com/send?phone=+6281915803535&text=Hi...Dengan Karoseri Senang Jaya Abadi...?"
+                },
+                {
+                  "title": "Marketing 3",
+                  "link": "https://api.whatsapp.com/send?phone=+6281993118977&text=Hi...Dengan Karoseri Senang Jaya Abadi...?"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "footer": {
+      "navigation": {
+        "categories": "Kategori",
+        "partnership": "Kemitraan",
+        "support": "Bantuan & Dukungan",
+        "go_to": "Pergi ke"
+      }
+    }
+  }
+}

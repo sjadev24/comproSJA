@@ -231,17 +231,23 @@ window.addEventListener('load', () => {
 });
 
 /**
- * Animation on scroll
+ * Updates the URL parameter based on the clicked tab on products page
  */
-const tabLinkEls = document.querySelectorAll('.nav-link');
+const tabLinkEls = document.querySelectorAll('.nav-link[data-bs-toggle="tab"]');
 
 tabLinkEls.forEach(function (el) {
   el.addEventListener('click', function (event) {
-    const targetTabId = event.target
+    const targetTab = event.target;
+    const targetTabId = targetTab
       .getAttribute('data-bs-target')
       .substring(1)
       .replace('-content', '');
 
+    targetTab.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest',
+      inline: 'start',
+    });
     const currentUrl = new URL(window.location);
     currentUrl.searchParams.set('tab', targetTabId);
     window.history.pushState({}, '', currentUrl);

@@ -1,34 +1,25 @@
 <?php
 ob_start();
 session_start();
-include("admin/inc/config.php");
-include("admin/inc/functions.php");
-include("admin/inc/CSRF_Protect.php");
+include "admin/inc/config.php";
+include "admin/inc/functions.php";
+include "admin/inc/CSRF_Protect.php";
+require_once "functions.php";
 
 $csrf = new CSRF_Protect();
-$error_message = '';
-$success_message = '';
-$error_message1 = '';
-$success_message1 = '';
 
-if (!isset($_SESSION['lang'])) {
-	$_SESSION['lang'] = 'en';
-}
-
-if (isset($_GET['lang'])) {
+if (!isset($_GET['lang'])) {
+	unset($_SESSION['lang']);
+} else {
 	$_SESSION['lang'] = $_GET['lang'];
 }
 
-$current_lang = $_SESSION['lang'];
+$current_lang = $_SESSION['lang'] ?? 'en';
 $translations = json_decode(file_get_contents(__DIR__ . '/lang/translations.json'), true);
 
-if (!isset($translations[$current_lang])) {
-	$current_lang = 'en';
-}
+$lang_text = $translations[$current_lang] ?? $translations['en'];
 
-$lang = $translations[$current_lang];
-
-print_r($lang['greeting']);
+$menu = $lang_text['menu'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -160,6 +151,7 @@ print_r($lang['greeting']);
 							<img src="assets/images/logo.png" alt="logo" width="216" height="37">
 						</picture>
 					</a>
+					<!-- <a href="?lang=en" style="color: white;">English</a> | <a href="?lang=id" style="color: white;">Bahasa Indonesia</a> -->
 				</h1>
 				<button class="navbar-toggler px-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
@@ -174,11 +166,10 @@ print_r($lang['greeting']);
 						<?php $current_page = basename($_SERVER['PHP_SELF']); ?>
 
 						<ul class="navbar-nav">
-							<li class="nav-item"><a href="index.php" class="nav-link <?php echo $current_page === 'index.php' ? 'active' : ''; ?>" aria-current="page">Home</a></li>
-							<li class="nav-item"><a href="products.php" class="nav-link <?php echo $current_page === 'products.php' ? 'active' : ''; ?>">Products</a></li>
-							<li class="nav-item"><a href="about.php" class="nav-link <?php echo $current_page === 'about.php' ? 'active' : ''; ?>">About</a></li>
-							<li class="nav-item"><a href="gallery.php" class="nav-link <?php echo $current_page === 'gallery.php' ? 'active' : ''; ?>">Gallery</a></li>
-							<li class="nav-item"><a href="contact.php" class="nav-link <?php echo $current_page === 'contact.php' ? 'active' : ''; ?>">Contact</a></li>
+							<?php foreach ($menu as $item) { ?>
+								<li class="nav-item"><a href="<?php echo $item['link'] . getLangParam(); ?>" class="nav-link <?php echo $current_page === $item['link'] || $current_page === 'index.php' && $item['link'] === './' ? 'active' : ''; ?>" aria-current="page"><?php echo $item['title']; ?></a></li>
+							<?php } ?>
+
 							<!-- <li class="nav-item dropdown search-dropdown row">
 								<div class="d-none d-lg-flex">
 									<button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Search">

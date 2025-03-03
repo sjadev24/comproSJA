@@ -1,13 +1,15 @@
-</main>
-
 <?php
-$statement = $pdo->prepare("SELECT * FROM tbl_settings WHERE id=1");
-$statement->execute();
-$result = $statement->fetchAll(PDO::FETCH_ASSOC);
-foreach ($result as $row) {
-}
+$page_title = 'Our Products | Premium Karoseri Solutions for Every Vehicle Type';
+$meta_description = 'Explore our range of premium karoseri solutions. From heavy-duty vehicle bodies to custom designs, find the perfect product for your needs at Karoseri Senang Jaya Abadi.
+';
+require_once 'includes/header.php';
+
+$section = $lang_text['products']['section'];
+$filters = $section['filters'];
+$footer_navigation = $lang_text['footer']['navigation']
 ?>
-<?php /* endif; */ ?>
+
+</main>
 
 <footer class="footer">
 	<div class="container">
@@ -55,17 +57,26 @@ foreach ($result as $row) {
 			<div class="col-lg-8 mt-lg-2 ms-lg-auto">
 				<div class="row gy-5">
 					<div class="col-md-4">
-						<h3 class="h5 pb-1 mb-3">Categories</h3>
+						<h3 class="h5 pb-1 mb-3"><?php echo $footer_navigation['categories']; ?></h3>
 						<ul class="d-flex flex-column gap-3-cs mb-0">
-							<li><a href="products.php?tab=heavy-duty">Heavy Duty</a></li>
-							<li><a href="products.php?tab=special-purpose">Special purpose vehicle</a></li>
+							<?php
+							$langParam = getLangParam() ? getLangParam() . '&' : '?';
+
+							foreach ($filters as $filter) {
+							?>
+								<li><a href="products.php<?php echo $langParam; ?>tab=<?php echo $filter['id']; ?>"><?php echo $filter['title']; ?></a></li>
+							<?php
+							}
+							?>
+
+							<!-- <li><a href="products.php?tab=special-purpose">Special purpose vehicle</a></li>
 							<li><a href="products.php?tab=ambulance">Ambulance</a></li>
 							<li><a href="products.php?tab=bus">Bus</a></li>
-							<li><a href="products.php?tab=heavy-equipment">Heavy equipment</a></li>
+							<li><a href="products.php?tab=heavy-equipment">Heavy equipment</a></li> -->
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<h3 class="h5 pb-1 mb-3">Partnership</h3>
+						<h3 class="h5 pb-1 mb-3"><?php echo $footer_navigation['partnership']; ?></h3>
 						<ul class="d-flex flex-column gap-3-cs mb-0">
 							<li>PT. Hino Motors Manufacturing Indonesia</li>
 							<li>PT. Armindo Perkasa</li>
@@ -79,13 +90,13 @@ foreach ($result as $row) {
 					</div>
 					<div class="col-md-4">
 						<div class="mb-6">
-							<h3 class="h5 pb-1 mb-3">Help &amp; Support</h3>
+							<h3 class="h5 pb-1 mb-3"><?php echo $footer_navigation['support']; ?></h3>
 							<a href='https://e-katalog.lkpp.go.id/id/search-produk?authenticityToken=46ea77a9b4b2a270776b6ed764554b8878435fc7&q=senang+jaya&order=relevance&limit=12&offset=1' aria-label="e-catalog">
 								<img src="assets/images/lkpp.png" class="img-lkpp" alt="">
 							</a>
 						</div>
 						<div>
-							<h3 class="h5 pb-1 mb-3">Go To :</h3>
+							<h3 class="h5 pb-1 mb-3"><?php echo $footer_navigation['go_to']; ?></h3>
 							<a href='https://karoserisenangjaya.com/psa/' target="blank">Pemuda Sukses Abadi</a>
 						</div>
 					</div>
