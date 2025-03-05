@@ -59,15 +59,15 @@ $section_instagram = $home['section_instagram'];
           <div class="col-sm-6">
             <div class="row mb-4">
               <div class="col-sm-6 mb-4 mb-sm-0">
-                <div class="p-3 bg-dark text-white rounded text-center text-white">
-                  <span class="h2 text-white">15+</span>
-                  <p class="mb-0">Years of experience</p>
+                <div class="p-3 bg-dark rounded text-center text-white">
+                  <span class="h2 text-white"><?php echo $section_homeabout['stats'][0]['number']; ?></span>
+                  <p class="mb-0"><?php echo $section_homeabout['stats'][0]['text']; ?></p>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="p-3 bg-primary rounded text-center text-white">
-                  <span class="h2 text-white">1.5K</span>
-                  <p class="mb-0">Happy customers</p>
+                  <span class="h2 text-white"><?php echo $section_homeabout['stats'][1]['number']; ?></span>
+                  <p class="mb-0"><?php echo $section_homeabout['stats'][1]['text']; ?></p>
                 </div>
               </div>
             </div>
@@ -81,25 +81,18 @@ $section_instagram = $home['section_instagram'];
       </div>
 
       <div class="col-lg-5">
-        <span class="d-inline-block bg-light text-gray-700 small rounded-3 px-3 py-2 mb-4">🤝 Your access point for top-notch bodywork solutions</span>
+        <span class="d-inline-block bg-light text-gray-700 small rounded-3 px-3 py-2 mb-4">🤝 <?php echo $section_homeabout['subtitle']; ?></span>
+        <h2 class="mb-4"><?php echo $section_homeabout['title']; ?></h2>
+        <p class="mb-5"><?php echo $section_homeabout['description']; ?></p>
 
-        <h2 class="mb-4">Crafting Excellence in Vehicle Customization</h2>
-        <p class="mb-5">With our extensive experience in karoseri, we specialize in creating high-quality, custom body designs for trucks, vans, and more. Our commitment to innovation and customer satisfaction ensures that every vehicle meets the highest standards. Discover how we can transform your vehicle with tailored designs that maximize functionality and aesthetics.</p>
-
-        <p><strong>Why Choose Us?</strong></p>
+        <p><strong><?php echo $section_homeabout['why_choose_us']['title']; ?></strong></p>
         <ul class="list-group list-group-borderless mb-4">
-          <li class="list-group-item d-flex border-0">
-            <i class="bi bi-patch-check-fill text-primary me-2" aria-hidden="true"></i>
-            Expertise in innovative and functional custom designs
-          </li>
-          <li class="list-group-item d-flex border-0">
-            <i class="bi bi-patch-check-fill text-primary me-2" aria-hidden="true"></i>
-            A proven history of delivering reliable and high-quality karoseri solutions
-          </li>
-          <li class="list-group-item d-flex border-0">
-            <i class="bi bi-patch-check-fill text-primary me-2" aria-hidden="true"></i>
-            Dedicated customer support from concept to completion
-          </li>
+          <?php foreach ($section_homeabout['why_choose_us']['features'] as $feature) { ?>
+            <li class="list-group-item d-flex border-0">
+              <i class="bi bi-patch-check-fill text-primary me-2" aria-hidden="true"></i>
+              <?php echo $feature; ?>
+            </li>
+          <?php } ?>
         </ul>
       </div>
     </div>

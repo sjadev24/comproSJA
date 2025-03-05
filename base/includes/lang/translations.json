@@ -78,7 +78,29 @@
           }
         ]
       },
-      "section_homeabout": {},
+      "section_homeabout": {
+        "stats": [
+          {
+            "number": "15+",
+            "text": "Years of experience"
+          },
+          {
+            "number": "1.5K",
+            "text": "Happy customers"
+          }
+        ],
+        "title": "Crafting Excellence in Vehicle Customization",
+        "subtitle": "Your access point for top-notch bodywork solutions",
+        "description": "With our extensive experience in karoseri, we specialize in creating high-quality, custom body designs for trucks, vans, and more. Our commitment to innovation and customer satisfaction ensures that every vehicle meets the highest standards. Discover how we can transform your vehicle with tailored designs that maximize functionality and aesthetics.",
+        "why_choose_us": {
+          "title": "Why Choose Us?",
+          "features": [
+            "Expertise in innovative and functional custom designs",
+            "A proven history of delivering reliable and high-quality karoseri solutions",
+            "Dedicated customer support from concept to completion"
+          ]
+        }
+      },
       "section_partners": {
         "title": "Our trusted partners"
       },
@@ -520,7 +542,29 @@
           }
         ]
       },
-      "section_homeabout": {},
+      "section_homeabout": {
+        "stats": [
+          {
+            "number": "15+",
+            "text": "Tahun pengalaman"
+          },
+          {
+            "number": "1.5K",
+            "text": "Pelanggan puas"
+          }
+        ],
+        "title": "Mewujudkan Keunggulan dalam Kustomisasi Kendaraan",
+        "subtitle": "Solusi karoseri terbaik untuk kebutuhan Anda",
+        "description": "Dengan pengalaman luas di industri karoseri, kami mengkhususkan diri dalam menciptakan desain bodi kendaraan berkualitas tinggi untuk truk, van, dan lainnya. Komitmen kami terhadap inovasi dan kepuasan pelanggan, memastikan setiap kendaraan memenuhi standar tertinggi. Temukan bagaimana kami dapat mengubah kendaraan Anda dengan desain khusus yang memaksimalkan fungsi dan estetika.",
+        "why_choose_us": {
+          "title": "Mengapa Memilih Kami?",
+          "features": [
+            "Desain karoseri inovatif dan fungsional",
+            "Rekam jejak terpercaya dalam menyediakan solusi karoseri berkualitas tinggi",
+            "Dukungan pelanggan penuh dari konsep hingga penyelesaian"
+          ]
+        }
+      },
       "section_partners": {
         "title": "Mitra terpercaya kami"
       },

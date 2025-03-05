@@ -10,19 +10,18 @@ $csrf = new CSRF_Protect();
 
 if (!isset($_GET['lang'])) {
 	unset($_SESSION['lang']);
-} else {
+} else if ($_GET['lang'] === 'en' || $_GET['lang'] === 'id') {
 	$_SESSION['lang'] = $_GET['lang'];
 }
 
 $current_lang = $_SESSION['lang'] ?? 'en';
 $translations = json_decode(file_get_contents(__DIR__ . '/lang/translations.json'), true);
-
 $lang_text = $translations[$current_lang] ?? $translations['en'];
 
 $menu = $lang_text['menu'];
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
 	<meta charset="UTF-8">
@@ -145,13 +144,12 @@ $menu = $lang_text['menu'];
 			<nav class="navbar navbar-expand-lg">
 				<h1 class="mb-0">
 					<span class="visually-hidden">Karoseri Senang Jaya Abadi</span>
-					<a href="index.php" class="navbar-brand">
+					<a href="./" class="navbar-brand">
 						<picture>
 							<source srcset="assets/images/logo.png 1x, assets/images/logo@2x.png 2x, assets/images/logo@3x.png 3x" type="image/png">
 							<img src="assets/images/logo.png" alt="logo" width="216" height="37">
 						</picture>
 					</a>
-					<!-- <a href="?lang=en" style="color: white;">English</a> | <a href="?lang=id" style="color: white;">Bahasa Indonesia</a> -->
 				</h1>
 				<button class="navbar-toggler px-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
@@ -165,7 +163,7 @@ $menu = $lang_text['menu'];
 					<div class="offcanvas-body">
 						<?php $current_page = basename($_SERVER['PHP_SELF']); ?>
 
-						<ul class="navbar-nav">
+						<ul class="navbar-nav mb-3 mb-lg-0">
 							<?php foreach ($menu as $item) { ?>
 								<li class="nav-item"><a href="<?php echo $item['link'] . getLangParam(); ?>" class="nav-link <?php echo $current_page === $item['link'] || $current_page === 'index.php' && $item['link'] === './' ? 'active' : ''; ?>" aria-current="page"><?php echo $item['title']; ?></a></li>
 							<?php } ?>
@@ -198,6 +196,11 @@ $menu = $lang_text['menu'];
 								</div>
 							</li> -->
 						</ul>
+
+						<?php $target_lang = !isset($_SESSION['lang']) || $_SESSION['lang'] === 'en' ? 'id' : 'en'; ?>
+						<div class="switch <?php echo $target_lang === 'en' ? 'lang-id' : ''; ?>">
+							<a href="?lang=<?php echo $target_lang; ?>" class="switch-control"></a>
+						</div>
 					</div>
 				</div>
 			</nav>

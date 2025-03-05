@@ -307,11 +307,10 @@ ul {
     transform: scaleY(1);
     transform-origin: top left;
   }
-}
 
-@media (max-width: 575px) {
-  .container {
-    --bs-gutter-x: 2rem;
+  .offcanvas-body {
+    align-items: center;
+    gap: 0.5rem;
   }
 }
 
@@ -321,5 +320,11 @@ ul {
   .container-md,
   .container-lg {
     max-width: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    --bs-gutter-x: 2rem;
   }
 }

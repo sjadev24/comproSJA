@@ -17,7 +17,7 @@ $footer_navigation = $lang_text['footer']['navigation']
 			<div class="col-lg-3 mb-6 mb-lg-0">
 				<div class="row gy-5">
 					<div class="d-flex">
-						<a href="index.php" class="footer-logo">
+						<a href="./" class="footer-logo">
 							<picture>
 								<source srcset="assets/images/logo.png 1x, assets/images/logo@2x.png 2x, assets/images/logo@3x.png 3x" type="image/png">
 								<img src="assets/images/logo.png" alt="logo">

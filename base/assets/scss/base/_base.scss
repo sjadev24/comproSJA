@@ -1,5 +1,31 @@
 @use '../abstracts/variables' as var;
 
+.switch {
+  position: relative;
+  width: 2.5rem;
+  height: 1.625rem;
+  padding: 0.1rem;
+  margin-left: 0.6rem;
+  background-color: var(--bs-white);
+  border-radius: 13px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px var.$color-orange-shade-200;
+}
+
+.switch-control {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/us.png') left center no-repeat;
+  background-size: 1.375rem;
+}
+
+.lang-id .switch-control {
+  background-image: url('../images/id.png');
+  background-position: right center;
+}
+
 .section {
   --section-spacer-y: 5rem;
   --section-spacer-x: 0;
@@ -72,14 +98,6 @@
   left: 0;
 }
 
-.social-link {
-  --bs-btn-padding-x: 0.5rem;
-  --bs-btn-hover-color: #{var.$color-orange};
-  --bs-btn-active-color: #{var.$color-orange};
-  --bs-btn-active-border-color: transparent;
-  --bs-btn-font-size: 1.1rem;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -133,10 +151,25 @@
   font-size: 0.3125rem;
 }
 
+.social-link {
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-hover-color: #{var.$color-orange};
+  --bs-btn-active-color: #{var.$color-orange};
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-font-size: 1.1rem;
+}
+
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Mobile style's
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media only screen and (max-width: 991px) {
+@media (min-width: 992px) {
+  .switch {
+    margin-left: 0;
+    box-shadow: 0 0 0 2px transparent;
+  }
+}
+
+@media (max-width: 991px) {
   .nav-wrapper {
     overflow-x: auto;
   }
@@ -148,9 +181,13 @@ Mobile style's
   .nav-item {
     width: max-content;
   }
+
+  .section {
+    --section-spacer-y: 4rem;
+  }
 }
 
-@media only screen and (max-width: 959px) {
+@media (max-width: 959px) {
   .menu-mobile {
     display: block;
   }
@@ -192,11 +229,5 @@ Mobile style's
   }
   .menu .show-on-mobile {
     display: block;
-  }
-}
-
-@media (max-width: 991px) {
-  .section {
-    --section-spacer-y: 4rem;
   }
 }
