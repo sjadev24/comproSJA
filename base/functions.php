@@ -108,10 +108,11 @@ function getCustomers()
 function getInstagramPosts()
 {
     return [
-        ["slug" => "img-01", "alt" => "A featured product from our Instagram feed"],
-        ["slug" => "img-02", "alt" => "A featured product from our Instagram feed"],
-        ["slug" => "img-03", "alt" => "A featured product from our Instagram feed"],
-        ["slug" => "img-04", "alt" => "A featured product from our Instagram feed"],
-        ["slug" => "img-05", "alt" => "A featured product from our Instagram feed"]
+        ["slug" => "img-01", "alt" => "Certified high-quality bus assembly process"],
+        ["slug" => "img-02", "alt" => "Advanced robotic welding technology"],
+        ["slug" => "img-03", "alt" => "Mini Roller Truck on Isuzu Traga ready for delivery"],
+        ["slug" => "img-04", "alt" => "43 Suzuki APV ambulances ready for delivery"],
+        ["slug" => "img-05", "alt" => "Hino chassis entering production area for body fabrication"],
+        ["slug" => "img-06", "alt" => "Isuzu truck entering custom assembly process"],
     ];
 }
