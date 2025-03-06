@@ -149,7 +149,7 @@ $section_instagram = $home['section_instagram'];
           <ul class="nav nav-underline flex-nowrap flex-lg-wrap gap-4 mx-auto" role="tablist">
             <?php foreach ($section_products['filters'] as $index => $filter) { ?>
               <li class="nav-item" role="presentation">
-                <button type="button" id="<?php echo $filter['id'] . "-tab"; ?>" class="nav-link <?php echo $index === 0 ? 'active' : ''; ?>" data-bs-toggle="pill" data-bs-target="<?php echo "#" . $filter['id'] . "-content"; ?>" role="tab" aria-controls="<?php echo $filter['id'] . "-content"; ?>" aria-selected="false"><?php echo $filter['title']; ?></button>
+                <button type="button" id="<?php echo $filter['id'] . "-tab"; ?>" class="nav-link <?php echo $index === 0 ? 'active' : ''; ?>" data-bs-toggle="tab" data-bs-target="<?php echo "#" . $filter['id'] . "-content"; ?>" role="tab" aria-controls="<?php echo $filter['id'] . "-content"; ?>" aria-selected="false"><?php echo $filter['title']; ?></button>
               </li>
             <?php } ?>
           </ul>
