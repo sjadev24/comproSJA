@@ -95,10 +95,10 @@ $footer_navigation = $lang_text['footer']['navigation']
 								<img src="assets/images/lkpp.png" class="img-lkpp" alt="">
 							</a>
 						</div>
-						<div>
+						<!-- <div>
 							<h3 class="h5 pb-1 mb-3"><?php echo $footer_navigation['go_to']; ?></h3>
 							<a href='https://karoserisenangjaya.com/psa/' target="blank">Pemuda Sukses Abadi</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
