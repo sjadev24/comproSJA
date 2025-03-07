@@ -16,13 +16,16 @@ $section_instagram = $home['section_instagram'];
 <section class="section section-hero d-flex py-0">
   <div class="swiper hero-swiper">
     <div class="swiper-wrapper">
-      <?php foreach ($section_hero['slides'] as $index => $slide) { ?>
-        <div class="d-flex align-items-center swiper-slide active">
+      <?php
+      foreach ($section_hero['slides'] as $index => $slide) {
+        $image = $slide['image']; ?>
+        <div class="swiper-slide d-flex align-items-center">
           <div class="hero-slide-img">
             <picture>
-              <source srcset="assets/uploads/hero/avif/<?php echo $slide['image']['slug']; ?>.avif" type="image/avif" />
-              <source srcset="assets/uploads/hero/webp/<?php echo $slide['image']['slug']; ?>.webp" type="image/webp" />
-              <img src="assets/uploads/hero/jpg/<?php echo $slide['image']['slug']; ?>.jpg" alt="hero 01">
+              <source srcset="assets/uploads/hero/avif/<?php echo $image['slug']; ?>.avif 1x, assets/uploads/hero/avif/<?php echo $image['slug']; ?>@2x.avif 2x" type="image/avif" />
+              <source srcset="assets/uploads/hero/webp/<?php echo $image['slug']; ?>.webp 1x, assets/uploads/hero/webp/<?php echo $image['slug']; ?>@2x.webp 2x" type="image/webp" />
+              <source srcset="assets/uploads/hero/jpg/<?php echo $image['slug']; ?>.jpg 1x, assets/uploads/hero/jpg/<?php echo $image['slug']; ?>@2x.jpg 2x" type="image/jpeg" />
+              <img src="assets/uploads/hero/jpg/<?php echo $image['slug']; ?>.jpg" alt="<?php echo $image['alt']; ?>">
             </picture>
           </div>
           <div class="container">
@@ -381,7 +384,18 @@ $section_instagram = $home['section_instagram'];
         foreach ($insta_posts as $insta_post) { ?>
           <div class="swiper-slide">
             <div class="card card-element-hover">
-              <img src="assets/images/insta-feed/<?php echo $insta_post['slug']; ?>.jpg" class="card-img" alt="<?php echo $insta_post['alt']; ?>">
+              <picture>
+                <source
+                  data-srcset="assets/images/insta-feed/avif/<?php echo $insta_post['slug']; ?>.avif 1x, assets/images/insta-feed/avif/<?php echo $insta_post['slug']; ?>@2x.avif 2x, assets/images/insta-feed/avif/<?php echo $insta_post['slug']; ?>@3x.avif 3x"
+                  type="image/avif" />
+                <source
+                  data-srcset="assets/images/insta-feed/webp/<?php echo $insta_post['slug']; ?>.webp 1x, assets/images/insta-feed/webp/<?php echo $insta_post['slug']; ?>@2x.webp 2x, assets/images/insta-feed/webp/<?php echo $insta_post['slug']; ?>@3x.webp 3x"
+                  type="image/webp" />
+                <source
+                  data-srcset="assets/images/insta-feed/jpg/<?php echo $insta_post['slug']; ?>.jpg 1x, assets/images/insta-feed/jpg/<?php echo $insta_post['slug']; ?>@2x.jpg 2x, assets/images/insta-feed/jpg/<?php echo $insta_post['slug']; ?>@3x.jpg 3x"
+                  type="image/jpeg" />
+                <img src="assets/images/placehold.png" data-src="assets/images/insta-feed/jpg/<?php echo $insta_post['slug']; ?>.jpg" class="card-img lazyload" alt="<?php echo $insta_post['alt']; ?>">
+              </picture>
               <div class="card-img-overlay">
                 <a href="https://www.instagram.com/senangjayagroup" class="stretched-link" target="_blank">
                   <i class="fab fa-instagram" aria-hidden="true"></i>
