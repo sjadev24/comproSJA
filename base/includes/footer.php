@@ -1,12 +1,7 @@
 <?php
-$page_title = 'Our Products | Premium Karoseri Solutions for Every Vehicle Type';
-$meta_description = 'Explore our range of premium karoseri solutions. From heavy-duty vehicle bodies to custom designs, find the perfect product for your needs at Karoseri Senang Jaya Abadi.
-';
-require_once 'includes/header.php';
-
 $section = $lang_text['products']['section'];
 $filters = $section['filters'];
-$footer_navigation = $lang_text['footer']['navigation']
+$footer_navigation = $lang_text['footer']['navigation'];
 ?>
 
 </main>
