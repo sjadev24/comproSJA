@@ -14,12 +14,12 @@ $contact_info = $section['contact_info'];
                 <h2 class="title-underline"><?php echo $section['title']; ?></h2>
             </div>
             <div class="col-md-10">
-                <h3 class="h4 mb-4"><?php echo $section['subtitle']; ?></h3>
+                <h3 class="mb-4 h4"><?php echo $section['subtitle']; ?></h3>
                 <p class="mb-6"><?php echo $section['description']; ?></p>
                 <div class="row contact-info">
                     <div class="col-md-6 col-lg-5 mb-5 mb-md-0">
                         <div class="mb-5">
-                            <p class="h6 pb-2"><?php echo $contact_info[0]['title']; ?></p>
+                            <p class="pb-2 h6"><?php echo $contact_info[0]['title']; ?></p>
                             <?php foreach ($contact_info[0]['content'] as $location) { ?>
                                 <div class="d-flex flex-column gap-1 mb-3">
                                     <span class="fw-medium"><?php echo $location['title']; ?></span>
@@ -28,7 +28,7 @@ $contact_info = $section['contact_info'];
                             <?php } ?>
                         </div>
                         <div>
-                            <p class="h6 pb-2"><?php echo $contact_info[1]['title']; ?></p>
+                            <p class="pb-2 h6"><?php echo $contact_info[1]['title']; ?></p>
                             <ul class="d-flex flex-column gap-3 mb-0">
                                 <?php foreach ($contact_info[1]['content'] as $email) { ?>
                                     <li>
@@ -40,7 +40,7 @@ $contact_info = $section['contact_info'];
                     </div>
 
                     <div class="col-md-6 col-lg-5">
-                        <p class="h6 pb-2"><?php echo $contact_info[2]['title']; ?></p>
+                        <p class="pb-2 h6"><?php echo $contact_info[2]['title']; ?></p>
                         <ul class="d-flex flex-column gap-3 mb-0">
                             <li>
                                 <a class="text-primary" href="tel:<?php echo $contact_info[2]['content']['phone_number']['href']; ?>">

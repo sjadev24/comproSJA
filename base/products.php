@@ -10,7 +10,7 @@ $filters = $section['filters'];
 
 <section class="section section-products">
   <div class="container">
-    <h2 class="h3 mb-5 mb-lg-6"><?php echo $section['title']; ?></h2>
+    <h2 class="mb-5 mb-lg-6 h3"><?php echo $section['title']; ?></h2>
 
     <div class="row">
       <?php $current_tab = isset($_GET['tab']) ? $_GET['tab'] : null; ?>
@@ -68,10 +68,10 @@ $filters = $section['filters'];
                       <source
                         data-srcset="assets/uploads/products/heavy-duty/jpg/<?php echo $image['slug']; ?>.jpg 1x, assets/uploads/products/heavy-duty/jpg/<?php echo $image['slug']; ?>@2x.jpg 2x, assets/uploads/products/heavy-duty/jpg/<?php echo $image['slug']; ?>@3x.jpg 3x"
                         type="image/jpeg" />
-                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/heavy-duty/jpg/<?php echo $image['slug']; ?>.jpg" class="card-img lazyload" alt="<?php echo $image['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/heavy-duty/jpg/<?php echo $image['slug']; ?>.jpg" class="lazyload card-img" alt="<?php echo $image['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
-                      <a href="assets/uploads/products/heavy-duty/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="product-lightbox stretched-link" data-gallery="heavy-duty">
+                      <a href="assets/uploads/products/heavy-duty/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="stretched-link product-lightbox" data-gallery="heavy-duty">
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -96,10 +96,10 @@ $filters = $section['filters'];
                       <source
                         data-srcset="assets/uploads/products/special-purpose/jpg/<?php echo $image['slug']; ?>.jpg 1x, assets/uploads/products/special-purpose/jpg/<?php echo $image['slug']; ?>@2x.jpg 2x, assets/uploads/products/special-purpose/jpg/<?php echo $image['slug']; ?>@3x.jpg 3x"
                         type="image/jpeg" />
-                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/special-purpose/jpg/<?php echo $image['slug']; ?>.jpg" class="card-img lazyload" alt="<?php echo $image['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/special-purpose/jpg/<?php echo $image['slug']; ?>.jpg" class="lazyload card-img" alt="<?php echo $image['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
-                      <a href="assets/uploads/products/special-purpose/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="product-lightbox stretched-link" data-gallery="special-purpose">
+                      <a href="assets/uploads/products/special-purpose/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="stretched-link product-lightbox" data-gallery="special-purpose">
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -124,10 +124,10 @@ $filters = $section['filters'];
                       <source
                         data-srcset="assets/uploads/products/ambulance/jpg/<?php echo $image['slug']; ?>.jpg 1x, assets/uploads/products/ambulance/jpg/<?php echo $image['slug']; ?>@2x.jpg 2x, assets/uploads/products/ambulance/jpg/<?php echo $image['slug']; ?>@3x.jpg 3x"
                         type="image/jpeg" />
-                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/ambulance/jpg/<?php echo $image['slug']; ?>.jpg" class="card-img lazyload" alt="<?php echo $image['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/ambulance/jpg/<?php echo $image['slug']; ?>.jpg" class="lazyload card-img" alt="<?php echo $image['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
-                      <a href="assets/uploads/products/ambulance/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="product-lightbox stretched-link" data-gallery="ambulance">
+                      <a href="assets/uploads/products/ambulance/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="stretched-link product-lightbox" data-gallery="ambulance">
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -152,10 +152,10 @@ $filters = $section['filters'];
                       <source
                         data-srcset="assets/uploads/products/bus/jpg/<?php echo $image['slug']; ?>.jpg 1x, assets/uploads/products/bus/jpg/<?php echo $image['slug']; ?>@2x.jpg 2x, assets/uploads/products/bus/jpg/<?php echo $image['slug']; ?>@3x.jpg 3x"
                         type="image/jpeg" />
-                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/bus/jpg/<?php echo $image['slug']; ?>.jpg" class="card-img lazyload" alt="<?php echo $image['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/bus/jpg/<?php echo $image['slug']; ?>.jpg" class="lazyload card-img" alt="<?php echo $image['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
-                      <a href="assets/uploads/products/bus/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="product-lightbox stretched-link" data-gallery="bus">
+                      <a href="assets/uploads/products/bus/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="stretched-link product-lightbox" data-gallery="bus">
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -180,10 +180,10 @@ $filters = $section['filters'];
                       <source
                         data-srcset="assets/uploads/products/heavy-equipment/jpg/<?php echo $image['slug']; ?>.jpg 1x, assets/uploads/products/heavy-equipment/jpg/<?php echo $image['slug']; ?>@2x.jpg 2x, assets/uploads/products/heavy-equipment/jpg/<?php echo $image['slug']; ?>@3x.jpg 3x"
                         type="image/jpeg" />
-                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/heavy-equipment/jpg/<?php echo $image['slug']; ?>.jpg" class="card-img lazyload" alt="<?php echo $image['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/heavy-equipment/jpg/<?php echo $image['slug']; ?>.jpg" class="lazyload card-img" alt="<?php echo $image['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
-                      <a href="assets/uploads/products/heavy-equipment/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
+                      <a href="assets/uploads/products/heavy-equipment/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="stretched-link product-lightbox" data-gallery="heavy-equipment">
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>

@@ -13,13 +13,13 @@ $section_customers = $home['section_customers'];
 $section_instagram = $home['section_instagram'];
 ?>
 
-<section class="section section-hero d-flex py-0">
+<section class="section d-flex py-0 section-hero">
   <div class="swiper hero-swiper">
     <div class="swiper-wrapper">
       <?php
       foreach ($section_hero['slides'] as $index => $slide) {
         $image = $slide['image']; ?>
-        <div class="swiper-slide d-flex align-items-center">
+        <div class="d-flex align-items-center swiper-slide">
           <div class="hero-slide-img">
             <picture>
               <source srcset="assets/uploads/hero/avif/<?php echo $image['slug']; ?>.avif 1x, assets/uploads/hero/avif/<?php echo $image['slug']; ?>@2x.avif 2x" type="image/avif" />
@@ -32,7 +32,7 @@ $section_instagram = $home['section_instagram'];
             <div class="row">
               <div class="col-md-8 col-lg-5">
                 <div class="hero-slide-content">
-                  <h2 class="h1 mb-3" data-swiper-parallax="<?php echo $slide['data_swiper_parallax']['title']; ?>"><?php echo $slide['title']; ?></h2>
+                  <h2 class="mb-3 h1" data-swiper-parallax="<?php echo $slide['data_swiper_parallax']['title']; ?>"><?php echo $slide['title']; ?></h2>
                   <p class="mb-5" data-swiper-parallax="<?php echo $slide['data_swiper_parallax']['description']; ?>"><?php echo $slide['description']; ?></p>
                   <div data-swiper-parallax="<?php echo $slide['data_swiper_parallax']['button']; ?>"><a href="<?php echo $slide['button']['link']; ?>" class="btn btn-primary"><?php echo $slide['button']['text']; ?></a></div>
                 </div>
@@ -46,16 +46,16 @@ $section_instagram = $home['section_instagram'];
   </div>
 </section>
 
-<section class="section section-homeabout pb-0">
+<section class="section pb-0 section-homeabout">
   <div class="container">
-    <div class="row g-4 align-items-xl-center gy-5">
+    <div class="row align-items-xl-center g-4 gy-5">
       <div class="col-lg-7">
-        <div class="row pe-lg-4 pe-xl-5 gy-4">
+        <div class="row gy-4 pe-lg-4 pe-xl-5">
           <div class="col-sm-6">
             <picture>
               <source data-srcset="assets/images/about/avif/office-01.avif" type="image/avif" />
               <source data-srcset="assets/images/about/webp/office-01.webp" type="image/webp" />
-              <img src="assets/images/placehold.png" data-src="assets/images/about/jpg/office-01.jpg" class="rounded lazyload" alt="office 01">
+              <img src="assets/images/placehold.png" data-src="assets/images/about/jpg/office-01.jpg" class="lazyload rounded" alt="office 01">
             </picture>
           </div>
 
@@ -77,14 +77,14 @@ $section_instagram = $home['section_instagram'];
             <picture>
               <source data-srcset="assets/images/about/avif/office-02.avif" type="image/avif" />
               <source data-srcset="assets/images/about/webp/office-02.webp" type="image/webp" />
-              <img src="assets/images/placehold.png" data-src="assets/images/about/jpg/office-02.jpg" class="rounded lazyload" alt="office 01">
+              <img src="assets/images/placehold.png" data-src="assets/images/about/jpg/office-02.jpg" class="lazyload rounded" alt="office 02">
             </picture>
           </div>
         </div>
       </div>
 
       <div class="col-lg-5">
-        <span class="d-inline-block bg-light text-gray-700 small rounded-3 px-3 py-2 mb-4">🤝 <?php echo $section_homeabout['subtitle']; ?></span>
+        <span class="d-inline-block px-3 py-2 bg-light mb-4 rounded-3 text-gray-700 small">🤝 <?php echo $section_homeabout['subtitle']; ?></span>
         <h2 class="mb-4"><?php echo $section_homeabout['title']; ?></h2>
         <p class="mb-5"><?php echo $section_homeabout['description']; ?></p>
 
@@ -92,7 +92,7 @@ $section_instagram = $home['section_instagram'];
         <ul class="list-group list-group-borderless mb-4">
           <?php foreach ($section_homeabout['why_choose_us']['features'] as $feature) { ?>
             <li class="list-group-item d-flex border-0">
-              <i class="bi bi-patch-check-fill text-primary me-2" aria-hidden="true"></i>
+              <i class="bi bi-patch-check-fill me-2 text-primary" aria-hidden="true"></i>
               <?php echo $feature; ?>
             </li>
           <?php } ?>
@@ -104,7 +104,7 @@ $section_instagram = $home['section_instagram'];
 
 <section class="section section-partners">
   <div class="container">
-    <h2 class="h5 mb-5 text-center text-gray-600 text-uppercase"><?php echo $section_partners['title']; ?></h2>
+    <h2 class="mb-5 h5 text-uppercase text-center text-gray-600"><?php echo $section_partners['title']; ?></h2>
     <div class="swiper partners-swiper">
       <div class="swiper-wrapper">
         <?php
@@ -122,7 +122,7 @@ $section_instagram = $home['section_instagram'];
   </div>
 </section>
 
-<section class="section section-specialize bg-light">
+<section class="section bg-light section-specialize">
   <div class="container">
     <h2 class="mb-6 text-center"><?php echo $section_specialize['title']; ?></h2>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-4">
@@ -130,11 +130,11 @@ $section_instagram = $home['section_instagram'];
       foreach ($section_specialize['categories'] as $category) {
       ?>
         <div class="col">
-          <div class="text-center my-2">
-            <div class="service-icon mb-4">
+          <div class="my-2 text-center">
+            <div class="mb-4 service-icon">
               <img src="assets/images/specialized/<?php echo $category['icon']; ?>" alt="">
             </div>
-            <h3 class="h5 mb-3"><?php echo $category['title']; ?></h3>
+            <h3 class="mb-3 h5"><?php echo $category['title']; ?></h3>
             <p class="mb-0"><?php echo $category['description']; ?></p>
           </div>
         </div>
@@ -148,7 +148,7 @@ $section_instagram = $home['section_instagram'];
     <h2 class="mb-6 text-center"><?php echo $section_products['title']; ?></h2>
     <div class="row">
       <div class="col">
-        <div class="d-flex nav-wrapper mb-5">
+        <div class="d-flex mb-5 nav-wrapper">
           <ul class="nav nav-underline flex-nowrap flex-lg-wrap gap-4 mx-auto" role="tablist">
             <?php foreach ($section_products['filters'] as $index => $filter) { ?>
               <li class="nav-item" role="presentation">
@@ -199,10 +199,10 @@ $section_instagram = $home['section_instagram'];
                       <source
                         data-srcset="assets/uploads/products/heavy-duty/jpg/<?php echo $image['slug']; ?>.jpg 1x, assets/uploads/products/heavy-duty/jpg/<?php echo $image['slug']; ?>@2x.jpg 2x, assets/uploads/products/heavy-duty/jpg/<?php echo $image['slug']; ?>@3x.jpg 3x"
                         type="image/jpeg" />
-                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/heavy-duty/jpg/<?php echo $image['slug']; ?>.jpg" class="card-img lazyload" alt="<?php echo $image['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/heavy-duty/jpg/<?php echo $image['slug']; ?>.jpg" class="lazyload card-img" alt="<?php echo $image['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
-                      <a href="assets/uploads/products/heavy-duty/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="product-lightbox stretched-link" data-gallery="heavy-duty">
+                      <a href="assets/uploads/products/heavy-duty/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="stretched-link product-lightbox" data-gallery="heavy-duty">
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -230,10 +230,10 @@ $section_instagram = $home['section_instagram'];
                       <source
                         data-srcset="assets/uploads/products/special-purpose/jpg/<?php echo $image['slug']; ?>.jpg 1x, assets/uploads/products/special-purpose/jpg/<?php echo $image['slug']; ?>@2x.jpg 2x, assets/uploads/products/special-purpose/jpg/<?php echo $image['slug']; ?>@3x.jpg 3x"
                         type="image/jpeg" />
-                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/special-purpose/jpg/<?php echo $image['slug']; ?>.jpg" class="card-img lazyload" alt="<?php echo $image['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/special-purpose/jpg/<?php echo $image['slug']; ?>.jpg" class="lazyload card-img" alt="<?php echo $image['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
-                      <a href="assets/uploads/products/special-purpose/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="product-lightbox stretched-link" data-gallery="special-purpose">
+                      <a href="assets/uploads/products/special-purpose/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="stretched-link product-lightbox" data-gallery="special-purpose">
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -261,10 +261,10 @@ $section_instagram = $home['section_instagram'];
                       <source
                         data-srcset="assets/uploads/products/ambulance/jpg/<?php echo $image['slug']; ?>.jpg 1x, assets/uploads/products/ambulance/jpg/<?php echo $image['slug']; ?>@2x.jpg 2x, assets/uploads/products/ambulance/jpg/<?php echo $image['slug']; ?>@3x.jpg 3x"
                         type="image/jpeg" />
-                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/ambulance/jpg/<?php echo $image['slug']; ?>.jpg" class="card-img lazyload" alt="<?php echo $image['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/ambulance/jpg/<?php echo $image['slug']; ?>.jpg" class="lazyload card-img" alt="<?php echo $image['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
-                      <a href="assets/uploads/products/ambulance/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="product-lightbox stretched-link" data-gallery="ambulance">
+                      <a href="assets/uploads/products/ambulance/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="stretched-link product-lightbox" data-gallery="ambulance">
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -292,10 +292,10 @@ $section_instagram = $home['section_instagram'];
                       <source
                         data-srcset="assets/uploads/products/bus/jpg/<?php echo $image['slug']; ?>.jpg 1x, assets/uploads/products/bus/jpg/<?php echo $image['slug']; ?>@2x.jpg 2x, assets/uploads/products/bus/jpg/<?php echo $image['slug']; ?>@3x.jpg 3x"
                         type="image/jpeg" />
-                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/bus/jpg/<?php echo $image['slug']; ?>.jpg" class="card-img lazyload" alt="<?php echo $image['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/bus/jpg/<?php echo $image['slug']; ?>.jpg" class="lazyload card-img" alt="<?php echo $image['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
-                      <a href="assets/uploads/products/bus/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="product-lightbox stretched-link" data-gallery="bus">
+                      <a href="assets/uploads/products/bus/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="stretched-link product-lightbox" data-gallery="bus">
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -323,10 +323,10 @@ $section_instagram = $home['section_instagram'];
                       <source
                         data-srcset="assets/uploads/products/heavy-equipment/jpg/<?php echo $image['slug']; ?>.jpg 1x, assets/uploads/products/heavy-equipment/jpg/<?php echo $image['slug']; ?>@2x.jpg 2x, assets/uploads/products/heavy-equipment/jpg/<?php echo $image['slug']; ?>@3x.jpg 3x"
                         type="image/jpeg" />
-                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/heavy-equipment/jpg/<?php echo $image['slug']; ?>.jpg" class="card-img lazyload" alt="<?php echo $image['alt']; ?>">
+                      <img src="assets/images/placehold.png" data-src="assets/uploads/products/heavy-equipment/jpg/<?php echo $image['slug']; ?>.jpg" class="lazyload card-img" alt="<?php echo $image['alt']; ?>">
                     </picture>
                     <div class="card-img-overlay">
-                      <a href="assets/uploads/products/heavy-equipment/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="product-lightbox stretched-link" data-gallery="heavy-equipment">
+                      <a href="assets/uploads/products/heavy-equipment/jpg/<?php echo $image['slug']; ?>@lbox.jpg" class="stretched-link product-lightbox" data-gallery="heavy-equipment">
                         <i class="bi bi-zoom-in" aria-hidden="true"></i>
                       </a>
                     </div>
@@ -349,7 +349,7 @@ $section_instagram = $home['section_instagram'];
   </div>
 </section>
 
-<section class="section section-customers bg-dark">
+<section class="section bg-dark section-customers">
   <div class="container">
     <h2 class="mb-6"><?php echo $section_customers['title']; ?></h2>
     <div class="swiper customers-swiper">
@@ -373,8 +373,8 @@ $section_instagram = $home['section_instagram'];
 
 <section class="section section-instagram">
   <div class="container">
-    <div class="text-center mb-6">
-      <p class="h4 mb-4"><?php echo $section_instagram['title']; ?></p>
+    <div class="mb-6 text-center">
+      <p class="mb-4 h4"><?php echo $section_instagram['title']; ?></p>
       <p class="mb-0"><?php echo $section_instagram['description']; ?></p>
     </div>
     <div class="swiper instafeed-swiper">
@@ -394,7 +394,7 @@ $section_instagram = $home['section_instagram'];
                 <source
                   data-srcset="assets/images/insta-feed/jpg/<?php echo $insta_post['slug']; ?>.jpg 1x, assets/images/insta-feed/jpg/<?php echo $insta_post['slug']; ?>@2x.jpg 2x, assets/images/insta-feed/jpg/<?php echo $insta_post['slug']; ?>@3x.jpg 3x"
                   type="image/jpeg" />
-                <img src="assets/images/placehold.png" data-src="assets/images/insta-feed/jpg/<?php echo $insta_post['slug']; ?>.jpg" class="card-img lazyload" alt="<?php echo $insta_post['alt']; ?>">
+                <img src="assets/images/placehold.png" data-src="assets/images/insta-feed/jpg/<?php echo $insta_post['slug']; ?>.jpg" class="lazyload card-img" alt="<?php echo $insta_post['alt']; ?>">
               </picture>
               <div class="card-img-overlay">
                 <a href="https://www.instagram.com/senangjayagroup" class="stretched-link" target="_blank">

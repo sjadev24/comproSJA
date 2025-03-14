@@ -33,7 +33,7 @@ $section_aboutcta = $about['section_aboutcta'];
                 <source
                   data-srcset="assets/images/about/jpg/who-we-are.jpg 1x, assets/images/about/jpg/who-we-are@2x.jpg 2x"
                   type="image/jpeg" />
-                <img src="assets/images/placehold.png" data-src="assets/images/about/jpg/who-we-are.jpg" class="rounded lazyload" alt="">
+                <img src="assets/images/placehold.png" data-src="assets/images/about/jpg/who-we-are.jpg" class="lazyload rounded" alt="">
               </picture>
             </div>
           </div>
@@ -41,7 +41,7 @@ $section_aboutcta = $about['section_aboutcta'];
             <h3 class="mb-4"><?php echo $section_whoweare['subtitle']; ?></h3>
             <p><?php echo $section_whoweare['description']; ?></p>
             <div class="mb-5">
-              <a href="assets/video/video.mp4" class="btn btn-lg btn-outline-primary rounded-circle me-2 intro-lightbox" aria-label="Play introduction video">
+              <a href="assets/video/video.mp4" class="btn btn-lg btn-outline-primary me-2 rounded-circle intro-lightbox" aria-label="Play introduction video">
                 <i class="fas fa-play" aria-hidden="true"></i>
               </a>
               <span class="text-dark">Video intro</span>
@@ -99,11 +99,11 @@ $section_aboutcta = $about['section_aboutcta'];
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-4">
           <?php foreach ($section_ourvalues['values'] as $value) { ?>
             <div class="col">
-              <div class="text-center my-2">
-                <div class="text-primary fs-2 mb-4">
+              <div class="my-2 text-center">
+                <div class="mb-4 fs-2 text-primary">
                   <i class="<?php echo $value['icon']; ?>" aria-hidden="true"></i>
                 </div>
-                <h4 class="h5 mb-3"><?php echo $value['title']; ?></h4>
+                <h4 class="mb-3 h5"><?php echo $value['title']; ?></h4>
                 <p class="mb-0"><?php echo $value['description']; ?></p>
               </div>
             </div>
@@ -114,7 +114,7 @@ $section_aboutcta = $about['section_aboutcta'];
   </div>
 </section>
 
-<section class="section section-whatwedo bg-light">
+<section class="section bg-light section-whatwedo">
   <div class="container">
     <div class="row">
       <div class="col-md-2 mb-5 mb-md-0">
@@ -136,7 +136,7 @@ $section_aboutcta = $about['section_aboutcta'];
                     <source
                       data-srcset="assets/images/about/jpg/what-we-do-01.jpg 1x, assets/images/about/jpg/what-we-do-01@2x.jpg 2x"
                       type="image/jpeg" />
-                    <img src="assets/images/placehold.png" data-src="assets/images/about/jpg/what-we-do-01.jpg" class="rounded lazyload" alt="">
+                    <img src="assets/images/placehold.png" data-src="assets/images/about/jpg/what-we-do-01.jpg" class="lazyload rounded" alt="">
                   </picture>
                 </div>
               </div>
@@ -152,7 +152,7 @@ $section_aboutcta = $about['section_aboutcta'];
                     <source
                       data-srcset="assets/images/about/jpg/what-we-do-02.jpg 1x, assets/images/about/jpg/what-we-do-02@2x.jpg 2x"
                       type="image/jpeg" />
-                    <img src="assets/images/placehold.png" data-src="assets/images/about/jpg/what-we-do-02.jpg" class="rounded lazyload" alt="">
+                    <img src="assets/images/placehold.png" data-src="assets/images/about/jpg/what-we-do-02.jpg" class="lazyload rounded" alt="">
                   </picture>
                 </div>
               </div>
@@ -179,7 +179,7 @@ $section_aboutcta = $about['section_aboutcta'];
   </div>
 </section>
 
-<section class="section section-awards bg-dark">
+<section class="section bg-dark section-awards">
   <div class="container">
     <div class="row">
       <div class="col-md-2 mb-5 mb-md-0">
@@ -196,8 +196,7 @@ $section_aboutcta = $about['section_aboutcta'];
                 <h4 class="h5">
                   <a href="assets/uploads/certifications/jpg/<?php echo $certificate['image']; ?>" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover certification-lightbox"><?php echo $certificate['title']; ?></a>
                 </h4>
-                <p class="mb-0">
-                  <?php echo $certificate['description']; ?></p>
+                <p class="mb-0"><?php echo $certificate['description']; ?></p>
               </div>
             </li>
           <?php } ?>
@@ -218,8 +217,8 @@ $section_aboutcta = $about['section_aboutcta'];
         <p class="mb-6"><?php echo $section_ourteam['description']; ?></p>
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-5 gy-4">
           <div class="col">
-            <div class="text-center my-2">
-              <div class="avatar px-2 mb-3">
+            <div class="my-2 text-center">
+              <div class="px-2 mb-3 avatar">
                 <picture>
                   <source srcset="assets/images/about/avif/marketing-01.avif" type="image/avif" />
                   <source srcset="assets/images/about/webp/marketing-01.webp" type="image/webp" />
@@ -231,8 +230,8 @@ $section_aboutcta = $about['section_aboutcta'];
             </div>
           </div>
           <div class="col">
-            <div class="text-center my-2">
-              <div class="avatar px-2 mb-3">
+            <div class="my-2 text-center">
+              <div class="px-2 mb-3 avatar">
                 <picture>
                   <source srcset="assets/images/about/avif/marketing-02.avif" type="image/avif" />
                   <source srcset="assets/images/about/webp/marketing-02.webp" type="image/webp" />
@@ -244,8 +243,8 @@ $section_aboutcta = $about['section_aboutcta'];
             </div>
           </div>
           <div class="col">
-            <div class="text-center my-2">
-              <div class="avatar px-2 mb-3">
+            <div class="my-2 text-center">
+              <div class="px-2 mb-3 avatar">
                 <picture>
                   <source srcset="assets/images/about/avif/marketing-03.avif" type="image/avif" />
                   <source srcset="assets/images/about/webp/marketing-03.webp" type="image/webp" />
@@ -262,7 +261,7 @@ $section_aboutcta = $about['section_aboutcta'];
   </div>
 </section>
 
-<section class="section section-ourcustomers bg-light">
+<section class="section bg-light section-ourcustomers">
   <div class="container">
     <div class="row">
       <div class="col-md-2 mb-5 mb-md-0">
