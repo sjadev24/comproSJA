@@ -55,7 +55,6 @@ $menu = $lang_text['menu'];
 
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="assets/css/responsive.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" defer></script>
 
@@ -151,7 +150,7 @@ $menu = $lang_text['menu'];
 						</picture>
 					</a>
 				</h1>
-				<button class="navbar-toggler px-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
 						<i class="fa-solid fa-bars" aria-hidden="true"></i>
 					</span>
