@@ -359,7 +359,7 @@ ul {
 }
 
 .section {
-  --section-spacer-y: 5rem;
+  --section-spacer-y: 4rem;
   --section-spacer-x: 0;
   --section-bg: var(--bs-body-bg);
   --section-color: var(--bs-body-color);
@@ -397,6 +397,18 @@ ul {
   height: 3px;
   background-color: #ccbb00;
   margin-top: 0.5rem;
+}
+
+.nav-wrapper {
+  overflow-x: auto;
+}
+
+.nav-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-item {
+  width: max-content;
 }
 
 .btn-icon {
@@ -496,19 +508,17 @@ ul {
     margin-left: 0;
     box-shadow: 0 0 0 2px transparent;
   }
-}
-@media (max-width: 991px) {
+  .section {
+    --section-spacer-y: 5rem;
+  }
   .nav-wrapper {
-    overflow-x: auto;
+    overflow-x: initial;
   }
   .nav-wrapper::-webkit-scrollbar {
-    display: none;
+    display: block;
   }
   .nav-item {
-    width: max-content;
-  }
-  .section {
-    --section-spacer-y: 4rem;
+    width: auto;
   }
 }
 .header {
@@ -518,7 +528,7 @@ ul {
 }
 
 .navbar-brand img {
-  width: 17.5rem;
+  width: 13.5rem;
   height: auto;
 }
 
@@ -563,6 +573,16 @@ ul {
   --bs-btn-border-color: var(--bs-border-color);
 }
 
+@media (min-width: 420px) {
+  .navbar-brand img {
+    width: 15rem;
+  }
+}
+@media (min-width: 576px) {
+  .navbar-brand img {
+    width: 17.5rem;
+  }
+}
 @media (min-width: 992px) {
   .search-dropdown .form-control {
     --bs-border-color: transparent;
@@ -574,16 +594,6 @@ ul {
   }
   .search-dropdown form {
     margin-left: 0;
-  }
-}
-@media (max-width: 480px) {
-  .navbar-brand img {
-    width: 15rem;
-  }
-}
-@media (max-width: 380px) {
-  .navbar-brand img {
-    width: 13.5rem;
   }
 }
 .menu > ul {
@@ -762,10 +772,11 @@ ul {
 
 .hero-slide-content .h1 {
   --bs-heading-color: var(--bs-white);
+  font-size: 1.65rem;
 }
 
 .hero-slide-content p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: var(--bs-gray-300);
 }
 
@@ -869,12 +880,12 @@ ul {
   --swiper-navigation-size: 14px;
 }
 
-@media (max-width: 575px) {
+@media (min-width: 576px) {
   .hero-slide-content .h1 {
-    font-size: 1.65rem;
+    font-size: 1.802rem;
   }
   .hero-slide-content p {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 /*--------------------------------------------------------------

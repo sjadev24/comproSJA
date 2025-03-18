@@ -7,7 +7,7 @@
 }
 
 .navbar-brand img {
-  width: 17.5rem;
+  width: 13.5rem;
   height: auto;
 }
 
@@ -52,6 +52,18 @@
   --bs-btn-border-color: var(--bs-border-color);
 }
 
+@media (min-width: 420px) {
+  .navbar-brand img {
+    width: 15rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar-brand img {
+    width: 17.5rem;
+  }
+}
+
 @media (min-width: 992px) {
   .search-dropdown .form-control {
     --bs-border-color: transparent;
@@ -65,17 +77,5 @@
 
   .search-dropdown form {
     margin-left: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar-brand img {
-    width: 15rem;
-  }
-}
-
-@media (max-width: 380px) {
-  .navbar-brand img {
-    width: 13.5rem;
   }
 }

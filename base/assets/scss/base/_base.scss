@@ -27,7 +27,7 @@
 }
 
 .section {
-  --section-spacer-y: 5rem;
+  --section-spacer-y: 4rem;
   --section-spacer-x: 0;
   --section-bg: var(--bs-body-bg);
   --section-color: var(--bs-body-color);
@@ -65,6 +65,18 @@
   height: 3px;
   background-color: var.$color-orange-shade-200;
   margin-top: 0.5rem;
+}
+
+.nav-wrapper {
+  overflow-x: auto;
+}
+
+.nav-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-item {
+  width: max-content;
 }
 
 .btn-icon {
@@ -164,22 +176,20 @@
     margin-left: 0;
     box-shadow: 0 0 0 2px transparent;
   }
-}
 
-@media (max-width: 991px) {
+  .section {
+    --section-spacer-y: 5rem;
+  }
+
   .nav-wrapper {
-    overflow-x: auto;
+    overflow-x: initial;
   }
 
   .nav-wrapper::-webkit-scrollbar {
-    display: none;
+    display: block;
   }
 
   .nav-item {
-    width: max-content;
-  }
-
-  .section {
-    --section-spacer-y: 4rem;
+    width: auto;
   }
 }
