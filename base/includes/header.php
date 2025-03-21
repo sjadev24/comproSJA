@@ -198,7 +198,7 @@ $menu = $lang_text['menu'];
 
 						<?php $target_lang = !isset($_SESSION['lang']) || $_SESSION['lang'] === 'en' ? 'id' : 'en'; ?>
 						<div class="switch <?php echo $target_lang === 'en' ? 'lang-id' : ''; ?>">
-							<a href="?lang=<?php echo $target_lang; ?>" class="switch-control"></a>
+							<a href="?lang=<?php echo $target_lang; ?>" class="switch-control" aria-label="Switch language"></a>
 						</div>
 					</div>
 				</div>
