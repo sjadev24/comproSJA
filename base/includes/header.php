@@ -146,7 +146,7 @@ $menu = $lang_text['menu'];
 					<a href="./" class="navbar-brand">
 						<picture>
 							<source srcset="assets/images/logo.png 1x, assets/images/logo@2x.png 2x, assets/images/logo@3x.png 3x" type="image/png">
-							<img src="assets/images/logo.png" alt="logo" width="216" height="37">
+							<img src="assets/images/logo.png" width="216" height="37" alt="logo">
 						</picture>
 					</a>
 				</h1>
